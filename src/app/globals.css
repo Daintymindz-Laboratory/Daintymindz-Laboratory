@@ -206,6 +206,10 @@ body {
   animation: rotate-slow 30s linear infinite;
 }
 
+.animate-rotate-slow-reverse {
+  animation: rotate-slow 30s linear infinite reverse;
+}
+
 .animate-marquee {
   animation: marquee 30s linear infinite;
 }

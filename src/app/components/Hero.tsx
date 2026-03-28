@@ -43,7 +43,7 @@ export default function Hero() {
 
       {/* Geometric decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 border border-amber/5 rotate-45 animate-rotate-slow" />
-      <div className="absolute bottom-20 right-10 w-48 h-48 border border-amber/5 rotate-12 animate-rotate-slow" style={{ animationDirection: "reverse" }} />
+      <div className="absolute bottom-20 right-10 w-48 h-48 border border-amber/5 rotate-12 animate-rotate-slow-reverse" />
       <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-amber/30 rounded-full animate-float" />
       <div className="absolute bottom-1/3 left-1/4 w-1.5 h-1.5 bg-amber/20 rounded-full animate-float delay-300" />
 
