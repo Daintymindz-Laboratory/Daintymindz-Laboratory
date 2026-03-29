@@ -5,11 +5,48 @@ import { useSyncExternalStore } from "react";
 export type Theme = "light" | "dark";
 
 const STORAGE_KEY = "theme";
+const listeners = new Set<() => void>();
+
+function notifyThemeChange() {
+  for (const listener of listeners) {
+    listener();
+  }
+}
 
 function getSystemTheme(): Theme {
   return window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
     : "light";
+}
+
+function getStoredTheme(): Theme | null {
+  try {
+    const storedTheme = window.localStorage.getItem(STORAGE_KEY);
+
+    return storedTheme === "light" || storedTheme === "dark"
+      ? storedTheme
+      : null;
+  } catch {
+    return null;
+  }
+}
+
+function hasStoredThemeOverride(): boolean {
+  try {
+    const storedTheme = window.localStorage.getItem(STORAGE_KEY);
+
+    if (storedTheme === "light" || storedTheme === "dark") {
+      return true;
+    }
+
+    if (storedTheme !== null) {
+      window.localStorage.removeItem(STORAGE_KEY);
+    }
+  } catch {
+    return false;
+  }
+
+  return false;
 }
 
 function applyTheme(theme: Theme) {
@@ -27,8 +64,8 @@ function getSnapshot(): Theme {
     return rootTheme;
   }
 
-  const storedTheme = window.localStorage.getItem(STORAGE_KEY);
-  if (storedTheme === "light" || storedTheme === "dark") {
+  const storedTheme = getStoredTheme();
+  if (storedTheme) {
     return storedTheme;
   }
 
@@ -40,15 +77,17 @@ function subscribe(onStoreChange: () => void) {
     return () => undefined;
   }
 
+  listeners.add(onStoreChange);
+
   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
   const handlePreferenceChange = () => {
-    if (window.localStorage.getItem(STORAGE_KEY)) {
+    if (hasStoredThemeOverride()) {
       return;
     }
 
     applyTheme(getSystemTheme());
-    onStoreChange();
+    notifyThemeChange();
   };
 
   const handleStorage = (event: StorageEvent) => {
@@ -58,7 +97,7 @@ function subscribe(onStoreChange: () => void) {
           ? event.newValue
           : getSystemTheme();
       applyTheme(nextTheme);
-      onStoreChange();
+      notifyThemeChange();
     }
   };
 
@@ -66,6 +105,7 @@ function subscribe(onStoreChange: () => void) {
   window.addEventListener("storage", handleStorage);
 
   return () => {
+    listeners.delete(onStoreChange);
     mediaQuery.removeEventListener("change", handlePreferenceChange);
     window.removeEventListener("storage", handleStorage);
   };
@@ -79,8 +119,14 @@ export function useTheme() {
   );
 
   const updateTheme = (nextTheme: Theme) => {
-    window.localStorage.setItem(STORAGE_KEY, nextTheme);
+    try {
+      window.localStorage.setItem(STORAGE_KEY, nextTheme);
+    } catch {
+      // Ignore storage errors so the in-memory theme toggle still works.
+    }
+
     applyTheme(nextTheme);
+    notifyThemeChange();
   };
 
   const toggleTheme = () => {

@@ -20,10 +20,12 @@ export default function ThemeToggle({
     <button
       type="button"
       onClick={onToggle}
+      role="switch"
+      aria-checked={isDark}
       className={`group inline-flex items-center justify-center gap-3 rounded-full border border-foreground/10 surface-panel px-3 py-2 text-foreground transition-all duration-300 hover:border-amber/30 hover:text-amber ${
         compact ? "w-full" : ""
       }`}
-      aria-label={`Switch to ${nextTheme} mode`}
+      aria-label="Dark mode"
       title={`Switch to ${nextTheme} mode`}
     >
       <span className="relative flex h-8 w-14 items-center rounded-full bg-foreground/8 p-1 transition-colors duration-300">
