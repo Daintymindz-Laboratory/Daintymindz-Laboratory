@@ -1,0 +1,16 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#111418"/>
+  <rect x="70" y="70" width="1060" height="760" rx="20" fill="#161B20" stroke="#D59C10" stroke-opacity="0.18"/>
+  <circle cx="324" cy="365" r="140" fill="#D59C10" fill-opacity="0.08"/>
+  <circle cx="873" cy="280" r="92" fill="#D59C10" fill-opacity="0.12"/>
+  <circle cx="845" cy="587" r="168" fill="#D59C10" fill-opacity="0.06"/>
+  <path d="M180 660C274 537 406 480 550 480C694 480 805 537 927 660" stroke="#D59C10" stroke-opacity="0.25" stroke-width="28" stroke-linecap="round"/>
+  <circle cx="552" cy="322" r="126" stroke="#D59C10" stroke-width="20" stroke-opacity="0.3"/>
+  <path d="M552 252L570 304L625 304L580 337L597 390L552 356L507 390L524 337L479 304L534 304L552 252Z" fill="#D59C10" fill-opacity="0.85"/>
+  <rect x="194" y="132" width="228" height="18" rx="9" fill="#D59C10" fill-opacity="0.2"/>
+  <rect x="194" y="165" width="155" height="18" rx="9" fill="#D59C10" fill-opacity="0.1"/>
+  <rect x="780" y="132" width="226" height="18" rx="9" fill="#D59C10" fill-opacity="0.2"/>
+  <rect x="852" y="165" width="154" height="18" rx="9" fill="#D59C10" fill-opacity="0.1"/>
+  <text x="600" y="760" text-anchor="middle" fill="#F5F0E8" fill-opacity="0.9" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" letter-spacing="8">WHO IS A DAINTYMIND?</text>
+  <text x="600" y="810" text-anchor="middle" fill="#F5F0E8" fill-opacity="0.6" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="3">CURIOUS · RIGOROUS · BOLD · IMPACT-DRIVEN</text>
+</svg>
