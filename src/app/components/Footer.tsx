@@ -70,7 +70,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-foreground/5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-body text-xs text-foreground/30">© 2026 DAINTYMINDZ LTD</p>
+          <p className="font-body text-xs text-foreground/30">
+            © {new Date().getFullYear()} DAINTYMINDZ LTD
+          </p>
           <div className="flex items-center gap-6">
             <a href="#home" className="font-body text-xs text-foreground/30 hover:text-amber transition-colors duration-300">
               Back to Top
