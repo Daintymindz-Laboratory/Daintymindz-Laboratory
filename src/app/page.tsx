@@ -4,6 +4,8 @@ import About from "./components/About";
 import MissionVision from "./components/MissionVision";
 import Services from "./components/Services";
 import Values from "./components/Values";
+import Team from "./components/Team";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -20,6 +22,10 @@ export default function Home() {
       <Services />
       <div className="amber-line" />
       <Values />
+      <div className="amber-line" />
+      <Team />
+      <div className="amber-line" />
+      <Projects />
       <div className="amber-line" />
       <Contact />
       <Footer />

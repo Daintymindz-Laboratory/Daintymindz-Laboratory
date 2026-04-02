@@ -5,10 +5,12 @@ import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "../hooks/useTheme";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Mission", href: "#mission" },
-  { label: "Services", href: "#services" },
-  { label: "Values", href: "#values" },
+  { label: "Home", href: "#home" },
+  { label: "The Lab", href: "#lab" },
+  { label: "Research Thrusts", href: "#research-thrusts" },
+  { label: "The Daintymind", href: "#daintymind" },
+  { label: "Global Team", href: "#team" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -38,14 +40,11 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "glass py-3"
-            : "bg-transparent py-6"
+          scrolled ? "glass py-3" : "bg-transparent py-6"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6">
+          <a href="#home" className="flex items-center gap-3 group shrink-0">
             <div className="relative w-10 h-10">
               <div className="absolute inset-0 bg-amber rounded-sm rotate-45 group-hover:rotate-[135deg] transition-transform duration-700" />
               <span className="absolute inset-0 flex items-center justify-center text-graphite-deep font-display font-extrabold text-lg">
@@ -57,8 +56,7 @@ export default function Navbar() {
             </span>
           </a>
 
-          {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden xl:flex items-center gap-7">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -68,16 +66,18 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+          </div>
+
+          <div className="hidden md:flex items-center gap-4 shrink-0">
             <ThemeToggle theme={theme} onToggle={toggleTheme} />
             <a
               href="#contact"
-              className="ml-4 px-6 py-2.5 bg-amber text-graphite-deep font-display font-bold text-sm tracking-wider rounded-sm hover:bg-amber-light transition-colors duration-300"
+              className="px-6 py-2.5 bg-amber text-graphite-deep font-display font-bold text-sm tracking-wider rounded-sm hover:bg-amber-light transition-colors duration-300"
             >
-              GET IN TOUCH
+              JOIN THE LAB
             </a>
           </div>
 
-          {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden relative w-8 h-8 flex flex-col justify-center items-center gap-1.5"
@@ -102,13 +102,12 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile menu overlay */}
       <div
         className={`mobile-overlay fixed inset-0 z-40 backdrop-blur-xl transition-opacity duration-500 md:hidden ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col items-center justify-center h-full gap-8">
+        <div className="flex flex-col items-center justify-center h-full gap-8 px-6 text-center">
           <ThemeToggle theme={theme} onToggle={toggleTheme} compact />
           {navLinks.map((link, i) => (
             <a
@@ -126,7 +125,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="mt-4 px-10 py-4 bg-amber text-graphite-deep font-display font-bold text-lg tracking-wider rounded-sm"
           >
-            GET IN TOUCH
+            JOIN THE LAB
           </a>
         </div>
       </div>

@@ -32,21 +32,20 @@ const themeScript = `(() => {
 })();`;
 
 export const metadata: Metadata = {
-  title: "DAINTYMINDZ LAB — Where Precision Meets Innovation",
+  title: "DAINTYMINDZ LAB — Engineering Intelligent Futures",
   description:
-    "DAINTYMINDZ LAB is a forward-thinking innovation lab driving intellectual energy, scientific rigor, and bold solutions for tomorrow's challenges.",
+    "DAINTYMINDZ LAB is a future-focused research institute and innovation studio dedicated to intelligence research for impact.",
   keywords: [
     "DAINTYMINDZ",
-    "innovation lab",
-    "technology",
-    "research",
-    "scientific rigor",
-    "precision",
+    "research lab",
+    "intelligence research",
+    "applied AI",
+    "innovation studio",
   ],
   openGraph: {
-    title: "DAINTYMINDZ LAB — Where Precision Meets Innovation",
+    title: "DAINTYMINDZ LAB — Engineering Intelligent Futures",
     description:
-      "A forward-thinking innovation lab driving intellectual energy, scientific rigor, and bold solutions.",
+      "A future-focused research institute and innovation studio dedicated to intelligence research for impact.",
     type: "website",
   },
 };
@@ -65,9 +64,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="noise-overlay min-h-full flex flex-col">
-        {children}
-      </body>
+      <body className="noise-overlay min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
