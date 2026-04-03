@@ -74,6 +74,9 @@ export default function Footer() {
             © {new Date().getFullYear()} DAINTYMINDZ LTD
           </p>
           <div className="flex items-center gap-6">
+            <a href="https://www.joypinness.com" target="_blank" rel="noreferrer" className="font-body text-xs text-foreground/30 hover:text-amber transition-colors duration-300">
+              Built by Joypinness Technologies
+            </a>
             <a href="#home" className="font-body text-xs text-foreground/30 hover:text-amber transition-colors duration-300">
               Back to Top
             </a>
