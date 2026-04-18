@@ -16,7 +16,7 @@ export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
         <p className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber mb-4">
           {track.subtitle}
         </p>
-        <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
+        <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground leading-tight">
           <span className="text-amber-gradient">{track.title}</span> Internship
         </h1>
 

@@ -59,7 +59,7 @@ export default async function ResearchDetailPage({
             <p className="font-body text-xs font-semibold tracking-[0.3em] text-amber/50 uppercase mb-3">
               {thrust.shortTitle}
             </p>
-            <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
+            <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground leading-tight">
               {thrust.title}
             </h1>
           </div>

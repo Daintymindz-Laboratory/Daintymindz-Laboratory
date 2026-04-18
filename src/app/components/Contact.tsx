@@ -31,7 +31,7 @@ export default function Contact() {
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber/30" />
           </div>
 
-          <h2 className={`font-display font-extrabold text-4xl sm:text-5xl lg:text-7xl leading-[1.05] text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
+          <h2 className={`font-display font-extrabold text-3xl sm:text-4xl lg:text-7xl leading-[1.05] text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
             Ready to build something
             <br />
             <span className="text-amber-gradient">bold?</span>

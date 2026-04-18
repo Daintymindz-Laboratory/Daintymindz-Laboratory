@@ -16,7 +16,7 @@ export default function InternshipsPage() {
         <p className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber mb-4">
           Internship Programme 2026
         </p>
-        <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
+        <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground leading-tight">
           {PROGRAM_INFO.tagline.split("Future").map((part, i) =>
             i === 0 ? (
               <span key={i}>

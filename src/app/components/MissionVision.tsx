@@ -27,9 +27,9 @@ export default function MissionVision() {
           <div className="flex-1 h-px bg-gradient-to-r from-amber/30 to-transparent" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-0">
+        <div className="grid lg:grid-cols-2 gap-4 lg:gap-0">
           <div
-            className={`relative p-10 lg:p-16 border border-foreground/5 ${
+            className={`relative p-6 sm:p-10 lg:p-16 border border-foreground/5 ${
               inView ? "animate-slide-left" : "opacity-0"
             }`}
           >
@@ -49,7 +49,7 @@ export default function MissionVision() {
               </h3>
             </div>
 
-            <h2 className="font-display font-bold text-3xl lg:text-4xl leading-tight text-foreground mb-6">
+            <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight text-foreground mb-6">
               Empowering Progress Through <span className="text-amber-gradient">Impactful Research.</span>
             </h2>
 
@@ -62,7 +62,7 @@ export default function MissionVision() {
           </div>
 
           <div
-            className={`surface-panel relative p-10 lg:p-16 border border-foreground/5 ${
+            className={`surface-panel relative p-6 sm:p-10 lg:p-16 border border-foreground/5 ${
               inView ? "animate-slide-right" : "opacity-0"
             }`}
           >
@@ -83,7 +83,7 @@ export default function MissionVision() {
               </h3>
             </div>
 
-            <h2 className="font-display font-bold text-3xl lg:text-4xl leading-tight text-foreground mb-6">
+            <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight text-foreground mb-6">
               Shaping a World Powered by <span className="text-amber-gradient">Bold Intelligence.</span>
             </h2>
 

@@ -24,7 +24,7 @@ export default function Projects() {
               </span>
               <div className="w-24 h-px bg-gradient-to-r from-amber/30 to-transparent" />
             </div>
-            <h2 className={`font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
+            <h2 className={`font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
               The portfolio behind our <span className="text-amber-gradient">research momentum</span>
             </h2>
           </div>

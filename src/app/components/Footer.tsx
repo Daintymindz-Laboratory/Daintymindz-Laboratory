@@ -9,7 +9,7 @@ export default function Footer() {
           {Array.from({ length: 8 }).map((_, i) => (
             <span
               key={i}
-              className="inline-block mx-8 font-display font-extrabold text-6xl lg:text-8xl text-foreground/[0.03] select-none"
+              className="inline-block mx-8 font-display font-extrabold text-3xl sm:text-5xl lg:text-8xl text-foreground/[0.03] select-none"
             >
               DAINTYMINDZ
             </span>

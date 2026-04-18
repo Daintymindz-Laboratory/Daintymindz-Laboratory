@@ -20,7 +20,7 @@ export default function ProjectsPage() {
             <p className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber mb-4">
               Projects
             </p>
-            <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
+            <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground leading-tight">
               The portfolio behind our{" "}
               <span className="text-amber-gradient">research momentum</span>
             </h1>

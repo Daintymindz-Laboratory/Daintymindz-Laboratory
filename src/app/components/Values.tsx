@@ -39,7 +39,7 @@ export default function Values() {
               </span>
             </div>
 
-            <h2 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-foreground">
+            <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl leading-[1.05] text-foreground">
               Who is a <span className="text-amber-gradient">Daintymind?</span>
             </h2>
 

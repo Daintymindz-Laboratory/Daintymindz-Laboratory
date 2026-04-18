@@ -18,7 +18,7 @@ export default function ContactPage() {
             <p className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber mb-4">
               Contact
             </p>
-            <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
+            <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground leading-tight">
               Let&apos;s build something{" "}
               <span className="text-amber-gradient">together</span>
             </h1>

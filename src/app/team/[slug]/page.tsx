@@ -59,7 +59,7 @@ export default async function TeamMemberPage({
             </div>
 
             <div>
-              <h1 className="font-display font-extrabold text-4xl sm:text-5xl text-foreground leading-tight">
+              <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-foreground leading-tight">
                 {member.name}
               </h1>
               <p className="mt-3 text-amber font-body text-sm tracking-[0.2em] uppercase font-semibold">
