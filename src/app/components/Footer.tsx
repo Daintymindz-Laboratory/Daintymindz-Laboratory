@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -21,15 +21,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <Image
-                src="/images/logo/logo-dark.png"
-                alt="DAINTYMINDZ"
-                width={40}
-                height={40}
-                className="h-10 w-10 rounded-sm"
+              <Logo
+                prongsColor="var(--amber)"
+                dantyColor="var(--foreground)"
+                mndzColor="var(--foreground)"
+                className="h-10 w-auto"
               />
               <span className="font-display font-bold text-lg tracking-wider text-foreground">
-                DAINTYMINDZ LTD | RC: 9161423
+                RC: 9161423
               </span>
             </div>
             <p className="font-body text-sm leading-relaxed text-foreground/40 max-w-md">

@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "../hooks/useTheme";
 
@@ -50,13 +50,11 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6">
           <Link href="/" className="flex items-center shrink-0">
-            <Image
-              src={theme === "dark" ? "/images/logo/logo-wordmark-dark.png" : "/images/logo/logo-wordmark-light.png"}
-              alt="DAINTYMINDZ"
-              width={180}
-              height={48}
+            <Logo
+              prongsColor="var(--amber)"
+              dantyColor="var(--foreground)"
+              mndzColor="var(--foreground)"
               className="h-10 w-auto"
-              priority
             />
           </Link>
 
