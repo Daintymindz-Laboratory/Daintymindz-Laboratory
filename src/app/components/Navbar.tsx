@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "../hooks/useTheme";
 
 const navLinks = [
+  { label: "Home", href: "/" },
   { label: "Research", href: "/research" },
   { label: "Projects", href: "/projects" },
   { label: "Team", href: "/team" },
@@ -17,6 +19,10 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -59,7 +65,11 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="golden-border relative font-body text-sm font-medium tracking-wide text-foreground/70 hover:text-amber transition-colors duration-300 pb-1"
+                className={`golden-border relative font-body text-sm font-medium tracking-wide transition-colors duration-300 pb-1 ${
+                  isActive(link.href)
+                    ? "text-amber"
+                    : "text-foreground/70 hover:text-amber"
+                }`}
               >
                 {link.label}
               </Link>
@@ -112,7 +122,11 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="font-display text-3xl font-bold tracking-wider text-foreground/80 hover:text-amber transition-colors duration-300"
+              className={`font-display text-3xl font-bold tracking-wider transition-colors duration-300 ${
+                isActive(link.href)
+                  ? "text-amber"
+                  : "text-foreground/80 hover:text-amber"
+              }`}
               style={{ animationDelay: `${i * 100}ms` }}
             >
               {link.label}
