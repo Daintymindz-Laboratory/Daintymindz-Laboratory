@@ -29,8 +29,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-body text-sm leading-relaxed text-foreground/40 max-w-md">
-              DAINTYMINDZ LAB engineers intelligent futures through globally
-              connected research, software systems, and field-driven innovation.
+              <em>Engineering Intelligent Futures.</em>
             </p>
           </div>
 
