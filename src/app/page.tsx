@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import MissionVision from "./components/MissionVision";
@@ -7,12 +6,10 @@ import Values from "./components/Values";
 import Team from "./components/Team";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <main className="gradient-mesh">
-      <Navbar />
       <Hero />
       <div className="amber-line" />
       <About />
@@ -28,7 +25,6 @@ export default function Home() {
       <Projects />
       <div className="amber-line" />
       <Contact />
-      <Footer />
     </main>
   );
 }

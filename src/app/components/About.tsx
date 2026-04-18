@@ -18,7 +18,7 @@ export default function About() {
     <section id="lab" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
       <div className="section-tint-vertical absolute inset-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div
           className={`flex items-center gap-4 mb-16 ${
             inView ? "animate-fade-up" : "opacity-0"
@@ -33,7 +33,7 @@ export default function About() {
 
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-24 items-start">
           <div className={`${inView ? "animate-slide-left" : "opacity-0"}`}>
-            <h2 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-foreground">
+            <h2 className="font-display font-extrabold text-2xl sm:text-4xl lg:text-6xl leading-[1.05] text-foreground">
               Beyond Innovation —
               <br />
               <span className="text-amber-gradient">Pioneering the Future of Intelligence</span>
@@ -42,34 +42,34 @@ export default function About() {
           </div>
 
           <div className={`space-y-6 ${inView ? "animate-slide-right" : "opacity-0"}`}>
-            <p className="font-body text-lg leading-relaxed text-foreground/70">
+            <p className="font-body text-base sm:text-lg leading-relaxed text-foreground/70">
               DAINTYMINDZ LAB is a future-focused research institute and innovation
-              studio dedicated to Intelligence Research for Impact. We operate at
+              studio dedicated to <strong>Intelligence Research for Impact</strong>. We operate at
               the intersection of academic depth and engineering boldness,
               building technologies that drive resilient, sustainable progress.
-              From our hubs in the USA, Nigeria, South Korea, and Canada, we
-              combine scientific precision with visionary thinking.
             </p>
             <p className="font-body text-base leading-relaxed text-foreground/55">
-              Our work spans research design, systems engineering, field-driven
-              intelligence, and translational product development. We move with
-              the discipline of a lab and the urgency of a studio.
+              From our hubs in the <strong>USA, Nigeria, South Korea, and Canada</strong>, we
+              combine scientific precision with visionary thinking. Every project
+              is grounded in deep research and an unwavering commitment to
+              quality, ensuring our work doesn&apos;t just meet expectations, but
+              redefines the 2030–2050 technological landscape.
             </p>
           </div>
         </div>
 
         <div
-          className={`mt-24 grid grid-cols-2 lg:grid-cols-4 gap-8 ${
+          className={`mt-24 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 ${
             inView ? "animate-fade-up delay-400" : "opacity-0"
           }`}
         >
           {footprints.map((item, i) => (
             <div
               key={item.label}
-              className="text-center p-6 border border-foreground/5 rounded-sm hover:border-amber/20 transition-colors duration-500"
+              className="text-center p-4 sm:p-6 border border-foreground/5 rounded-sm hover:border-amber/20 transition-colors duration-500"
               style={{ animationDelay: `${400 + i * 150}ms` }}
             >
-              <div className="font-display font-extrabold text-3xl lg:text-4xl text-amber">
+              <div className="font-display font-extrabold text-xl sm:text-3xl lg:text-4xl text-amber">
                 {item.value}
               </div>
               <div className="mt-2 font-body text-sm text-foreground/50 tracking-wide">

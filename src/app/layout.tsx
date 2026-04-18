@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Syne } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const displayFont = Syne({
   subsets: ["latin"],
@@ -42,6 +44,10 @@ export const metadata: Metadata = {
     "applied AI",
     "innovation studio",
   ],
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "DAINTYMINDZ LAB — Engineering Intelligent Futures",
     description:
@@ -64,7 +70,11 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="noise-overlay min-h-full flex flex-col">{children}</body>
+      <body className="noise-overlay min-h-full flex flex-col">
+        <Navbar />
+        <div className="flex-1">{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }

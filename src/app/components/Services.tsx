@@ -1,34 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
 import { useInView } from "../hooks/useInView";
-
-const thrusts = [
-  {
-    title: "ML / Autonomous Intelligence",
-    description:
-      "Building adaptive machine intelligence systems that learn, reason, and act in complex operational environments.",
-    tags: ["AI", "Autonomy", "Learning Systems"],
-  },
-  {
-    title: "Software Systems / Immersive Engineering",
-    description:
-      "Designing robust platforms, interactive tools, and immersive computational experiences that translate research into use.",
-    tags: ["Platforms", "XR", "Systems Design"],
-  },
-  {
-    title: "Data Analytics / Decisional Intelligence",
-    description:
-      "Turning data into strategic clarity through analytical models, evidence-driven insight pipelines, and decision support systems.",
-    tags: ["Analytics", "Decisioning", "Insights"],
-  },
-  {
-    title: "Data Ops / Field Intelligence",
-    description:
-      "Operationalising reliable data collection, monitoring, and intelligence workflows across real-world, distributed environments.",
-    tags: ["DataOps", "Field Systems", "Observability"],
-  },
-];
+import { thrusts } from "../data/research";
 
 export default function Services() {
   const ref = useRef<HTMLElement>(null);
@@ -38,7 +13,7 @@ export default function Services() {
     <section id="research-thrusts" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
       <div className="section-depth absolute inset-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div
           className={`flex items-center gap-4 mb-6 ${
             inView ? "animate-fade-up" : "opacity-0"
@@ -56,10 +31,10 @@ export default function Services() {
             inView ? "animate-fade-up delay-200" : "opacity-0"
           }`}
         >
-          <h2 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-foreground">
+          <h2 className="font-display font-extrabold text-2xl sm:text-4xl lg:text-6xl leading-[1.05] text-foreground">
             Research systems built for <span className="text-amber-gradient">real-world intelligence</span>
           </h2>
-          <p className="mt-6 font-body text-lg text-foreground/60 leading-relaxed">
+          <p className="mt-6 font-body text-base sm:text-lg text-foreground/60 leading-relaxed">
             Our core thrusts connect academic inquiry, product engineering, and
             field execution to produce resilient, deployable intelligence.
           </p>
@@ -67,8 +42,9 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {thrusts.map((thrust, i) => (
-            <div
+            <Link
               key={thrust.title}
+              href={`/research/${thrust.slug}`}
               className={`surface-panel group relative p-8 lg:p-10 border border-foreground/5 rounded-sm card-hover ${
                 inView ? "animate-fade-up" : "opacity-0"
               }`}
@@ -100,8 +76,18 @@ export default function Services() {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/research"
+            className="inline-flex items-center gap-2 px-8 py-3.5 border border-foreground/15 text-foreground/70 font-display font-semibold text-sm tracking-widest rounded-sm hover:border-amber/50 hover:text-amber transition-all duration-300"
+          >
+            EXPLORE ALL THRUSTS
+            <span>→</span>
+          </Link>
         </div>
       </div>
     </section>

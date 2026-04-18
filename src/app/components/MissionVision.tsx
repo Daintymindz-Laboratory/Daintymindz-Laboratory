@@ -14,7 +14,7 @@ export default function MissionVision() {
         <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-amber/[0.03] blur-[120px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div
           className={`flex items-center gap-4 mb-16 ${
             inView ? "animate-fade-up" : "opacity-0"
@@ -27,9 +27,9 @@ export default function MissionVision() {
           <div className="flex-1 h-px bg-gradient-to-r from-amber/30 to-transparent" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-0">
+        <div className="grid lg:grid-cols-2 gap-4 lg:gap-0">
           <div
-            className={`relative p-10 lg:p-16 border border-foreground/5 ${
+            className={`relative p-6 sm:p-10 lg:p-16 border border-foreground/5 ${
               inView ? "animate-slide-left" : "opacity-0"
             }`}
           >
@@ -49,19 +49,20 @@ export default function MissionVision() {
               </h3>
             </div>
 
-            <h2 className="font-display font-bold text-3xl lg:text-4xl leading-tight text-foreground mb-6">
+            <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight text-foreground mb-6">
               Empowering Progress Through <span className="text-amber-gradient">Impactful Research.</span>
             </h2>
 
             <p className="font-body text-base leading-relaxed text-foreground/60">
-              We turn rigorous inquiry into practical intelligence — shaping
-              systems, tools, and insights that help communities and industries
-              move forward with confidence.
+              To harness the power of intellectual energy and data-driven
+              precision to develop solutions for a rapidly changing world. We
+              deliver excellence through rigorous research, autonomous systems,
+              and a deep understanding of global challenges.
             </p>
           </div>
 
           <div
-            className={`surface-panel relative p-10 lg:p-16 border border-foreground/5 ${
+            className={`surface-panel relative p-6 sm:p-10 lg:p-16 border border-foreground/5 ${
               inView ? "animate-slide-right" : "opacity-0"
             }`}
           >
@@ -82,14 +83,15 @@ export default function MissionVision() {
               </h3>
             </div>
 
-            <h2 className="font-display font-bold text-3xl lg:text-4xl leading-tight text-foreground mb-6">
+            <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight text-foreground mb-6">
               Shaping a World Powered by <span className="text-amber-gradient">Bold Intelligence.</span>
             </h2>
 
             <p className="font-body text-base leading-relaxed text-foreground/60">
-              We envision a future where resilient progress is driven by research,
-              engineered with precision, and made globally relevant through bold,
-              humane intelligence.
+              We envision a future where technology is a foundation for
+              sustainable transformation. DMZ Lab aspires to be a global beacon
+              of leadership, pioneering breakthroughs that redefine industries
+              and inspire the next generation of &quot;Daintyminds.&quot;
             </p>
           </div>
         </div>
