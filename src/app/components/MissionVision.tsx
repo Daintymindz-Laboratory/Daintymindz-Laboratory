@@ -54,9 +54,10 @@ export default function MissionVision() {
             </h2>
 
             <p className="font-body text-base leading-relaxed text-foreground/60">
-              We turn rigorous inquiry into practical intelligence — shaping
-              systems, tools, and insights that help communities and industries
-              move forward with confidence.
+              To harness the power of intellectual energy and data-driven
+              precision to develop solutions for a rapidly changing world. We
+              deliver excellence through rigorous research, autonomous systems,
+              and a deep understanding of global challenges.
             </p>
           </div>
 
@@ -87,9 +88,10 @@ export default function MissionVision() {
             </h2>
 
             <p className="font-body text-base leading-relaxed text-foreground/60">
-              We envision a future where resilient progress is driven by research,
-              engineered with precision, and made globally relevant through bold,
-              humane intelligence.
+              We envision a future where technology is a foundation for
+              sustainable transformation. DMZ Lab aspires to be a global beacon
+              of leadership, pioneering breakthroughs that redefine industries
+              and inspire the next generation of &quot;Daintyminds.&quot;
             </p>
           </div>
         </div>
