@@ -3,17 +3,24 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { useInView } from "../hooks/useInView";
+import { useTheme } from "../hooks/useTheme";
 
 const traits = [
-  "Curious enough to question assumptions.",
-  "Disciplined enough to test ideas rigorously.",
-  "Bold enough to build what does not yet exist.",
-  "Grounded enough to create intelligence with real impact.",
+  "A visionary engineer, scientist, or strategist who believes intelligence should be as precise as it is purposeful.",
+  "A builder with a \"global-first\" mindset — whether creating applications, curating novel datasets, or designing predictive models.",
+  "A member of a multidisciplinary community dedicated to engineering a future that is resilient, inclusive, and driven by high-impact research.",
+  "At DMZ Lab, being a Daintymind is a commitment to technical excellence and ethical stewardship of the future.",
 ];
 
 export default function Values() {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, 0.1);
+  const { theme } = useTheme();
+
+  const heroSrc =
+    theme === "dark"
+      ? "/images/daintymind/daintymind-hero-dark.png"
+      : "/images/daintymind/daintymind-hero.png";
 
   return (
     <section id="daintymind" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
@@ -37,10 +44,11 @@ export default function Values() {
             </h2>
 
             <p className="mt-6 font-body text-lg text-foreground/60 leading-relaxed">
-              A Daintymind is a builder-researcher with global awareness and
-              uncompromising standards. It is the mindset that powers our lab:
-              intellectually sharp, engineering-driven, ethically grounded, and
-              committed to creating intelligence that matters.
+              A <strong>Daintymind</strong> is a visionary engineer, scientist, or strategist
+              who believes that intelligence should be as precise as it is
+              purposeful. We are a community of multidisciplinary problem-solvers
+              dedicated to engineering a future that is resilient, inclusive, and
+              driven by high-impact research.
             </p>
 
             <div className="mt-8 space-y-4">
@@ -60,10 +68,10 @@ export default function Values() {
           <div className={`${inView ? "animate-slide-right" : "opacity-0"}`}>
             <div className="surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover">
               <Image
-                src="/daintymind-placeholder.svg"
-                alt="Placeholder illustration representing a Daintymind"
+                src={heroSrc}
+                alt="A Daintymind — the human element of innovation"
                 width={1200}
-                height={900}
+                height={800}
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="w-full h-auto"
               />
