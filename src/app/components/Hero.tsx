@@ -55,7 +55,7 @@ export default function Hero() {
         <div className="animate-fade-up opacity-0 mb-8">
           <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-amber/20 bg-amber/5">
             <div className="w-2 h-2 bg-amber rounded-full animate-pulse" />
-            <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-amber">
+            <span className="font-body text-[8px] font-semibold tracking-[0.3em] uppercase text-amber">
               Global Research Institute
             </span>
           </div>

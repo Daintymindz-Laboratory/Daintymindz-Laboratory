@@ -1,3 +1,5 @@
+import { cn } from "../lib/helpers";
+
 interface LogoProps {
   /** Background fill. Default: "transparent" */
   background?: string;
@@ -27,7 +29,7 @@ export default function Logo({
       viewBox="0 0 2000 2000"
       role="img"
       aria-label={title}
-      className={className}
+      className={cn("h-14 w-auto md:h-20", className)}
     >
       {background !== "transparent" && (
         <rect width="2000" height="2000" fill={background} />

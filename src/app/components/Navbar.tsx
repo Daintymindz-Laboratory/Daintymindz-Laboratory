@@ -48,13 +48,12 @@ export default function Navbar() {
           scrolled ? "glass py-3" : "bg-transparent py-6"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-6">
           <Link href="/" className="flex items-center shrink-0">
             <Logo
               prongsColor="var(--amber)"
               dantyColor="var(--foreground)"
               mndzColor="var(--foreground)"
-              className="h-14 w-auto"
             />
           </Link>
 
@@ -74,37 +73,39 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="hidden md:flex items-center gap-4 shrink-0">
-            <ThemeToggle theme={theme} onToggle={toggleTheme} />
-            <Link
-              href="/internships"
-              className="px-6 py-2.5 bg-amber text-graphite-deep font-display font-bold text-sm tracking-wider rounded-sm hover:bg-amber-light transition-colors duration-300"
-            >
-              JOIN THE LAB
-            </Link>
-          </div>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 shrink-0 max-w-fit">
+              <ThemeToggle theme={theme} onToggle={toggleTheme} className="ms-auto" />
+              <Link
+                href="/internships"
+                className="hidden md:flex px-6 py-2.5 bg-amber text-graphite-deep font-display font-bold text-sm tracking-wider rounded-sm hover:bg-amber-light transition-colors duration-300"
+              >
+                JOIN THE LAB
+              </Link>
+            </div>
 
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden relative w-8 h-8 flex flex-col justify-center items-center gap-1.5"
-            aria-label="Toggle menu"
-          >
-            <span
-              className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
-                mobileOpen ? "rotate-45 translate-y-2" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
-                mobileOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
-                mobileOpen ? "-rotate-45 -translate-y-2" : ""
-              }`}
-            />
-          </button>
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="md:hidden relative w-8 h-8 flex flex-col justify-center items-center gap-1.5"
+              aria-label="Toggle menu"
+            >
+              <span
+                className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
+                  mobileOpen ? "rotate-45 translate-y-2" : ""
+                }`}
+              />
+              <span
+                className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
+                  mobileOpen ? "opacity-0" : ""
+                }`}
+              />
+              <span
+                className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
+                  mobileOpen ? "-rotate-45 -translate-y-2" : ""
+                }`}
+              />
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -114,7 +115,6 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col items-center justify-center h-full gap-8 px-6 text-center">
-          <ThemeToggle theme={theme} onToggle={toggleTheme} compact />
           {navLinks.map((link, i) => (
             <Link
               key={link.href}

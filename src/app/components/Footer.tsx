@@ -25,7 +25,6 @@ export default function Footer() {
                 prongsColor="var(--amber)"
                 dantyColor="var(--foreground)"
                 mndzColor="var(--foreground)"
-                className="h-14 w-auto"
               />
               <span className="font-display font-bold text-lg tracking-wider text-foreground">
                 RC: 9161423
