@@ -44,16 +44,16 @@ export default function About() {
           <div className={`space-y-6 ${inView ? "animate-slide-right" : "opacity-0"}`}>
             <p className="font-body text-lg leading-relaxed text-foreground/70">
               DAINTYMINDZ LAB is a future-focused research institute and innovation
-              studio dedicated to Intelligence Research for Impact. We operate at
+              studio dedicated to <strong>Intelligence Research for Impact</strong>. We operate at
               the intersection of academic depth and engineering boldness,
               building technologies that drive resilient, sustainable progress.
-              From our hubs in the USA, Nigeria, South Korea, and Canada, we
-              combine scientific precision with visionary thinking.
             </p>
             <p className="font-body text-base leading-relaxed text-foreground/55">
-              Our work spans research design, systems engineering, field-driven
-              intelligence, and translational product development. We move with
-              the discipline of a lab and the urgency of a studio.
+              From our hubs in the <strong>USA, Nigeria, South Korea, and Canada</strong>, we
+              combine scientific precision with visionary thinking. Every project
+              is grounded in deep research and an unwavering commitment to
+              quality, ensuring our work doesn&apos;t just meet expectations, but
+              redefines the 2030–2050 technological landscape.
             </p>
           </div>
         </div>
