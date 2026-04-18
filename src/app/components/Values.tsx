@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import { useInView } from "../hooks/useInView";
 
@@ -17,8 +18,8 @@ export default function Values() {
   return (
     <section id="daintymind" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-amber/[0.03] rounded-full" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-amber/[0.05] rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 border border-amber/3 rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 border border-amber/5 rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
@@ -58,9 +59,12 @@ export default function Values() {
 
           <div className={`${inView ? "animate-slide-right" : "opacity-0"}`}>
             <div className="surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover">
-              <img
+              <Image
                 src="/daintymind-placeholder.svg"
                 alt="Placeholder illustration representing a Daintymind"
+                width={1200}
+                height={900}
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="w-full h-auto"
               />
             </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | DAINTYMINDZ LAB",
@@ -34,12 +35,12 @@ export default function PrivacyPage() {
       <section className="relative py-32 lg:py-40 overflow-hidden">
         <div className="section-depth-soft absolute inset-0" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 font-body text-sm text-foreground/55 hover:text-amber transition-colors"
           >
             ← Back to home
-          </a>
+          </Link>
 
           <div className="mt-10 mb-14">
             <p className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber mb-4">
