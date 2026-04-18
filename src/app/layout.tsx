@@ -44,6 +44,10 @@ export const metadata: Metadata = {
     "applied AI",
     "innovation studio",
   ],
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "DAINTYMINDZ LAB — Engineering Intelligent Futures",
     description:

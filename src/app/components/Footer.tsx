@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -20,12 +21,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-10 h-10">
-                <div className="absolute inset-0 bg-amber rounded-sm rotate-45" />
-                <span className="absolute inset-0 flex items-center justify-center text-graphite-deep font-display font-extrabold text-lg">
-                  D
-                </span>
-              </div>
+              <Image
+                src="/images/logo/logo-dark.png"
+                alt="DAINTYMINDZ"
+                width={40}
+                height={40}
+                className="h-10 w-10 rounded-sm"
+              />
               <span className="font-display font-bold text-lg tracking-wider text-foreground">
                 DAINTYMINDZ LTD | RC: 9161423
               </span>
