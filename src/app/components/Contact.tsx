@@ -31,14 +31,14 @@ export default function Contact() {
           </div>
 
           <h2 className={`font-display font-extrabold text-4xl sm:text-5xl lg:text-7xl leading-[1.05] text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
-            Build with us.
+            Ready to build something
             <br />
-            <span className="text-amber-gradient">Join the lab.</span>
+            <span className="text-amber-gradient">bold?</span>
           </h2>
 
           <p className={`mt-8 font-body text-lg text-foreground/60 max-w-2xl mx-auto leading-relaxed ${inView ? "animate-fade-up delay-300" : "opacity-0"}`}>
-            For partnerships, research collaborations, and strategic conversations,
-            reach out to our global team.
+            Whether you have a challenge to solve or a vision to realize, we are
+            ready to listen. Let’s create something extraordinary.
           </p>
 
           <div className={`mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 ${inView ? "animate-fade-up delay-400" : "opacity-0"}`}>
@@ -82,21 +82,24 @@ export default function Contact() {
                     ))}
                   </div>
                 </div>
+                <div>
+                  <p className="font-body text-xs tracking-[0.3em] uppercase text-amber/70 mb-2">Hours</p>
+                  <p className="font-body text-sm text-foreground/60">Mon – Fri (Global Timezones Supported)</p>
+                </div>
               </div>
             </div>
 
             <div className="surface-panel border border-foreground/5 rounded-sm p-8 lg:p-10">
               <p className="font-body text-xs tracking-[0.3em] uppercase text-amber/70 mb-3">Join the Lab</p>
-              <h3 className="font-display font-bold text-2xl text-foreground mb-4">
-                Internship recruitment
+              <h3 className="font-display font-bold text-2xl text-foreground mb-2">
+                Are you a future Daintymind?
               </h3>
               <p className="font-body text-sm leading-relaxed text-foreground/55 mb-6">
-                We welcome curious interns ready to contribute across research,
-                product prototyping, data operations, and field intelligence.
-                Send your profile, interests, and why you want to build with us.
+                We are always looking for visionary interns and researchers in ML,
+                Software Systems, and Data Ops.
               </p>
-              <a href="mailto:info@daintymindz.com?subject=Join%20the%20Lab" className="font-display font-bold text-sm tracking-[0.24em] uppercase text-amber hover:text-amber-light transition-colors">
-                Apply via email →
+              <a href="mailto:internships@daintymindz.com?subject=Apply%20for%20Next%20Cohort" className="font-display font-bold text-sm tracking-[0.24em] uppercase text-amber hover:text-amber-light transition-colors">
+                Apply for our Next Cohort →
               </a>
             </div>
           </div>
