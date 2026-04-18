@@ -1,39 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 import { useInView } from "../hooks/useInView";
-
-const team = [
-  {
-    name: "Dr. Judith Nkechinyere Njoku",
-    role: "Founder & Director of Research",
-    location: "USA",
-    photo: "/images/team/judith.jpg",
-    bio: "As the founding DaintyMind, Dr. Judith is a distinguished researcher and the visionary architect behind Daintymindz Laboratory. With a Ph.D. and advanced expertise in Electrical Engineering and Computer Science, she leads the lab\u2019s strategic expansion into Digital Twins, Deep Learning, and Autonomous Systems. She also serves as the Technical Advisor to the Machine Learning Department.",
-  },
-  {
-    name: "Anthony",
-    role: "Head of Software Engineering",
-    location: "South Korea",
-    photo: "/images/team/anthony.png",
-    bio: "Operating as a senior DaintyMind from South Korea, Anthony is a Senior Full-Stack Engineer with over seven years of experience designing scalable web, mobile, and distributed systems. He leads the Software Development division, driving the architecture and delivery of robust, production-grade platforms that support the lab\u2019s research, AI, and data-driven initiatives.",
-  },
-  {
-    name: "Gloria",
-    role: "Researcher",
-    location: "Nigeria",
-    photo: "/images/team/gloria.jpg",
-    bio: "Based in Nigeria, DaintyMind Gloria is a Food Technologist and research-driven innovator focused on transforming agricultural and food systems through data and intelligent technologies. She leads Ground Truth initiatives, designing and managing bio-agricultural data pipelines that enable the development of inclusive, real-world AI models.",
-  },
-  {
-    name: "Cynthia",
-    role: "Head of Data Analytics",
-    location: "Canada",
-    photo: "/images/team/cynthia.jpeg",
-    bio: "Representing our Canadian hub as a strategic DaintyMind, Cynthia Osewemen is a data analytics and operations professional with over 10 years of experience spanning banking operations, customer service leadership, and data analysis. She leads the Data Analytics Division, overseeing analytical projects and establishing structured workflows.",
-  },
-];
+import { team } from "../data/team";
 
 export default function Team() {
   const ref = useRef<HTMLElement>(null);
@@ -69,9 +40,10 @@ export default function Team() {
 
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           {team.map((member, i) => (
-            <article
+            <Link
               key={member.name}
-              className={`surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover ${
+              href={`/team/${member.slug}`}
+              className={`group surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover ${
                 inView ? "animate-fade-up" : "opacity-0"
               }`}
               style={{ animationDelay: `${300 + i * 120}ms` }}
@@ -95,12 +67,22 @@ export default function Team() {
                 <p className="mt-1 font-body text-xs text-foreground/40 tracking-wide">
                   Based in {member.location}
                 </p>
-                <p className="mt-4 font-body text-sm text-foreground/55 leading-relaxed">
+                <p className="mt-4 font-body text-sm text-foreground/55 leading-relaxed line-clamp-3">
                   {member.bio}
                 </p>
               </div>
-            </article>
+            </Link>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/team"
+            className="inline-flex items-center gap-2 px-8 py-3.5 border border-foreground/15 text-foreground/70 font-display font-semibold text-sm tracking-widest rounded-sm hover:border-amber/50 hover:text-amber transition-all duration-300"
+          >
+            VIEW FULL TEAM
+            <span>→</span>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
 import { useInView } from "../hooks/useInView";
 
@@ -52,12 +53,12 @@ export default function Contact() {
               </svg>
               <div className="absolute inset-0 bg-amber-light translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
             </a>
-            <a
-              href="#projects"
+            <Link
+              href="/projects"
               className="px-10 py-5 border border-foreground/15 text-foreground/70 font-display font-semibold text-sm tracking-widest rounded-sm hover:border-amber/50 hover:text-amber transition-all duration-300"
             >
               VIEW PROJECTS
-            </a>
+            </Link>
           </div>
 
           <div className={`mt-16 grid lg:grid-cols-[1.2fr_0.8fr] gap-8 text-left ${inView ? "animate-fade-up delay-500" : "opacity-0"}`}>
@@ -98,9 +99,9 @@ export default function Contact() {
                 We are always looking for visionary interns and researchers in ML,
                 Software Systems, and Data Ops.
               </p>
-              <a href="mailto:internships@daintymindz.com?subject=Apply%20for%20Next%20Cohort" className="font-display font-bold text-sm tracking-[0.24em] uppercase text-amber hover:text-amber-light transition-colors">
+              <Link href="/internships" className="font-display font-bold text-sm tracking-[0.24em] uppercase text-amber hover:text-amber-light transition-colors">
                 Apply for our Next Cohort →
-              </a>
+              </Link>
             </div>
           </div>
         </div>

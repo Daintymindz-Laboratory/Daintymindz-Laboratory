@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 export default function Hero() {
@@ -72,19 +73,19 @@ export default function Hero() {
         </p>
 
         <div className="animate-fade-up opacity-0 delay-600 mt-12 flex flex-col sm:flex-row items-center justify-center gap-5">
-          <a
-            href="#research-thrusts"
+          <Link
+            href="/research"
             className="group relative px-10 py-4 bg-amber text-graphite-deep font-display font-bold text-sm tracking-widest rounded-sm overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(213,156,16,0.3)]"
           >
             <span className="relative z-10">EXPLORE OUR RESEARCH</span>
             <div className="absolute inset-0 bg-amber-light translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/contact"
             className="px-10 py-4 border border-foreground/20 text-foreground/70 font-display font-semibold text-sm tracking-widest rounded-sm hover:border-amber/50 hover:text-amber transition-all duration-300"
           >
             JOIN THE LAB
-          </a>
+          </Link>
         </div>
 
         <div className="animate-fade-in opacity-0 delay-800 mt-20 flex flex-col items-center gap-2">

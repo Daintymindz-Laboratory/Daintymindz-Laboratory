@@ -1,34 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useRef } from "react";
 import { useInView } from "../hooks/useInView";
-
-const thrusts = [
-  {
-    title: "Machine Learning | Autonomous & Predictive Intelligence",
-    description:
-      "We design deep learning architectures that learn and adapt in real-time. Our focus is on perception under uncertainty and human-AI alignment to build the \"predictive brains\" of future systems.",
-    tags: ["AI", "Deep Learning", "Autonomy"],
-  },
-  {
-    title: "Software Systems | Immersive Engineering & Applications",
-    description:
-      "We transform research into functional tools. From high-fidelity Digital Twins to immersive VR/AR simulations, we build groundbreaking applications to solve urban and rural challenges.",
-    tags: ["Digital Twins", "VR/AR", "Systems Design"],
-  },
-  {
-    title: "Data Analytics | Decisional Intelligence & Visualization",
-    description:
-      "Turning complex data into actionable foresight. We develop advanced dashboards and analytical models that help industries navigate climate change and energy transitions.",
-    tags: ["Analytics", "Dashboards", "Foresight"],
-  },
-  {
-    title: "Data Operations (Data Ops) | Novel Curation & Field Intelligence",
-    description:
-      "Solving problems with \"Ground Truth.\" Our global field teams capture and curate unique, high-quality datasets missing from traditional archives, ensuring our AI is inclusive and unbiased.",
-    tags: ["DataOps", "Ground Truth", "Field Curation"],
-  },
-];
+import { thrusts } from "../data/research";
 
 export default function Services() {
   const ref = useRef<HTMLElement>(null);
@@ -67,8 +42,9 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {thrusts.map((thrust, i) => (
-            <div
+            <Link
               key={thrust.title}
+              href={`/research/${thrust.slug}`}
               className={`surface-panel group relative p-8 lg:p-10 border border-foreground/5 rounded-sm card-hover ${
                 inView ? "animate-fade-up" : "opacity-0"
               }`}
@@ -100,8 +76,18 @@ export default function Services() {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/research"
+            className="inline-flex items-center gap-2 px-8 py-3.5 border border-foreground/15 text-foreground/70 font-display font-semibold text-sm tracking-widest rounded-sm hover:border-amber/50 hover:text-amber transition-all duration-300"
+          >
+            EXPLORE ALL THRUSTS
+            <span>→</span>
+          </Link>
         </div>
       </div>
     </section>

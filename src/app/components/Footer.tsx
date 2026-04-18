@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="relative border-t border-foreground/5">
@@ -39,19 +41,29 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="https://github.com" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
-                  GitHub
-                </a>
+                <Link href="/research" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
+                  Research
+                </Link>
               </li>
               <li>
-                <a href="https://linkedin.com" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
-                  LinkedIn
-                </a>
+                <Link href="/projects" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
+                  Projects
+                </Link>
               </li>
               <li>
-                <a href="/privacy" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
+                <Link href="/team" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link href="/internships" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
+                  Internships
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -73,12 +85,12 @@ export default function Footer() {
             © {new Date().getFullYear()} DAINTYMINDZ LTD
           </p>
           <div className="flex items-center gap-6">
-            <a href="#home" className="font-body text-xs text-foreground/30 hover:text-amber transition-colors duration-300">
+            <Link href="/" className="font-body text-xs text-foreground/30 hover:text-amber transition-colors duration-300">
               Back to Top
-            </a>
-            <a href="/privacy" className="font-body text-xs text-foreground/30 hover:text-amber transition-colors duration-300">
+            </Link>
+            <Link href="/privacy" className="font-body text-xs text-foreground/30 hover:text-amber transition-colors duration-300">
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
