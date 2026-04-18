@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { type InternshipTrack, PROGRAM_INFO } from "./internship-data";
 
@@ -38,6 +39,19 @@ export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
         <p className="mt-8 font-body text-lg text-foreground/60 leading-relaxed max-w-3xl">
           {track.description}
         </p>
+      </div>
+
+      {/* Track image */}
+      <div className="mb-10 surface-panel border border-foreground/5 rounded-sm overflow-hidden">
+        <Image
+          src={track.image}
+          alt={`${track.title} — ${track.subtitle}`}
+          width={1200}
+          height={800}
+          sizes="(min-width: 1024px) 960px, 100vw"
+          className="w-full h-auto"
+          priority
+        />
       </div>
 
       {/* What You'll Do */}

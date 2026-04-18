@@ -4,6 +4,7 @@ export interface InternshipTrack {
   subtitle: string;
   duration: string;
   mode: string;
+  image: string;
   description: string;
   responsibilities: string[];
   requirements: string[];
@@ -19,6 +20,7 @@ export const PROGRAM_INFO = {
   eligibility:
     "Students, recent graduates, and early-career professionals passionate about using technology for real-world impact.",
   email: "internships@daintymindz.com",
+  heroImage: "/images/internships/hero.jpg",
 } as const;
 
 export const TRACKS: InternshipTrack[] = [
@@ -28,6 +30,7 @@ export const TRACKS: InternshipTrack[] = [
     subtitle: "Autonomous & Predictive Intelligence",
     duration: "6 months",
     mode: "Remote",
+    image: "/images/internships/ml.jpg",
     description:
       "Join the ML thrust and help build predictive models that tackle challenges in agriculture, healthcare, and sustainability. You will work with computer vision, NLP, and time-series forecasting to push the boundaries of autonomous intelligence.",
     responsibilities: [
@@ -53,6 +56,7 @@ export const TRACKS: InternshipTrack[] = [
     subtitle: "Immersive Engineering & Applications",
     duration: "6 months",
     mode: "Remote",
+    image: "/images/internships/software-systems.jpg",
     description:
       "Work at the intersection of engineering and innovation. As a Software Systems intern, you will develop web and mobile applications, build scalable full-stack systems, and contribute to platforms that connect communities with opportunity.",
     responsibilities: [
@@ -78,6 +82,7 @@ export const TRACKS: InternshipTrack[] = [
     subtitle: "Decisional Intelligence & Visualization",
     duration: "6 months",
     mode: "Remote",
+    image: "/images/internships/data-analytics.jpg",
     description:
       "Turn raw data into actionable insight. As a Data Analytics intern, you will design dashboards, perform statistical analysis, and craft visualizations that inform critical decisions across the lab's research thrusts.",
     responsibilities: [
@@ -103,6 +108,7 @@ export const TRACKS: InternshipTrack[] = [
     subtitle: "Novel Curation & Field Intelligence",
     duration: "6 months",
     mode: "Remote",
+    image: "/images/internships/data-operations.jpg",
     description:
       "Data is the foundation of every breakthrough. As a Data Operations intern, you will curate novel datasets, manage field data pipelines, and ensure the integrity of information flowing into our ML and analytics workflows.",
     responsibilities: [
