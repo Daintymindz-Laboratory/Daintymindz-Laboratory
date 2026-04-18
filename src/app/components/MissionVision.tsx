@@ -14,7 +14,7 @@ export default function MissionVision() {
         <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-amber/[0.03] blur-[120px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div
           className={`flex items-center gap-4 mb-16 ${
             inView ? "animate-fade-up" : "opacity-0"

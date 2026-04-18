@@ -14,7 +14,7 @@ export default function Team() {
     <section id="team" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
       <div className="section-tint-vertical absolute inset-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="text-center mb-16">
           <div
             className={`flex items-center justify-center gap-4 mb-6 ${
@@ -30,10 +30,10 @@ export default function Team() {
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber/30" />
           </div>
 
-          <h2 className={`font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
+          <h2 className={`font-display font-extrabold text-2xl sm:text-4xl lg:text-6xl text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
             Meet the minds behind the <span className="text-amber-gradient">lab</span>
           </h2>
-          <p className={`mt-6 max-w-3xl mx-auto font-body text-lg italic text-foreground/60 leading-relaxed ${inView ? "animate-fade-up delay-300" : "opacity-0"}`}>
+          <p className={`mt-6 max-w-3xl mx-auto font-body text-base sm:text-lg italic text-foreground/60 leading-relaxed ${inView ? "animate-fade-up delay-300" : "opacity-0"}`}>
             We are a global team of specialists, the <strong>DaintyMindz</strong>, united by a commitment to scientific rigor and the pursuit of intelligent, real-world solutions.
           </p>
         </div>

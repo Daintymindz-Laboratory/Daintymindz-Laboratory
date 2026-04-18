@@ -13,7 +13,7 @@ export default function Services() {
     <section id="research-thrusts" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
       <div className="section-depth absolute inset-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div
           className={`flex items-center gap-4 mb-6 ${
             inView ? "animate-fade-up" : "opacity-0"
@@ -31,10 +31,10 @@ export default function Services() {
             inView ? "animate-fade-up delay-200" : "opacity-0"
           }`}
         >
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl leading-[1.05] text-foreground">
+          <h2 className="font-display font-extrabold text-2xl sm:text-4xl lg:text-6xl leading-[1.05] text-foreground">
             Research systems built for <span className="text-amber-gradient">real-world intelligence</span>
           </h2>
-          <p className="mt-6 font-body text-lg text-foreground/60 leading-relaxed">
+          <p className="mt-6 font-body text-base sm:text-lg text-foreground/60 leading-relaxed">
             Our core thrusts connect academic inquiry, product engineering, and
             field execution to produce resilient, deployable intelligence.
           </p>

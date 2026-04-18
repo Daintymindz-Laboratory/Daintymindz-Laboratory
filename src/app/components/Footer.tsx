@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16">
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
@@ -25,7 +25,7 @@ export default function Footer() {
                 prongsColor="var(--amber)"
                 dantyColor="var(--foreground)"
                 mndzColor="var(--foreground)"
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
               <span className="font-display font-bold text-lg tracking-wider text-foreground">
                 RC: 9161423

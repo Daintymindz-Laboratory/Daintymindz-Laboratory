@@ -61,7 +61,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <h1 className="animate-fade-up opacity-0 delay-200 font-display font-extrabold leading-[0.92] tracking-tight text-foreground text-[2.5rem] sm:text-6xl md:text-7xl lg:text-9xl">
+        <h1 className="animate-fade-up opacity-0 delay-200 font-display font-extrabold leading-[0.92] tracking-tight text-foreground text-[1.85rem] sm:text-6xl md:text-7xl lg:text-9xl">
           Engineering
           <br />
           <span className="text-amber-gradient">Intelligent Futures.</span>

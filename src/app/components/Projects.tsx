@@ -14,7 +14,7 @@ export default function Projects() {
     <section id="projects" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
       <div className="section-depth absolute inset-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
           <div>
             <div className={`flex items-center gap-4 mb-6 ${inView ? "animate-fade-up" : "opacity-0"}`}>
@@ -24,11 +24,11 @@ export default function Projects() {
               </span>
               <div className="w-24 h-px bg-gradient-to-r from-amber/30 to-transparent" />
             </div>
-            <h2 className={`font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
+            <h2 className={`font-display font-extrabold text-2xl sm:text-4xl lg:text-6xl text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
               The portfolio behind our <span className="text-amber-gradient">research momentum</span>
             </h2>
           </div>
-          <p className={`max-w-xl font-body text-lg italic text-foreground/60 leading-relaxed ${inView ? "animate-fade-up delay-300" : "opacity-0"}`}>
+          <p className={`max-w-xl font-body text-base sm:text-lg italic text-foreground/60 leading-relaxed ${inView ? "animate-fade-up delay-300" : "opacity-0"}`}>
             Showcasing our commitment to Intelligence Research for Impact.
           </p>
         </div>

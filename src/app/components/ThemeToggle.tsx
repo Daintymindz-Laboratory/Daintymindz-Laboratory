@@ -22,20 +22,20 @@ export default function ThemeToggle({
       onClick={onToggle}
       role="switch"
       aria-checked={isDark}
-      className={`group inline-flex items-center justify-center gap-3 rounded-full border border-foreground/10 surface-panel px-3 py-2 text-foreground transition-all duration-300 hover:border-amber/30 hover:text-amber ${
+      className={`group inline-flex items-center justify-center gap-2 rounded-full border border-foreground/10 surface-panel px-2.5 py-1.5 text-foreground transition-all duration-300 hover:border-amber/30 hover:text-amber ${
         compact ? "w-full" : ""
       }`}
       aria-label="Dark mode"
       title={`Switch to ${nextTheme} mode`}
     >
-      <span className="relative flex h-8 w-14 items-center rounded-full bg-foreground/8 p-1 transition-colors duration-300">
+      <span className="relative flex h-6 w-10 items-center rounded-full bg-foreground/8 p-0.5 transition-colors duration-300">
         <span
-          className={`absolute h-6 w-6 rounded-full bg-amber transition-transform duration-300 ${
-            isDark ? "translate-x-0" : "translate-x-6"
+          className={`absolute h-5 w-5 rounded-full bg-amber transition-transform duration-300 ${
+            isDark ? "translate-x-0" : "translate-x-4"
           }`}
         />
         <svg
-          className="relative z-10 h-4 w-4 text-graphite-deep"
+          className="relative z-10 h-3 w-3 text-graphite-deep"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -45,7 +45,7 @@ export default function ThemeToggle({
           <path d="M12 1.5v3M12 19.5v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1.5 12h3M19.5 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" />
         </svg>
         <svg
-          className="relative z-10 ml-auto h-4 w-4 text-graphite-deep"
+          className="relative z-10 ml-auto h-3 w-3 text-graphite-deep"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

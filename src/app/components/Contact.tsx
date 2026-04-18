@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="section-depth-soft absolute inset-0" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber/[0.04] rounded-full blur-[150px]" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="text-center">
           <div
             className={`flex items-center justify-center gap-4 mb-8 ${
@@ -31,13 +31,13 @@ export default function Contact() {
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber/30" />
           </div>
 
-          <h2 className={`font-display font-extrabold text-3xl sm:text-4xl lg:text-7xl leading-[1.05] text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
+          <h2 className={`font-display font-extrabold text-2xl sm:text-4xl lg:text-7xl leading-[1.05] text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
             Ready to build something
             <br />
             <span className="text-amber-gradient">bold?</span>
           </h2>
 
-          <p className={`mt-8 font-body text-lg text-foreground/60 max-w-2xl mx-auto leading-relaxed ${inView ? "animate-fade-up delay-300" : "opacity-0"}`}>
+          <p className={`mt-8 font-body text-base sm:text-lg text-foreground/60 max-w-2xl mx-auto leading-relaxed ${inView ? "animate-fade-up delay-300" : "opacity-0"}`}>
             Whether you have a challenge to solve or a vision to realize, we are
             ready to listen. Let’s create something extraordinary.
           </p>

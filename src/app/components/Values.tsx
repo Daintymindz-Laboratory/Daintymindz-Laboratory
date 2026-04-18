@@ -29,7 +29,7 @@ export default function Values() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 border border-amber/5 rounded-full" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-14 items-center">
           <div className={`${inView ? "animate-slide-left" : "opacity-0"}`}>
             <div className="flex items-center gap-4 mb-6">
@@ -39,11 +39,11 @@ export default function Values() {
               </span>
             </div>
 
-            <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl leading-[1.05] text-foreground">
+            <h2 className="font-display font-extrabold text-2xl sm:text-4xl lg:text-6xl leading-[1.05] text-foreground">
               Who is a <span className="text-amber-gradient">Daintymind?</span>
             </h2>
 
-            <p className="mt-6 font-body text-lg text-foreground/60 leading-relaxed">
+            <p className="mt-6 font-body text-base sm:text-lg text-foreground/60 leading-relaxed">
               A <strong>Daintymind</strong> is a visionary engineer, scientist, or strategist
               who believes that intelligence should be as precise as it is
               purposeful. We are a community of multidisciplinary problem-solvers
