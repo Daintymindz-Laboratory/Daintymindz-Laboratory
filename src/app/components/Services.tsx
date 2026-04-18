@@ -5,28 +5,28 @@ import { useInView } from "../hooks/useInView";
 
 const thrusts = [
   {
-    title: "ML / Autonomous Intelligence",
+    title: "Machine Learning | Autonomous & Predictive Intelligence",
     description:
-      "Building adaptive machine intelligence systems that learn, reason, and act in complex operational environments.",
-    tags: ["AI", "Autonomy", "Learning Systems"],
+      "We design deep learning architectures that learn and adapt in real-time. Our focus is on perception under uncertainty and human-AI alignment to build the \"predictive brains\" of future systems.",
+    tags: ["AI", "Deep Learning", "Autonomy"],
   },
   {
-    title: "Software Systems / Immersive Engineering",
+    title: "Software Systems | Immersive Engineering & Applications",
     description:
-      "Designing robust platforms, interactive tools, and immersive computational experiences that translate research into use.",
-    tags: ["Platforms", "XR", "Systems Design"],
+      "We transform research into functional tools. From high-fidelity Digital Twins to immersive VR/AR simulations, we build groundbreaking applications to solve urban and rural challenges.",
+    tags: ["Digital Twins", "VR/AR", "Systems Design"],
   },
   {
-    title: "Data Analytics / Decisional Intelligence",
+    title: "Data Analytics | Decisional Intelligence & Visualization",
     description:
-      "Turning data into strategic clarity through analytical models, evidence-driven insight pipelines, and decision support systems.",
-    tags: ["Analytics", "Decisioning", "Insights"],
+      "Turning complex data into actionable foresight. We develop advanced dashboards and analytical models that help industries navigate climate change and energy transitions.",
+    tags: ["Analytics", "Dashboards", "Foresight"],
   },
   {
-    title: "Data Ops / Field Intelligence",
+    title: "Data Operations (Data Ops) | Novel Curation & Field Intelligence",
     description:
-      "Operationalising reliable data collection, monitoring, and intelligence workflows across real-world, distributed environments.",
-    tags: ["DataOps", "Field Systems", "Observability"],
+      "Solving problems with \"Ground Truth.\" Our global field teams capture and curate unique, high-quality datasets missing from traditional archives, ensuring our AI is inclusive and unbiased.",
+    tags: ["DataOps", "Ground Truth", "Field Curation"],
   },
 ];
 
