@@ -22,7 +22,7 @@ export default function Projects() {
               <span className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber">
                 Projects
               </span>
-              <div className="w-24 h-px bg-gradient-to-r from-amber/30 to-transparent" />
+                <div className="w-24 h-px bg-linear-to-r from-amber/30 to-transparent" />
             </div>
             <h2 className={`font-display font-extrabold text-2xl sm:text-4xl lg:text-6xl text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
               The portfolio behind our <span className="text-amber-gradient">research momentum</span>
@@ -36,7 +36,7 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <Link
-              key={project.name}
+                key={project.slug}
               href={`/projects/${project.slug}`}
               className={`group surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover ${
                 inView ? "animate-fade-up" : "opacity-0"
@@ -44,7 +44,7 @@ export default function Projects() {
               style={{ animationDelay: `${350 + i * 100}ms` }}
             >
               {project.image && (
-                <div className="relative w-full aspect-[16/9] bg-foreground/5">
+                <div className="relative w-full aspect-video bg-foreground/5">
                   <Image
                     src={project.image}
                     alt={project.name}

@@ -8,7 +8,7 @@ export interface InternshipTrack {
   description: string;
   responsibilities: string[];
   requirements: string[];
-  applyUrl: string;
+  applyUrl?: string;
   relatedProjects: string[];
 }
 
@@ -47,7 +47,6 @@ export const TRACKS: InternshipTrack[] = [
       "Experience with data manipulation libraries (NumPy, Pandas)",
       "Strong analytical and problem-solving skills",
     ],
-    applyUrl: "#", // TODO: Replace with Airtable form URL
     relatedProjects: ["HarvestGuard AI", "Seed Viability Predictor", "Crop Shelf-Life Estimator"],
   },
   {
@@ -73,7 +72,6 @@ export const TRACKS: InternshipTrack[] = [
       "Understanding of RESTful APIs and version control (Git)",
       "Eagerness to learn and build in a fast-paced, globally distributed team",
     ],
-    applyUrl: "#", // TODO: Replace with Airtable form URL
     relatedProjects: ["Pathfinder", "DMZ Mentor Connect"],
   },
   {
@@ -99,7 +97,6 @@ export const TRACKS: InternshipTrack[] = [
       "Understanding of descriptive and inferential statistics",
       "Attention to detail and strong communication skills",
     ],
-    applyUrl: "#", // TODO: Replace with Airtable form URL
     relatedProjects: ["PurityScale", "Crop Shelf-Life Estimator"],
   },
   {
@@ -125,7 +122,6 @@ export const TRACKS: InternshipTrack[] = [
       "Strong organizational skills and attention to data quality",
       "Interest in field research and real-world data challenges",
     ],
-    applyUrl: "#", // TODO: Replace with Airtable form URL
     relatedProjects: ["HarvestGuard AI", "Seed Viability Predictor", "PurityScale"],
   },
 ];

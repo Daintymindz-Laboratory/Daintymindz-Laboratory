@@ -3,6 +3,8 @@ import Link from "next/link";
 import { type InternshipTrack, PROGRAM_INFO } from "./internship-data";
 
 export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
+  const hasApplyUrl = Boolean(track.applyUrl);
+
   return (
     <>
       <div className="mt-10 mb-14">
@@ -123,15 +125,21 @@ export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
           </a>
           .
         </p>
-        <a
-          href={track.applyUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 font-body text-sm font-semibold tracking-wider uppercase bg-amber text-graphite-deep px-8 py-3.5 rounded-sm hover:bg-amber-light transition-colors"
-        >
-          Apply Now
-          <span>→</span>
-        </a>
+        {hasApplyUrl ? (
+          <a
+            href={track.applyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-body text-sm font-semibold tracking-wider uppercase bg-amber text-graphite-deep px-8 py-3.5 rounded-sm hover:bg-amber-light transition-colors"
+          >
+            Apply Now
+            <span>→</span>
+          </a>
+        ) : (
+          <div className="inline-flex items-center gap-2 font-body text-sm font-semibold tracking-wider uppercase bg-foreground/8 text-foreground/45 px-8 py-3.5 rounded-sm border border-foreground/10 cursor-not-allowed">
+            Applications Open Soon
+          </div>
+        )}
       </div>
     </>
   );

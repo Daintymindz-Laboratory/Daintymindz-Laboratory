@@ -21,13 +21,13 @@ export default function Team() {
               inView ? "animate-fade-up" : "opacity-0"
             }`}
           >
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-amber/30" />
+            <div className="h-px w-16 bg-linear-to-r from-transparent to-amber/30" />
             <div className="geo-diamond" />
             <span className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber">
               Global Team
             </span>
             <div className="geo-diamond" />
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber/30" />
+            <div className="h-px w-16 bg-linear-to-l from-transparent to-amber/30" />
           </div>
 
           <h2 className={`font-display font-extrabold text-2xl sm:text-4xl lg:text-6xl text-foreground ${inView ? "animate-fade-up delay-200" : "opacity-0"}`}>
@@ -41,14 +41,14 @@ export default function Team() {
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           {team.map((member, i) => (
             <Link
-              key={member.name}
+                key={member.slug}
               href={`/team/${member.slug}`}
               className={`group surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover ${
                 inView ? "animate-fade-up" : "opacity-0"
               }`}
               style={{ animationDelay: `${300 + i * 120}ms` }}
             >
-              <div className="relative w-full aspect-[3/4] bg-foreground/5">
+              <div className="relative w-full aspect-3/4 bg-foreground/5">
                 <Image
                   src={member.photo}
                   alt={member.name}
