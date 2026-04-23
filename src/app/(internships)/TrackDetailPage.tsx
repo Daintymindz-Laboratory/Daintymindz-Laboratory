@@ -3,7 +3,7 @@ import Link from "next/link";
 import { type InternshipTrack, PROGRAM_INFO } from "./internship-data";
 
 export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
-  const hasApplyUrl = Boolean(track.applyUrl);
+  const hasApplyUrl = Boolean(track.applyUrl) || Boolean(process.env.INTERNSHIP_APPLICATION_FORM_URL);
 
   return (
     <>
@@ -127,7 +127,7 @@ export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
         </p>
         {hasApplyUrl ? (
           <a
-            href={track.applyUrl}
+            href={track.applyUrl || process.env.INTERNSHIP_APPLICATION_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-body text-sm font-semibold tracking-wider uppercase bg-amber text-graphite-deep px-8 py-3.5 rounded-sm hover:bg-amber-light transition-colors"
