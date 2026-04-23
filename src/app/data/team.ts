@@ -17,14 +17,6 @@ export const team: TeamMember[] = [
     bio: "As the founding DaintyMind, Dr. Judith is a distinguished researcher and the visionary architect behind Daintymindz Laboratory. With a Ph.D. and advanced expertise in Electrical Engineering and Computer Science, she leads the lab\u2019s strategic expansion into Digital Twins, Deep Learning, and Autonomous Systems. She also serves as the Technical Advisor to the Machine Learning Department.",
   },
   {
-    slug: "anthony",
-    name: "Anthony",
-    role: "Head of Software Engineering",
-    location: "South Korea",
-    photo: "/images/team/anthony.png",
-    bio: "Operating as a senior DaintyMind from South Korea, Anthony is a Senior Full-Stack Engineer with over seven years of experience designing scalable web, mobile, and distributed systems. He leads the Software Development division, driving the architecture and delivery of robust, production-grade platforms that support the lab\u2019s research, AI, and data-driven initiatives.",
-  },
-  {
     slug: "gloria",
     name: "Gloria",
     role: "Researcher",
@@ -39,5 +31,13 @@ export const team: TeamMember[] = [
     location: "Canada",
     photo: "/images/team/cynthia.jpeg",
     bio: "Representing our Canadian hub as a strategic DaintyMind, Cynthia Osewemen is a data analytics and operations professional with over 10 years of experience spanning banking operations, customer service leadership, and data analysis. She leads the Data Analytics Division, overseeing analytical projects and establishing structured workflows.",
+  },
+  {
+    slug: "anthony",
+    name: "Anthony",
+    role: "Head of Software Engineering",
+    location: "South Korea",
+    photo: "/images/team/anthony.png",
+    bio: "Operating as a senior DaintyMind from South Korea, Anthony is a Senior Full-Stack Engineer with over seven years of experience designing scalable web, mobile, and distributed systems. He leads the Software Development division, driving the architecture and delivery of robust, production-grade platforms that support the lab\u2019s research, AI, and data-driven initiatives.",
   },
 ];
