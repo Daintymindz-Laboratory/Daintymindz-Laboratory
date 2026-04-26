@@ -27,19 +27,6 @@ export const team: TeamMember[] = [
     Based in the United States, Judith bridges the critical gap between complex academic theory and the deployment of high-impact software systems. In addition to her role as Founder, she serves as the Technical Advisor to the Machine Learning Department, where she guides the development of predictive models for climate resilience, infrastructure diagnostics, and agricultural intelligence. Her leadership ensures that every project at DMZ Lab is grounded in scientific rigor while remaining focused on "Engineering Intelligent Futures" for global communities.`,
   },
   {
-    slug: "gloria",
-    name: "Ms. Gloria Njoku",
-    role: "Researcher",
-    membershipType: MembershipType.ResearchAssociate,
-    location: "Nigeria",
-    photo: "/images/team/gloria.jpg",
-    bio: `Based in Nigeria, DaintyMind Gloria  is a Food Technologist and research-driven innovator focused on transforming agricultural and food systems through data and intelligent technologies. At DaintyMindz Laboratory, she leads Ground Truth initiatives, designing and managing bio-agricultural data pipelines that enable the development of inclusive, real-world AI models.
-    
-    Her expertise spans food product development, agro-based research, and data structuring, giving her a unique ability to translate complex field data into actionable scientific insights. She is particularly interested in tackling post-harvest losses, improving food quality, and strengthening data reliability across global food systems.
-    
-    Operating from Nigeria, Gloria is building a strong research trajectory centered on leveraging data to solve critical food challenges in developing regions, positioning her as a rising contributor to global food security innovation.`,
-  },
-  {
     slug: "cynthia",
     name: "Mrs. Cynthia Osewemen",
     role: "Head of Data Analytics",
@@ -70,5 +57,18 @@ export const team: TeamMember[] = [
     His expertise spans modern tech stacks, cloud-native systems, and blockchain-integrated applications. He has led the development of multiple products across fintech, intelligent systems, and AI-assisted platforms, combining strong engineering principles with practical product thinking.
     
     At DaintyMindz, Anthony focuses on building high-quality software systems, mentoring engineers, and establishing technical standards that enable the team to translate research ideas into real-world, impactful products.`,
+  },
+  {
+    slug: "gloria",
+    name: "Ms. Gloria Njoku",
+    role: "Research Associate",
+    membershipType: MembershipType.ResearchAssociate,
+    location: "Nigeria",
+    photo: "/images/team/gloria.jpg",
+    bio: `Based in Nigeria, DaintyMind Gloria  is a Food Technologist and research-driven innovator focused on transforming agricultural and food systems through data and intelligent technologies. At DaintyMindz Laboratory, she leads Ground Truth initiatives, designing and managing bio-agricultural data pipelines that enable the development of inclusive, real-world AI models.
+    
+    Her expertise spans food product development, agro-based research, and data structuring, giving her a unique ability to translate complex field data into actionable scientific insights. She is particularly interested in tackling post-harvest losses, improving food quality, and strengthening data reliability across global food systems.
+    
+    Operating from Nigeria, Gloria is building a strong research trajectory centered on leveraging data to solve critical food challenges in developing regions, positioning her as a rising contributor to global food security innovation.`,
   },
 ];
