@@ -4,11 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import { useInView } from "../hooks/useInView";
-import { team } from "../data/team";
+import { MembershipType, team } from "../data/team";
 
 export default function Team() {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, 0.1);
+  const featuredTeam = team.filter(
+    (member) =>
+      member.membershipType === MembershipType.Leadership ||
+      member.membershipType === MembershipType.ResearchAssociate
+  );
 
   return (
     <section id="team" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
@@ -39,7 +44,7 @@ export default function Team() {
         </div>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-          {team.map((member, i) => (
+          {featuredTeam.map((member, i) => (
             <Link
                 key={member.slug}
               href={`/team/${member.slug}`}
