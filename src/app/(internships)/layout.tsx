@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "Internships | DAINTYMINDZ LAB",
   },
   description:
-    "Join the DAINTYMINDZ Internship Programme 2026 — a six-month remote programme across Machine Learning, Software Systems, Data Analytics, and Data Operations.",
+    "Join the DAINTYMINDZ Internship Programme 2026 — a four-month remote programme across Machine Learning, Software Systems, Data Analytics, and Data Operations.",
 };
 
 export default function InternshipsLayout({

@@ -15,10 +15,10 @@ export interface InternshipTrack {
 export const PROGRAM_INFO = {
   name: "DAINTYMINDZ Internship Programme 2026",
   tagline: "Are You a Future Daintymind?",
-  duration: "6 months — June 2026 to December 2026",
+  duration: "4 months",
   mode: "Remote (Global)",
   eligibility:
-    "Students, recent graduates, and early-career professionals passionate about using technology for real-world impact.",
+    "Undergraduate students passionate about using technology for real-world impact.",
   email: "internships@daintymindz.com",
   heroImage: "/images/internships/hero.jpg",
 } as const;
@@ -28,7 +28,7 @@ export const TRACKS: InternshipTrack[] = [
     slug: "ml-internship",
     title: "Machine Learning",
     subtitle: "Autonomous & Predictive Intelligence",
-    duration: "6 months",
+    duration: "4 months",
     mode: "Remote",
     image: "/images/internships/ml.jpg",
     description:
@@ -53,7 +53,7 @@ export const TRACKS: InternshipTrack[] = [
     slug: "software-systems",
     title: "Software Systems",
     subtitle: "Immersive Engineering & Applications",
-    duration: "6 months",
+    duration: "4 months",
     mode: "Remote",
     image: "/images/internships/software-systems.jpg",
     description:
@@ -78,7 +78,7 @@ export const TRACKS: InternshipTrack[] = [
     slug: "data-analytics",
     title: "Data Analytics",
     subtitle: "Decisional Intelligence & Visualization",
-    duration: "6 months",
+    duration: "4 months",
     mode: "Remote",
     image: "/images/internships/data-analytics.jpg",
     description:
@@ -103,7 +103,7 @@ export const TRACKS: InternshipTrack[] = [
     slug: "data-operations",
     title: "Data Operations",
     subtitle: "Novel Curation & Field Intelligence",
-    duration: "6 months",
+    duration: "4 months",
     mode: "Remote",
     image: "/images/internships/data-operations.jpg",
     description:

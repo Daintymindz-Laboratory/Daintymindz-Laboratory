@@ -6,7 +6,7 @@ import { PROGRAM_INFO, TRACKS } from "../internship-data";
 export const metadata: Metadata = {
   title: "Internships | DAINTYMINDZ LAB",
   description:
-    "Explore the DAINTYMINDZ Internship Programme 2026 — four research tracks, six months, fully remote, open to talent worldwide.",
+    "Explore the DAINTYMINDZ Internship Programme 2026 — four research tracks, four months, fully remote, open to talent worldwide.",
 };
 
 export default function InternshipsPage() {
@@ -30,9 +30,8 @@ export default function InternshipsPage() {
           )}
         </h1>
         <p className="mt-6 font-body text-lg text-foreground/60 leading-relaxed max-w-3xl">
-          The <strong>DAINTYMINDZ Internship Programme</strong> is a six-month,
-          fully remote opportunity for students, recent graduates, and
-          early-career professionals to contribute to real research projects
+          The <strong>DAINTYMINDZ Internship Programme</strong> is a four-month,
+          fully remote opportunity for undergraduate students to contribute to real research projects
           across four specialised tracks. Work alongside the Daintymindz global
           team and help engineer intelligent futures.
         </p>
@@ -54,10 +53,10 @@ export default function InternshipsPage() {
       {/* Programme overview */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
         {[
-          { label: "Duration", value: "June – December 2026" },
+          { label: "Duration", value: "4 months" },
           { label: "Mode", value: PROGRAM_INFO.mode },
           { label: "Tracks", value: "4 Research Thrusts" },
-          { label: "Eligibility", value: "Students & Early-Career" },
+          { label: "Eligibility", value: "Undergraduate Students" },
         ].map((item) => (
           <div
             key={item.label}
@@ -85,7 +84,7 @@ export default function InternshipsPage() {
             href={`/${track.slug}`}
             className="group surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover transition-all"
           >
-            <div className="aspect-[16/9] relative">
+            <div className="aspect-video relative">
               <Image
                 src={track.image}
                 alt={track.title}
@@ -123,10 +122,10 @@ export default function InternshipsPage() {
         </p>
         <ul className="space-y-3">
           {[
-            "University students (undergraduate or postgraduate) in STEM fields",
-            "Recent graduates looking for hands-on research experience",
-            "Early-career professionals pivoting into ML, software, data analytics, or data ops",
-            "Self-taught builders with a portfolio of relevant projects",
+            "Undergraduate students in STEM fields",
+            // "Recent graduates looking for hands-on research experience",
+            // "Early-career professionals pivoting into ML, software, data analytics, or data ops",
+            "Self-motivated builders with a portfolio of relevant projects",
           ].map((item) => (
             <li key={item} className="flex items-start gap-3">
               <div className="mt-1.5 w-2 h-2 rounded-full bg-amber shrink-0" />

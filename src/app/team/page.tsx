@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { team } from "../data/team";
+import { MembershipType, team } from "../data/team";
 
 export const metadata: Metadata = {
   title: "Global Team | DAINTYMINDZ LAB",
@@ -10,6 +10,23 @@ export const metadata: Metadata = {
 };
 
 export default function TeamPage() {
+  const sections = [
+    {
+      title: "Leadership",
+      members: team.filter((member) => member.membershipType === MembershipType.Leadership),
+    },
+    {
+      title: "Research Associates",
+      members: team.filter(
+        (member) => member.membershipType === MembershipType.ResearchAssociate
+      ),
+    },
+    {
+      title: "Interns",
+      members: team.filter((member) => member.membershipType === MembershipType.Intern),
+    },
+  ];
+
   return (
     <main className="gradient-mesh min-h-screen">
       <section className="relative py-32 lg:py-40 overflow-hidden">
@@ -31,38 +48,51 @@ export default function TeamPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-            {team.map((member) => (
-              <Link
-                key={member.slug}
-                href={`/team/${member.slug}`}
-                className="group surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover"
-              >
-                <div className="relative w-full aspect-[3/4] bg-foreground/5">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    fill
-                    sizes="(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-8">
-                  <h2 className="font-display font-bold text-xl text-foreground group-hover:text-amber transition-colors">
-                    {member.name}
+          <div className="space-y-14">
+            {sections.map((section) => {
+              if (section.members.length === 0) return null;
+
+              return (
+                <div key={section.title}>
+                  <h2 className="font-display font-bold text-2xl text-foreground mb-6">
+                    {section.title}
                   </h2>
-                  <p className="mt-2 text-amber font-body text-sm tracking-[0.2em] uppercase">
-                    {member.role}
-                  </p>
-                  <p className="mt-1 font-body text-xs text-foreground/40 tracking-wide">
-                    Based in {member.location}
-                  </p>
-                  <p className="mt-4 font-body text-sm text-foreground/55 leading-relaxed line-clamp-3">
-                    {member.bio}
-                  </p>
+                  <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+                    {section.members.map((member) => (
+                      <Link
+                        key={member.slug}
+                        href={`/team/${member.slug}`}
+                        className="group surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover"
+                      >
+                        <div className="relative w-full aspect-3/4 bg-foreground/5">
+                          <Image
+                            src={member.photo}
+                            alt={member.name}
+                            fill
+                            sizes="(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw"
+                            className="object-cover"
+                          />
+                        </div>
+                        <div className="p-8">
+                          <h3 className="font-display font-bold text-xl text-foreground group-hover:text-amber transition-colors">
+                            {member.name}
+                          </h3>
+                          <p className="mt-2 text-amber font-body text-sm tracking-[0.2em] uppercase">
+                            {member.role}
+                          </p>
+                          <p className="mt-1 font-body text-xs text-foreground/40 tracking-wide">
+                            Based in {member.location}
+                          </p>
+                          <p className="mt-4 font-body text-sm text-foreground/55 leading-relaxed line-clamp-3">
+                            {member.bio}
+                          </p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

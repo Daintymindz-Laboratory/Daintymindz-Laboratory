@@ -28,7 +28,7 @@ export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
           {[
             { label: "Duration", value: track.duration },
             { label: "Mode", value: track.mode },
-            { label: "Programme", value: "June – December 2026" },
+            { label: "Programme", value: "4 months" },
           ].map((item) => (
             <span
               key={item.label}

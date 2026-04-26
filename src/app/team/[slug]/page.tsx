@@ -46,7 +46,7 @@ export default async function TeamMemberPage({
 
           <div className="mt-10 grid md:grid-cols-[280px_1fr] gap-10 items-start">
             <div className="surface-panel border border-foreground/5 rounded-sm overflow-hidden">
-              <div className="relative w-full aspect-[3/4] bg-foreground/5">
+              <div className="relative w-full aspect-3/4 bg-foreground/5">
                 <Image
                   src={member.photo}
                   alt={member.name}
@@ -73,7 +73,7 @@ export default async function TeamMemberPage({
                 <h2 className="font-display font-bold text-xl text-foreground mb-4">
                   About
                 </h2>
-                <p className="font-body text-base leading-relaxed text-foreground/60">
+                <p className="font-body text-base leading-relaxed text-foreground/60 whitespace-pre-line">
                   {member.bio}
                 </p>
               </div>
