@@ -73,7 +73,7 @@ export default async function TeamMemberPage({
                 <h2 className="font-display font-bold text-xl text-foreground mb-4">
                   About
                 </h2>
-                <p className="font-body text-base leading-relaxed text-foreground/60">
+                <p className="font-body text-base leading-relaxed text-foreground/60 whitespace-pre-line">
                   {member.bio}
                 </p>
               </div>
