@@ -84,7 +84,7 @@ export default function InternshipsPage() {
             href={`/${track.slug}`}
             className="group surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover transition-all"
           >
-            <div className="aspect-[16/9] relative">
+            <div className="aspect-video relative">
               <Image
                 src={track.image}
                 alt={track.title}
