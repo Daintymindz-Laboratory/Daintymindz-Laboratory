@@ -6,7 +6,7 @@ import { PROGRAM_INFO, TRACKS } from "../internship-data";
 export const metadata: Metadata = {
   title: "Internships | DAINTYMINDZ LAB",
   description:
-    "Explore the DAINTYMINDZ Internship Programme 2026 — four research tracks, six months, fully remote, open to talent worldwide.",
+    "Explore the DAINTYMINDZ Internship Programme 2026 — four research tracks, four months, fully remote, open to talent worldwide.",
 };
 
 export default function InternshipsPage() {
@@ -30,7 +30,7 @@ export default function InternshipsPage() {
           )}
         </h1>
         <p className="mt-6 font-body text-lg text-foreground/60 leading-relaxed max-w-3xl">
-          The <strong>DAINTYMINDZ Internship Programme</strong> is a six-month,
+          The <strong>DAINTYMINDZ Internship Programme</strong> is a four-month,
           fully remote opportunity for undergraduate students to contribute to real research projects
           across four specialised tracks. Work alongside the Daintymindz global
           team and help engineer intelligent futures.
@@ -53,7 +53,7 @@ export default function InternshipsPage() {
       {/* Programme overview */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
         {[
-          { label: "Duration", value: "June – December 2026" },
+          { label: "Duration", value: "4 months" },
           { label: "Mode", value: PROGRAM_INFO.mode },
           { label: "Tracks", value: "4 Research Thrusts" },
           { label: "Eligibility", value: "Undergraduate Students" },
