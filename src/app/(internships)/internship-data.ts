@@ -18,7 +18,7 @@ export const PROGRAM_INFO = {
   duration: "6 months — June 2026 to December 2026",
   mode: "Remote (Global)",
   eligibility:
-    "Students, recent graduates, and early-career professionals passionate about using technology for real-world impact.",
+    "Undergraduate students passionate about using technology for real-world impact.",
   email: "internships@daintymindz.com",
   heroImage: "/images/internships/hero.jpg",
 } as const;

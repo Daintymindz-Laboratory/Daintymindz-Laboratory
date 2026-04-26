@@ -31,8 +31,7 @@ export default function InternshipsPage() {
         </h1>
         <p className="mt-6 font-body text-lg text-foreground/60 leading-relaxed max-w-3xl">
           The <strong>DAINTYMINDZ Internship Programme</strong> is a six-month,
-          fully remote opportunity for students, recent graduates, and
-          early-career professionals to contribute to real research projects
+          fully remote opportunity for undergraduate students to contribute to real research projects
           across four specialised tracks. Work alongside the Daintymindz global
           team and help engineer intelligent futures.
         </p>
@@ -57,7 +56,7 @@ export default function InternshipsPage() {
           { label: "Duration", value: "June – December 2026" },
           { label: "Mode", value: PROGRAM_INFO.mode },
           { label: "Tracks", value: "4 Research Thrusts" },
-          { label: "Eligibility", value: "Students & Early-Career" },
+          { label: "Eligibility", value: "Undergraduate Students" },
         ].map((item) => (
           <div
             key={item.label}
@@ -123,10 +122,10 @@ export default function InternshipsPage() {
         </p>
         <ul className="space-y-3">
           {[
-            "University students (undergraduate or postgraduate) in STEM fields",
-            "Recent graduates looking for hands-on research experience",
-            "Early-career professionals pivoting into ML, software, data analytics, or data ops",
-            "Self-taught builders with a portfolio of relevant projects",
+            "Undergraduate students in STEM fields",
+            // "Recent graduates looking for hands-on research experience",
+            // "Early-career professionals pivoting into ML, software, data analytics, or data ops",
+            "Self-motivated builders with a portfolio of relevant projects",
           ].map((item) => (
             <li key={item} className="flex items-start gap-3">
               <div className="mt-1.5 w-2 h-2 rounded-full bg-amber shrink-0" />
