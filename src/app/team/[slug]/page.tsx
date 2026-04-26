@@ -16,9 +16,33 @@ export function generateMetadata({
   return params.then(({ slug }) => {
     const member = team.find((m) => m.slug === slug);
     if (!member) return { title: "Team Member Not Found" };
+    const bioPreview = member.bio.replace(/\n/g, " ").slice(0, 160);
     return {
       title: `${member.name} | DAINTYMINDZ LAB`,
-      description: `${member.role} — ${member.bio.slice(0, 160)}`,
+      description: `${member.role} — ${bioPreview}`,
+      alternates: {
+        canonical: `https://daintymindz.com/team/${slug}`,
+      },
+      openGraph: {
+        title: member.name,
+        description: `${member.role} at DAINTYMINDZ LAB`,
+        type: "profile",
+        url: `https://daintymindz.com/team/${slug}`,
+        images: [
+          {
+            url: member.photo,
+            width: 280,
+            height: 373,
+            alt: member.name,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary",
+        title: member.name,
+        description: `${member.role} at DAINTYMINDZ LAB`,
+        images: [member.photo],
+      },
     };
   });
 }
