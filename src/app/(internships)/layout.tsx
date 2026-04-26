@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   },
   description:
     "Join the DAINTYMINDZ Internship Programme 2026 — a four-month remote programme across Machine Learning, Software Systems, Data Analytics, and Data Operations.",
+  alternates: {
+    canonical: "https://daintymindz.com/internships",
+  },
+  openGraph: {
+    title: "DAINTYMINDZ Internship Programme 2026",
+    description:
+      "Join a four-month remote programme across Machine Learning, Software Systems, Data Analytics, and Data Operations.",
+    type: "website",
+    url: "https://daintymindz.com/internships",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DAINTYMINDZ Internship Programme 2026",
+    description:
+      "Join a four-month remote programme across Machine Learning, Software Systems, Data Analytics, and Data Operations.",
+  },
 };
 
 export default function InternshipsLayout({
