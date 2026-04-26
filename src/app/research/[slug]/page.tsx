@@ -19,6 +19,20 @@ export function generateMetadata({
     return {
       title: `${thrust.shortTitle} | DAINTYMINDZ LAB`,
       description: thrust.description,
+      alternates: {
+        canonical: `https://daintymindz.com/research/${slug}`,
+      },
+      openGraph: {
+        title: thrust.title,
+        description: thrust.description,
+        type: "article",
+        url: `https://daintymindz.com/research/${slug}`,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: thrust.shortTitle,
+        description: thrust.description,
+      },
     };
   });
 }

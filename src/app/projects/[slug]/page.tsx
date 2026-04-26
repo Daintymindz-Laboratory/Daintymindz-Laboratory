@@ -19,6 +19,31 @@ export function generateMetadata({
     return {
       title: `${project.name} | DAINTYMINDZ LAB`,
       description: project.solution,
+      alternates: {
+        canonical: `https://daintymindz.com/projects/${slug}`,
+      },
+      openGraph: {
+        title: project.name,
+        description: project.solution,
+        type: "article",
+        url: `https://daintymindz.com/projects/${slug}`,
+        images: project.image
+          ? [
+              {
+                url: project.image,
+                width: 1200,
+                height: 630,
+                alt: project.name,
+              },
+            ]
+          : undefined,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: project.name,
+        description: project.solution,
+        images: project.image ? [project.image] : undefined,
+      },
     };
   });
 }
