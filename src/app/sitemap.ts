@@ -4,6 +4,8 @@ import { projects } from "./data/projects";
 import { thrusts } from "./data/research";
 import { TRACKS } from "./(internships)/internship-data";
 
+export const dynamic = "force-static";
+
 const BASE_URL = "https://daintymindz.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
