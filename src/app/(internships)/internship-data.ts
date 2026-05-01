@@ -47,7 +47,7 @@ export const TRACKS: InternshipTrack[] = [
       "Experience with data manipulation libraries (NumPy, Pandas)",
       "Strong analytical and problem-solving skills",
     ],
-    applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
+    // applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
     relatedProjects: ["HarvestGuard AI", "Seed Viability Predictor", "Crop Shelf-Life Estimator"],
   },
   {
@@ -73,7 +73,7 @@ export const TRACKS: InternshipTrack[] = [
       "Understanding of RESTful APIs and version control (Git)",
       "Eagerness to learn and build in a fast-paced, globally distributed team",
     ],
-    applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
+    // applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
     relatedProjects: ["Pathfinder", "DMZ Mentor Connect"],
   },
   {
@@ -99,7 +99,7 @@ export const TRACKS: InternshipTrack[] = [
       "Understanding of descriptive and inferential statistics",
       "Attention to detail and strong communication skills",
     ],
-    applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
+    // applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
     relatedProjects: ["PurityScale", "Crop Shelf-Life Estimator"],
   },
   {
@@ -118,7 +118,7 @@ export const TRACKS: InternshipTrack[] = [
       "Ensure data quality, consistency, and compliance with ethical guidelines",
       "Collaborate with ML and analytics teams to meet downstream data needs",
     ],
-    applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
+    // applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
     requirements: [
       "Proficiency in SQL and Python",
       "Experience with data wrangling and cleaning workflows",
