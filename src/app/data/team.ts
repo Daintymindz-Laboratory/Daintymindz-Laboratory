@@ -22,7 +22,7 @@ export const team: TeamMember[] = [
     membershipType: MembershipType.Leadership,
     location: "USA",
     photo: "/images/team/judith.jpg",
-    bio: `As the founding DaintyMind, Dr. Judith Nkechinyere Njoku is a distinguished researcher and the visionary architect behind Daintymindz Laboratory. With a Ph.D. and advanced expertise in Electrical Engineering and Computer Science, she leads the lab’s strategic expansion into Digital Twins, Deep Learning, and Autonomous Systems.
+    bio: `As the founding DaintyMind, Dr. Judith Vowels is a distinguished researcher and the visionary architect behind Daintymindz Laboratory. With a Ph.D. and advanced expertise in Electronics and Computer Science, she leads the lab’s strategic expansion into Digital Twins, Deep Learning, and Autonomous Systems.
     
     Based in the United States, Judith bridges the critical gap between complex academic theory and the deployment of high-impact software systems. In addition to her role as Founder, she serves as the Technical Advisor to the Machine Learning Department, where she guides the development of predictive models for climate resilience, infrastructure diagnostics, and agricultural intelligence. Her leadership ensures that every project at DMZ Lab is grounded in scientific rigor while remaining focused on "Engineering Intelligent Futures" for global communities.`,
   },
