@@ -148,7 +148,7 @@ export const team: TeamMember[] = [
   {
     slug: "gloria",
     name: "Ms. Gloria Njoku",
-    role: "Research Associate",
+    role: "Data Operations & Machine Learning Research Associate",
     membershipType: MembershipType.ResearchAssociate,
     location: "Nigeria",
     photo: "/images/team/gloria.jpg",
@@ -158,5 +158,88 @@ export const team: TeamMember[] = [
     
     Operating from Nigeria, Gloria is building a strong research trajectory centered on leveraging data to solve critical food challenges in developing regions, positioning her as a rising contributor to global food security innovation.`,
     projects: ["bitter-gourd-freshness-detection"],
+  },
+  {
+    slug: "kings",
+    name: "Mr. Kings Opara",
+    role: "Machine Learning Research Associate",
+    membershipType: MembershipType.ResearchAssociate,
+    location: "Nigeria",
+    photo: "/images/team/kings.jpeg",
+    bio: `Based in Nigeria, DaintyMind Kings is a mechanical engineer and researcher whose academic work has focused on renewable-energy systems and applied engineering design. His undergraduate thesis at the Federal University of Technology Owerri, "Design and Fabrication of an Eddy Current Braking System," examined how current flow through an electromagnet enhances brake torque, with applications in high-speed locomotives and electric vehicles. He has also co-authored a peer-reviewed study on optimal photovoltaic tilt angles across Nigeria's six geopolitical zones.
+
+    Beyond research, Kings has worked as an equipment installation site engineer on microwave antenna projects for MTN Nigeria, interned in predictive maintenance at the Egbin Thermal Power Plant, and taught chemistry and STEM subjects to secondary school students. At Daintymindz Laboratory, he brings this engineering and applied-research background to the Machine Learning track.`,
+    education: [
+      "B.Eng, Mechanical Engineering, Federal University of Technology Owerri, 2023",
+    ],
+    skills: ["Python", "MATLAB", "Data Analysis", "Research & Analytical Skills", "Autodesk Fusion 360", "SolidWorks"],
+    experience: [
+      { title: "Equipment Installation Site Engineer", org: "ZTE Corporation, Nigeria (MTN Microwave Antenna Installation Project)", period: "Present" },
+      { title: "Chemistry Teacher", org: "Day Secondary School, Kuta, Niger State", period: "2024 – 2025" },
+      { title: "Mechanical Engineering Intern", org: "Egbin Thermal Power Plant, Ikorodu, Lagos", period: "Jan 2022 – Jun 2022" },
+    ],
+    publications: [
+      {
+        title: "Exploring the Ideal Photovoltaic (PV) Tilt Angle Across the Six Geo-Political Zones in Nigeria",
+        venue: "Journal of Electrical Engineering and Electronics Design",
+        year: "2024",
+      },
+    ],
+  },
+  {
+    slug: "victory",
+    name: "Ms. Victory Ikpeyi",
+    role: "Data Operations Research Associate",
+    membershipType: MembershipType.ResearchAssociate,
+    location: "Nigeria",
+    photo: "/images/team/victory.jpeg",
+    bio: `Based in Nigeria, DaintyMind Victory is a data management and operations professional with a background in data quality assurance and large-scale field data collection. She has worked with Nigeria's National Population Commission across several roles, progressing from Enumerator to Supervisor to Data Quality Manager, reviewing and validating population records, resolving data inconsistencies, and supervising field teams to ensure accuracy and compliance with quality standards.
+
+    She is trained in data quality management, UX design, and administrative support. At Daintymindz Laboratory, she brings this field-operations and data-integrity background to the Data Operations track.`,
+    education: [
+      "HND, Food Science and Technology, Federal Polytechnic Owerri, 2019",
+      "ND, Food Science and Technology, Federal Polytechnic Owerri, 2015",
+    ],
+    skills: ["Data Entry & Validation", "Records Management", "Documentation Review", "Report Preparation", "Microsoft Excel", "Google Workspace"],
+    experience: [
+      { title: "Data Quality Manager (Adhoc)", org: "National Population Commission, Yenagoa, Bayelsa", period: "Jan 2024 – Feb 2024" },
+      { title: "Supervisor (Adhoc)", org: "National Population Commission, Yenagoa, Bayelsa", period: "Jun 2023 – Jul 2023" },
+      { title: "Enumerator (Adhoc)", org: "National Population Commission, Yenagoa, Bayelsa", period: "Mar 2022 – Apr 2023" },
+    ],
+    links: [{ label: "LinkedIn", url: "https://www.linkedin.com/in/ikpeyi-victory" }],
+  },
+  {
+    slug: "tobi",
+    name: "Mr. Tobi Allison",
+    role: "Data Analytics Research Associate",
+    membershipType: MembershipType.ResearchAssociate,
+    location: "Nigeria",
+    photo: "/images/team/tobi.jpg",
+    bio: `Based in Nigeria, DaintyMind Tobi is a data analyst with a background in marine engineering and experience spanning supply chain systems, logistics operations, and agricultural intelligence platforms. As a Data & Backend Analyst at ARVA, an agricultural intelligence platform, he has designed scalable PostgreSQL database structures, built offline-first data synchronization for low-connectivity environments, and analyzed farmer interaction data to support product decisions.
+
+    Previously, as a Data Analyst for a Nestlé distributor, he built structured reporting systems used by more than 50 field staff and improved reporting accuracy through data validation and reconciliation. At Daintymindz Laboratory, he brings this data analysis and operational intelligence background to the Data Analytics track.`,
+    education: [
+      "B.Tech, Marine Engineering, Rivers State University, 2023",
+    ],
+    skills: ["SQL", "Python (Pandas, NumPy)", "Power BI (DAX)", "Excel (Power Query, PivotTables)", "PostgreSQL", "Data Visualization & Storytelling"],
+    experience: [
+      { title: "Data & Backend Analyst", org: "ARVA (Agricultural Intelligence Platform)", period: "May 2025 – Present" },
+      { title: "Data Analyst, Supply Chain & Operations", org: "A.E Chrismerchant Ltd (Nestlé Distributor)", period: "Dec 2024 – Dec 2025" },
+      { title: "Field Data Analyst", org: "National Youth Service Corps", period: "Nov 2024 – Jan 2025" },
+    ],
+  },
+  {
+    slug: "collins",
+    name: "Mr. Collins Ugwu",
+    role: "Software Engineering Research Associate",
+    membershipType: MembershipType.ResearchAssociate,
+    location: "Nigeria",
+    photo: "/images/team/collins.jpg",
+    bio: `Based in Nigeria, DaintyMind Collins is a frontend developer with a focus on building intuitive, high-performing web applications. His technical toolkit spans React, Next.js, and Tailwind CSS on the frontend, and Node.js, Express, and MongoDB on the backend. At Daintymindz Laboratory, he brings this full-stack development background to the Software Engineering track.`,
+    education: [
+      "BMLS (in progress), Kingsley Ozumba Mbadiwe University, Ideato, Imo State, 2023 – Present",
+    ],
+    skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Next.js", "Node.js", "Express.js", "MongoDB"],
+    links: [{ label: "Portfolio", url: "https://new-portfolio-seven-mu-61.vercel.app/" }],
   },
 ];
