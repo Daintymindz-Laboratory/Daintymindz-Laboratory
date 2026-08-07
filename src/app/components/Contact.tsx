@@ -97,7 +97,7 @@ export default function Contact() {
               </h3>
               <p className="font-body text-sm leading-relaxed text-foreground/55 mb-6">
                 We are always looking for visionary interns and researchers in ML,
-                Software Systems, and Data Ops.
+                Software Engineering, and Data Ops.
               </p>
               <Link href="/internships" className="font-display font-bold text-sm tracking-[0.24em] uppercase text-amber hover:text-amber-light transition-colors">
                 Apply for our Next Cohort →

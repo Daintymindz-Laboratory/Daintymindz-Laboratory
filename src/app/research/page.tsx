@@ -5,7 +5,7 @@ import { thrusts } from "../data/research";
 export const metadata: Metadata = {
   title: "Research Thrusts | DAINTYMINDZ LAB",
   description:
-    "Explore the four core research thrusts powering DAINTYMINDZ LAB — Machine Learning, Software Systems, Data Analytics, and Data Operations.",
+    "Explore the four core research thrusts powering DAINTYMINDZ LAB: Machine Learning, Software Engineering, Data Analytics, and Data Operations.",
 };
 
 export default function ResearchPage() {

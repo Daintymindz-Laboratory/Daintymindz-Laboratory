@@ -7,9 +7,25 @@ export type Project = {
   problem: string;
   solution: string;
   tags: string[];
+  venue?: string;
+  paperUrl?: string;
+  posterUrl?: string;
 };
 
 export const projects: Project[] = [
+  {
+    slug: "bitter-gourd-freshness-detection",
+    name: "Explainable Bitter Gourd Freshness Detection using MobileNetV3 and GradCAM",
+    status: "Published",
+    category: "Agricultural Intelligence & Food Security",
+    image: "/images/projects/kics-bitter-gourd-poster.png",
+    problem: "More than 50% of fruit and vegetable yield is lost across the global supply chain, much of it from spoilage that goes unnoticed. Manual freshness inspection is slow, subjective, and inconsistent at scale, and bitter gourd, despite being a high-value medicinal crop, has no automated freshness assessment method even as demand grows. Deep learning can help, but the black-box nature of most models is a barrier to trust in food-safety contexts.",
+    solution: "An explainable deep learning pipeline pairing a lightweight MobileNetV3-Small classifier with GradCAM visual explanations, reaching 100% accuracy, precision, recall, and F1 on a held-out test set of 40 images while showing exactly which regions of the fruit, not background or spurious cues, drove each fresh/rotten decision. The lightweight backbone is built for low-resource, mobile and edge deployment in real post-harvest field settings.",
+    tags: ["MachineLearning"],
+    venue: "KICS Summer 2026",
+    paperUrl: "/papers/kics-bitter-gourd-freshness-paper.pdf",
+    posterUrl: "/papers/kics-bitter-gourd-freshness-poster.pdf",
+  },
   {
     slug: "seed-viability",
     name: "Climate-Window Security via Seed Viability Scanning",
@@ -18,7 +34,7 @@ export const projects: Project[] = [
     image: "/images/projects/seed-viability.png",
     problem: "Up to 30% of local seeds are unviable due to micro-cracks or pests, wasting crucial planting windows.",
     solution: "A mobile Computer Vision app where farmers scan seeds to receive an instant Germination Probability Score, securing harvests before the first seed hits the soil.",
-    tags: ["DataOps", "MachineLearning", "SoftwareSystems"],
+    tags: ["DataOps", "MachineLearning", "SoftwareEngineering"],
   },
   {
     slug: "harvestguard",
@@ -48,7 +64,7 @@ export const projects: Project[] = [
     image: "/images/projects/pathfinder.png",
     problem: "Transforming standard dashboards into intelligent \"Senses.\"",
     solution: "A YOLO-based edge-computing model trained on underserved Nigerian road datasets. It instantly identifies and classifies potholes, severe cracks, and surface damage to provide real-time safety hazards and transit delay mapping.",
-    tags: ["SoftwareSystems", "MachineLearning"],
+    tags: ["SoftwareEngineering", "MachineLearning"],
   },
   {
     slug: "mobile-vision-core",
@@ -58,7 +74,7 @@ export const projects: Project[] = [
     image: null,
     problem: "Complex Computer Vision models cannot run on low-end devices in remote regions.",
     solution: "A specialized software framework that allows complex CV models (like our Seed Viability and Shelf-Life scanners) to run locally on a smartphone, with high-performance cloud backends and Edge-Computing interfaces.",
-    tags: ["SoftwareSystems"],
+    tags: ["SoftwareEngineering"],
   },
   {
     slug: "decision-engine",
@@ -77,4 +93,5 @@ export const statusClasses: Record<string, string> = {
   "Model Optimization": "bg-sky-500/12 text-sky-300 border-sky-400/20",
   "Platform Build": "bg-violet-500/12 text-violet-300 border-violet-400/20",
   "Dashboard Design": "bg-amber/12 text-amber border-amber/20",
+  "Published": "bg-indigo-500/12 text-indigo-300 border-indigo-400/20",
 };

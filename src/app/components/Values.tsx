@@ -5,11 +5,18 @@ import { useRef } from "react";
 import { useInView } from "../hooks/useInView";
 import { useTheme } from "../hooks/useTheme";
 
-const traits = [
-  "A visionary engineer, scientist, or strategist who believes intelligence should be as precise as it is purposeful.",
-  "A builder with a \"global-first\" mindset — whether creating applications, curating novel datasets, or designing predictive models.",
-  "A member of a multidisciplinary community dedicated to engineering a future that is resilient, inclusive, and driven by high-impact research.",
-  "At DMZ Lab, being a Daintymind is a commitment to technical excellence and ethical stewardship of the future.",
+const coreValues = [
+  { letter: "D", word: "Discipline", description: "Do the right thing, even when nobody is watching." },
+  { letter: "A", word: "Accountability", description: "Own your work, your mistakes, and the fix." },
+  { letter: "I", word: "Integrity", description: "Tell the truth about results, limits, and failures." },
+  { letter: "N", word: "Novel Thinking", description: "Build what does not exist yet, for this context." },
+  { letter: "T", word: "Teamwork", description: "Nobody succeeds alone, across any time zone." },
+  { letter: "Y", word: "You", description: "We invest in the person, not just the output." },
+  { letter: "M", word: "Mastery", description: "Never stop learning, the field moves too fast to coast." },
+  { letter: "I", word: "Impact", description: "Every piece of work must answer: who is better off?" },
+  { letter: "N", word: "Nurture", description: "Every senior Daintymind invests in someone junior." },
+  { letter: "D", word: "Data-Driven", description: "Evidence first, always, no claims without data." },
+  { letter: "Z", word: "Zero Compromise", description: "On quality, on ethics, on standards, no exceptions." },
 ];
 
 export default function Values() {
@@ -44,25 +51,18 @@ export default function Values() {
             </h2>
 
             <p className="mt-6 font-body text-base sm:text-lg text-foreground/60 leading-relaxed">
-              A <strong>Daintymind</strong> is a visionary engineer, scientist, or strategist
-              who believes that intelligence should be as precise as it is
-              purposeful. We are a community of multidisciplinary problem-solvers
-              dedicated to engineering a future that is resilient, inclusive, and
-              driven by high-impact research.
+              A <strong>Daintymind</strong> is more than an employee or an intern; they are a
+              visionary practitioner who believes that technical intelligence must be as
+              precise as it is purposeful. Whether building groundbreaking applications,
+              developing decision-centric dashboards, curating novel datasets, or designing
+              predictive models, being a Daintymind means moving beyond the code to focus on
+              the impact.
             </p>
 
-            <div className="mt-8 space-y-4">
-              {traits.map((trait, i) => (
-                <div
-                  key={trait}
-                  className={`flex items-start gap-4 ${inView ? "animate-fade-up" : "opacity-0"}`}
-                  style={{ animationDelay: `${200 + i * 120}ms` }}
-                >
-                  <div className="mt-1 w-2.5 h-2.5 rounded-full bg-amber shrink-0" />
-                  <p className="font-body text-base text-foreground/65">{trait}</p>
-                </div>
-              ))}
-            </div>
+            <p className="mt-6 font-body text-base text-foreground/55 leading-relaxed">
+              At Daintymindz, being a Daintymind is a commitment to technical excellence and
+              ethical stewardship of the future.
+            </p>
           </div>
 
           <div className={`${inView ? "animate-slide-right" : "opacity-0"}`}>
@@ -76,6 +76,44 @@ export default function Values() {
                 className="w-full h-auto"
               />
             </div>
+          </div>
+        </div>
+
+        <div className={`mt-24 ${inView ? "animate-fade-up delay-300" : "opacity-0"}`}>
+          <div className="flex items-center gap-4 mb-10">
+            <div className="geo-diamond" />
+            <span className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber">
+              Our Core Values
+            </span>
+            <div className="flex-1 h-px bg-gradient-to-r from-amber/30 to-transparent" />
+          </div>
+
+          <h3 className="font-display font-extrabold text-xl sm:text-2xl lg:text-3xl text-foreground mb-10">
+            Eleven letters. <span className="text-amber-gradient">One standard.</span>
+          </h3>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {coreValues.map((value, i) => (
+              <div
+                key={`${value.letter}-${value.word}`}
+                className={`surface-panel border border-foreground/5 rounded-sm p-6 card-hover ${
+                  inView ? "animate-fade-up" : "opacity-0"
+                }`}
+                style={{ animationDelay: `${350 + i * 60}ms` }}
+              >
+                <div className="flex items-baseline gap-3 mb-2">
+                  <span className="font-display font-extrabold text-3xl text-amber">
+                    {value.letter}
+                  </span>
+                  <h4 className="font-display font-bold text-base text-foreground">
+                    {value.word}
+                  </h4>
+                </div>
+                <p className="font-body text-sm text-foreground/55 leading-relaxed">
+                  {value.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

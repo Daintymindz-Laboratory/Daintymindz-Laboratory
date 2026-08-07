@@ -17,8 +17,8 @@ export const thrusts: ResearchThrust[] = [
   },
   {
     slug: "software-systems",
-    title: "Software Systems | Immersive Engineering & Applications",
-    shortTitle: "Software Systems",
+    title: "Software Engineering | Immersive Engineering & Applications",
+    shortTitle: "Software Engineering",
     description:
       "We transform research into functional tools. From high-fidelity Digital Twins to immersive VR/AR simulations, we build groundbreaking applications to solve urban and rural challenges.",
     tags: ["Digital Twins", "VR/AR", "Systems Design"],
