@@ -9,6 +9,18 @@ export type PortfolioLink = {
   url: string;
 };
 
+export type MetricEntry = {
+  label: string;
+  value: string;
+};
+
+export type PublicationEntry = {
+  title: string;
+  venue: string;
+  year: string;
+  url?: string;
+};
+
 export type TeamMember = {
   slug: string;
   name: string;
@@ -22,6 +34,9 @@ export type TeamMember = {
   experience?: ExperienceEntry[];
   links?: PortfolioLink[];
   projects?: string[];
+  metrics?: MetricEntry[];
+  publications?: PublicationEntry[];
+  publicationsUrl?: string;
 };
 
 export enum MembershipType {
@@ -37,14 +52,16 @@ export const team: TeamMember[] = [
     role: "Director of Research",
     membershipType: MembershipType.Leadership,
     location: "USA",
-    photo: "/images/team/judith.jpg",
-    bio: `As the founding DaintyMind, Dr. Judith Vowels is a distinguished researcher and the visionary architect behind Daintymindz Laboratory. With a Ph.D. and advanced expertise in Electronics and Computer Science, she leads the lab’s strategic expansion into Digital Twins, Deep Learning, and Autonomous Systems.
+    photo: "/images/team/judith_pic.png",
+    bio: `As the founding DaintyMind, Dr. Judith Vowels is a distinguished researcher and the visionary architect behind Daintymindz Laboratory. She holds a Ph.D. in IT Convergence Engineering and an M.Sc. in Electronics Engineering from Kumoh National Institute of Technology, and currently serves as a Distinguished Postdoctoral Fellow at the University of Wyoming, where she leads the lab's strategic expansion into Digital Twins, Deep Learning, and Autonomous Systems.
+
+    Her research integrates digital twins, trustworthy and explainable AI, computer vision, and simulation to make complex physical systems, from batteries and bridges to city infrastructure, more observable, predictable, and trustworthy. Her doctoral work, BatteryMetrix, is a user-centered digital twin for predictive, explainable, and secure battery management in electric vehicles. She has also led research on adverse-weather image restoration for autonomous perception (OmniRestore, presented at CVPR 2026), predictive digital twins for smart parking (PANDA), and multi-bridge structural health monitoring in South Korea (BridgeSync). Her work has been widely cited and published in venues including IEEE Access, the IEEE Internet of Things Journal, and IEEE/CVF CVPR Workshops.
 
     Based in the United States, Judith bridges the critical gap between complex academic theory and the deployment of high-impact software systems. In addition to her role as Founder, she serves as the Technical Advisor to the Machine Learning Department, where she guides the development of predictive models for climate resilience, infrastructure diagnostics, and agricultural intelligence. Her leadership ensures that every project at DMZ Lab is grounded in scientific rigor while remaining focused on "Engineering Intelligent Futures" for global communities.`,
     education: [
-      "PhD, IT Convergence Engineering — Kumoh National Institute of Technology",
-      "MSc, Electronics Engineering — Kumoh National Institute of Technology",
-      "BEng, Petroleum Engineering — Federal University of Technology, Owerri",
+      "PhD, IT Convergence Engineering, Kumoh National Institute of Technology, 2025",
+      "MSc, Electronics Engineering, Kumoh National Institute of Technology, 2021",
+      "BEng, Petroleum Engineering, Federal University of Technology, Owerri, 2014",
     ],
     skills: [
       "Digital Twins",
@@ -55,15 +72,43 @@ export const team: TeamMember[] = [
       "Machine Learning",
     ],
     experience: [
-      { title: "Distinguished Postdoctoral Fellow", org: "University of Wyoming", period: "2025 – Present" },
-      { title: "Research Specialist and Supervisor", org: "Climate Smart Decision Support Systems Laboratory, Kyungpook National University & Michigan State University", period: "Aug 2022 – Jul 2024" },
+      { title: "Distinguished Postdoctoral Fellow", org: "Secure Sensing and Learning Research Lab & Center for Rural Community Resilience and Innovation, University of Wyoming", period: "2025 – Present" },
+      { title: "Visiting Research Scholar", org: "Climate Smart Decision Support Systems Laboratory, Michigan State University", period: "2024" },
+      { title: "Research Specialist and Supervisor", org: "Climate Smart Decision Support Systems Laboratory (CLIMDES), Kyungpook National University & Michigan State University", period: "Aug 2022 – Jul 2024" },
       { title: "Graduate Research Assistant", org: "Networked Systems Laboratory, Kumoh National Institute of Technology", period: "2022 – 2025" },
+      { title: "Graduate Research and Teaching Assistant", org: "Future Communications Systems Laboratory, Kumoh National Institute of Technology", period: "2019 – 2021" },
+      { title: "Customer Experience Management Personnel and IT Buddy", org: "Sterling Bank PLC, Lagos, Nigeria", period: "Apr 2017 – Jul 2019" },
+      { title: "National Youth Service Corps Intern", org: "Ministry of Energy, Alausa, Ikeja, Lagos, Nigeria", period: "Nov 2015 – Oct 2016" },
     ],
     links: [
       { label: "LinkedIn", url: "https://linkedin.com/in/judith989" },
       { label: "Google Scholar", url: "https://scholar.google.com/citations?user=Ag2gYzIAAAAJ" },
       { label: "GitHub", url: "https://github.com/Judith989" },
     ],
+    metrics: [
+      { label: "Citations", value: "1,350+" },
+      { label: "h-index", value: "14" },
+      { label: "Research Led", value: "$150K" },
+      { label: "Interns Supervised", value: "15+" },
+    ],
+    publications: [
+      {
+        title: "OmniRestore: A Parameter-Efficient Framework for Universal Adverse-Weather Image Restoration",
+        venue: "IEEE/CVF CVPR Workshops",
+        year: "2026",
+      },
+      {
+        title: "MetaWatch: Trends, Challenges, and Future of Network Intrusion Detection in the Metaverse",
+        venue: "IEEE Internet of Things Journal",
+        year: "2025",
+      },
+      {
+        title: "Explainable Data-Driven Digital Twins for Predicting Battery States in Electric Vehicles",
+        venue: "IEEE Access",
+        year: "2024",
+      },
+    ],
+    publicationsUrl: "https://judithnjoku.me/publications/",
     projects: ["bitter-gourd-freshness-detection"],
   },
   {
@@ -72,7 +117,7 @@ export const team: TeamMember[] = [
     role: "Head of Data Analytics",
     membershipType: MembershipType.Leadership,
     location: "Canada",
-    photo: "/images/team/cynthia.jpeg",
+    photo: "/images/team/cynthia2.jpeg",
     bio: `Representing our Canadian hub as a strategic DaintyMind, Cynthia Osewemen is a data analytics and operations professional with over 10 years of experience spanning banking operations, customer service leadership, and data analysis. She currently leads the Data Analytics Division  at DaintyMindz Lab. In her role, Cynthia oversees analytical projects, supervises interns, reviews deliverables, and engages with clients to ensure high-quality outcomes. She plays a key role in establishing structured workflows, optimizing processes, and maintaining high standards for data accuracy, reporting, and client satisfaction as the lab continues to grow.
     
     Cynthia has strong expertise in data analysis and reporting, working with tools such as Microsoft Excel, SQL, Python, and Power BI to transform data into actionable insights. She also brings growing experience in AI-driven automation, leveraging technology to streamline workflows, improve efficiency, and enhance data processing and reporting capabilities.

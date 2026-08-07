@@ -52,13 +52,13 @@ export const TRACKS: InternshipTrack[] = [
   },
   {
     slug: "software-systems",
-    title: "Software Systems",
+    title: "Software Engineering",
     subtitle: "Immersive Engineering & Applications",
     duration: "4 months",
     mode: "Remote",
     image: "/images/internships/software-systems.jpg",
     description:
-      "Work at the intersection of engineering and innovation. As a Software Systems intern, you will develop web and mobile applications, build scalable full-stack systems, and contribute to platforms that connect communities with opportunity.",
+      "Work at the intersection of engineering and innovation. As a Software Engineering intern, you will develop web and mobile applications, build scalable full-stack systems, and contribute to platforms that connect communities with opportunity.",
     responsibilities: [
       "Develop web and mobile applications using modern frameworks",
       "Work on active projects including Pathfinder and DMZ Mentor Connect",

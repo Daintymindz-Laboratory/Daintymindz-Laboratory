@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DAINTYMINDZ Internship Programme 2026",
     description:
-      "Explore four research tracks: Machine Learning, Software Systems, Data Analytics, and Data Operations.",
+      "Explore four research tracks: Machine Learning, Software Engineering, Data Analytics, and Data Operations.",
     type: "website",
     url: "https://daintymindz.com/internships",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DAINTYMINDZ Internship Programme 2026",
     description:
-      "Four-month remote programme across ML, Software Systems, Data Analytics, and Data Ops.",
+      "Four-month remote programme across ML, Software Engineering, Data Analytics, and Data Ops.",
     images: [
       "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=80",
     ],
