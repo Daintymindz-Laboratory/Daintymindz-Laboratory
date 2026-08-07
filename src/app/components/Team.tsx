@@ -9,11 +9,13 @@ import { MembershipType, team } from "../data/team";
 export default function Team() {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, 0.1);
-  const featuredTeam = team.filter(
-    (member) =>
-      member.membershipType === MembershipType.Leadership ||
-      member.membershipType === MembershipType.ResearchAssociate
-  );
+  const featuredTeam = team
+    .filter(
+      (member) =>
+        member.membershipType === MembershipType.Leadership ||
+        member.membershipType === MembershipType.ResearchAssociate
+    )
+    .slice(0, 3);
 
   return (
     <section id="team" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
@@ -43,7 +45,7 @@ export default function Team() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {featuredTeam.map((member, i) => (
             <Link
                 key={member.slug}

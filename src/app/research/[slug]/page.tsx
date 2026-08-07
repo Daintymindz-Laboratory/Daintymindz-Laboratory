@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { thrusts } from "../../data/research";
@@ -78,6 +79,19 @@ export default async function ResearchDetailPage({
             </h1>
           </div>
 
+          <div className="mb-10 surface-panel border border-foreground/5 rounded-sm overflow-hidden">
+            <div className="relative w-full aspect-video">
+              <Image
+                src={thrust.image}
+                alt={thrust.title}
+                fill
+                sizes="(min-width: 1024px) 768px, 100vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+
           <div className="space-y-6">
             <div className="surface-panel border border-foreground/5 rounded-sm p-8">
               <h2 className="font-display font-bold text-2xl text-foreground mb-4">
@@ -86,6 +100,37 @@ export default async function ResearchDetailPage({
               <p className="font-body text-base leading-relaxed text-foreground/60">
                 {thrust.description}
               </p>
+            </div>
+
+            <div className="surface-panel border border-foreground/5 rounded-sm p-8">
+              <h2 className="font-display font-bold text-2xl text-foreground mb-4">
+                Why This Matters
+              </h2>
+              <p className="font-body text-base leading-relaxed text-foreground/60 mb-8">
+                {thrust.whyItMatters}
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                {thrust.stats.map((stat) => (
+                  <a
+                    key={stat.label}
+                    href={stat.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block p-6 border border-foreground/10 rounded-sm hover:border-amber/40 transition-colors"
+                  >
+                    <div className="font-display font-extrabold text-3xl sm:text-4xl text-amber mb-2">
+                      {stat.value}
+                    </div>
+                    <p className="font-body text-sm text-foreground/60 leading-relaxed mb-3">
+                      {stat.label}
+                    </p>
+                    <p className="font-body text-xs text-foreground/40 tracking-wide group-hover:text-amber transition-colors">
+                      Source: {stat.source} ↗
+                    </p>
+                  </a>
+                ))}
+              </div>
             </div>
 
             <div className="surface-panel border border-foreground/5 rounded-sm p-8">
