@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { team } from "../../data/team";
+import { projects } from "../../data/projects";
 
 export function generateStaticParams() {
   return team.map((m) => ({ slug: m.slug }));
@@ -56,6 +57,10 @@ export default async function TeamMemberPage({
   const member = team.find((m) => m.slug === slug);
   if (!member) notFound();
 
+  const completedProjects = (member.projects ?? [])
+    .map((projectSlug) => projects.find((p) => p.slug === projectSlug))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
   return (
     <main className="gradient-mesh min-h-screen">
       <section className="relative py-32 lg:py-40 overflow-hidden">
@@ -89,9 +94,30 @@ export default async function TeamMemberPage({
               <p className="mt-3 text-amber font-body text-sm tracking-[0.2em] uppercase font-semibold">
                 {member.role}
               </p>
-              <p className="mt-1 font-body text-xs text-foreground/40 tracking-wide">
-                Based in {member.location}
-              </p>
+              <div className="mt-2 flex flex-wrap items-center gap-3">
+                <p className="font-body text-xs text-foreground/40 tracking-wide">
+                  Based in {member.location}
+                </p>
+                <span className="font-body text-[10px] font-semibold tracking-[0.2em] uppercase px-3 py-1 border border-amber/20 text-amber/70 rounded-full">
+                  {member.membershipType}
+                </span>
+              </div>
+
+              {member.links && member.links.length > 0 && (
+                <div className="mt-6 flex flex-wrap gap-3">
+                  {member.links.map((link) => (
+                    <a
+                      key={link.url}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-body text-xs font-semibold tracking-wider uppercase px-4 py-2 border border-foreground/15 text-foreground/70 rounded-sm hover:border-amber/50 hover:text-amber transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              )}
 
               <div className="mt-8 surface-panel border border-foreground/5 rounded-sm p-8">
                 <h2 className="font-display font-bold text-xl text-foreground mb-4">
@@ -101,6 +127,86 @@ export default async function TeamMemberPage({
                   {member.bio}
                 </p>
               </div>
+
+              {member.experience && member.experience.length > 0 && (
+                <div className="mt-6 surface-panel border border-foreground/5 rounded-sm p-8">
+                  <h2 className="font-display font-bold text-xl text-foreground mb-4">
+                    Experience
+                  </h2>
+                  <ul className="space-y-5">
+                    {member.experience.map((entry) => (
+                      <li key={`${entry.title}-${entry.org}`}>
+                        <p className="font-body font-semibold text-foreground/80">
+                          {entry.title}
+                        </p>
+                        <p className="font-body text-sm text-foreground/50">
+                          {entry.org}
+                          {entry.period ? ` · ${entry.period}` : ""}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {member.education && member.education.length > 0 && (
+                <div className="mt-6 surface-panel border border-foreground/5 rounded-sm p-8">
+                  <h2 className="font-display font-bold text-xl text-foreground mb-4">
+                    Education
+                  </h2>
+                  <ul className="space-y-3">
+                    {member.education.map((entry) => (
+                      <li key={entry} className="flex items-start gap-3">
+                        <div className="mt-1.5 w-2 h-2 rounded-full bg-amber shrink-0" />
+                        <span className="font-body text-base text-foreground/60">
+                          {entry}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {completedProjects.length > 0 && (
+                <div className="mt-6 surface-panel border border-foreground/5 rounded-sm p-8">
+                  <h2 className="font-display font-bold text-xl text-foreground mb-4">
+                    Work Completed
+                  </h2>
+                  <ul className="space-y-4">
+                    {completedProjects.map((project) => (
+                      <li key={project.slug}>
+                        <Link
+                          href={`/projects/${project.slug}`}
+                          className="font-body font-semibold text-foreground/80 hover:text-amber transition-colors"
+                        >
+                          {project.name}
+                        </Link>
+                        {project.venue && (
+                          <p className="font-body text-sm text-foreground/50">{project.venue}</p>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {member.skills && member.skills.length > 0 && (
+                <div className="mt-6 surface-panel border border-foreground/5 rounded-sm p-8">
+                  <h2 className="font-display font-bold text-xl text-foreground mb-4">
+                    Skills
+                  </h2>
+                  <div className="flex flex-wrap gap-2">
+                    {member.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1.5 text-xs font-body font-semibold tracking-wide border border-amber/15 text-amber/70 rounded-sm"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

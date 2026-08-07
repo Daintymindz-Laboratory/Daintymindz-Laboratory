@@ -79,11 +79,41 @@ export default async function ProjectDetailPage({
               <span className="font-body text-xs text-foreground/40 tracking-wide">
                 {project.category}
               </span>
+              {project.venue && (
+                <span className="font-body text-xs text-amber/70 tracking-wide">
+                  {project.venue}
+                </span>
+              )}
             </div>
 
             <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground leading-tight">
               {project.name}
             </h1>
+
+            {(project.paperUrl || project.posterUrl) && (
+              <div className="mt-6 flex flex-wrap gap-4">
+                {project.paperUrl && (
+                  <a
+                    href={project.paperUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-amber text-graphite-deep font-display font-bold text-sm tracking-wider rounded-sm hover:bg-amber-light transition-colors"
+                  >
+                    Read the Paper →
+                  </a>
+                )}
+                {project.posterUrl && (
+                  <a
+                    href={project.posterUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 border border-foreground/15 text-foreground/70 font-display font-semibold text-sm tracking-wider rounded-sm hover:border-amber/50 hover:text-amber transition-colors"
+                  >
+                    View the Poster →
+                  </a>
+                )}
+              </div>
+            )}
           </div>
 
           {project.image && (

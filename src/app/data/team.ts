@@ -1,3 +1,14 @@
+export type ExperienceEntry = {
+  title: string;
+  org: string;
+  period?: string;
+};
+
+export type PortfolioLink = {
+  label: string;
+  url: string;
+};
+
 export type TeamMember = {
   slug: string;
   name: string;
@@ -6,6 +17,11 @@ export type TeamMember = {
   location: string;
   photo: string;
   bio: string;
+  education?: string[];
+  skills?: string[];
+  experience?: ExperienceEntry[];
+  links?: PortfolioLink[];
+  projects?: string[];
 };
 
 export enum MembershipType {
@@ -23,8 +39,32 @@ export const team: TeamMember[] = [
     location: "USA",
     photo: "/images/team/judith.jpg",
     bio: `As the founding DaintyMind, Dr. Judith Vowels is a distinguished researcher and the visionary architect behind Daintymindz Laboratory. With a Ph.D. and advanced expertise in Electronics and Computer Science, she leads the lab’s strategic expansion into Digital Twins, Deep Learning, and Autonomous Systems.
-    
+
     Based in the United States, Judith bridges the critical gap between complex academic theory and the deployment of high-impact software systems. In addition to her role as Founder, she serves as the Technical Advisor to the Machine Learning Department, where she guides the development of predictive models for climate resilience, infrastructure diagnostics, and agricultural intelligence. Her leadership ensures that every project at DMZ Lab is grounded in scientific rigor while remaining focused on "Engineering Intelligent Futures" for global communities.`,
+    education: [
+      "PhD, IT Convergence Engineering — Kumoh National Institute of Technology",
+      "MSc, Electronics Engineering — Kumoh National Institute of Technology",
+      "BEng, Petroleum Engineering — Federal University of Technology, Owerri",
+    ],
+    skills: [
+      "Digital Twins",
+      "Trustworthy & Explainable AI",
+      "Computer Vision",
+      "Cyber-Physical Systems",
+      "Simulation",
+      "Machine Learning",
+    ],
+    experience: [
+      { title: "Distinguished Postdoctoral Fellow", org: "University of Wyoming", period: "2025 – Present" },
+      { title: "Research Specialist and Supervisor", org: "Climate Smart Decision Support Systems Laboratory, Kyungpook National University & Michigan State University", period: "Aug 2022 – Jul 2024" },
+      { title: "Graduate Research Assistant", org: "Networked Systems Laboratory, Kumoh National Institute of Technology", period: "2022 – 2025" },
+    ],
+    links: [
+      { label: "LinkedIn", url: "https://linkedin.com/in/judith989" },
+      { label: "Google Scholar", url: "https://scholar.google.com/citations?user=Ag2gYzIAAAAJ" },
+      { label: "GitHub", url: "https://github.com/Judith989" },
+    ],
+    projects: ["bitter-gourd-freshness-detection"],
   },
   {
     slug: "cynthia",
@@ -42,8 +82,9 @@ export const team: TeamMember[] = [
     Prior to transitioning into data analytics, she built a solid foundation in the banking sector, where she held leadership roles in operations and customer service. This experience strengthened her ability to manage teams, optimize processes, and deliver results in high-performance, regulated environments.
     
     She holds a Master of Business Administration (MBA) in Human Resources Management and continues to expand her expertise in data analytics, automation, and emerging technologies.
-    
+
     Cynthia is passionate about leveraging data and technology to drive informed decision-making, improve systems, and support innovation across industries.`,
+    projects: ["bitter-gourd-freshness-detection"],
   },
   {
     slug: "anthony",
@@ -57,6 +98,7 @@ export const team: TeamMember[] = [
     His expertise spans modern tech stacks, cloud-native systems, and blockchain-integrated applications. He has led the development of multiple products across fintech, intelligent systems, and AI-assisted platforms, combining strong engineering principles with practical product thinking.
     
     At DaintyMindz, Anthony focuses on building high-quality software systems, mentoring engineers, and establishing technical standards that enable the team to translate research ideas into real-world, impactful products.`,
+    projects: ["bitter-gourd-freshness-detection"],
   },
   {
     slug: "gloria",
@@ -70,5 +112,6 @@ export const team: TeamMember[] = [
     Her expertise spans food product development, agro-based research, and data structuring, giving her a unique ability to translate complex field data into actionable scientific insights. She is particularly interested in tackling post-harvest losses, improving food quality, and strengthening data reliability across global food systems.
     
     Operating from Nigeria, Gloria is building a strong research trajectory centered on leveraging data to solve critical food challenges in developing regions, positioning her as a rising contributor to global food security innovation.`,
+    projects: ["bitter-gourd-freshness-detection"],
   },
 ];
