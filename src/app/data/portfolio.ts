@@ -14,8 +14,8 @@ export const portfolioProducts: PortfolioProduct[] = [
     name: "Daintymindz Academy",
     tagline: "Train minds. Build AI. Ship research.",
     description:
-      "A structured learning platform for Daintymindz researchers and interns, spanning 17 courses across four tracks: Artificial Intelligence, Data Analytics, Software Engineering, and Data Operations. Courses run fully project-based, from Python foundations to production AI systems, with a verified certificate on completion.",
-    techStack: ["Learning Platform", "AI Curriculum", "Certification"],
+      "A learning management system (LMS) built for Daintymindz researchers and interns, spanning 17 courses across four tracks: Artificial Intelligence, Data Analytics, Software Engineering, and Data Operations. Courses run fully project-based, from Python foundations to production AI systems, with course progress tracking and a verified certificate on completion.",
+    techStack: ["LMS", "AI Curriculum", "Certification"],
     url: "https://academy.daintymindz.com",
     images: ["https://academy.daintymindz.com/logo.png", "/images/products/portfolio/academy-2.png"],
   },
