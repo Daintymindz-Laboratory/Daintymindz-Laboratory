@@ -6,7 +6,7 @@ import { projects, statusClasses } from "../data/projects";
 export const metadata: Metadata = {
   title: "Projects | DAINTYMINDZ LAB",
   description:
-    "Explore the DAINTYMINDZ LAB project portfolio — real-world research across agricultural intelligence, smart infrastructure, and data analytics.",
+    "Explore the DAINTYMINDZ LAB project portfolio: real-world research across agricultural intelligence, smart infrastructure, and data analytics.",
 };
 
 export default function ProjectsPage() {

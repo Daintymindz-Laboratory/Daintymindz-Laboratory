@@ -17,13 +17,13 @@ export default function LinkedInSidebar() {
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close LinkedIn feed" : "Open LinkedIn feed"}
         aria-expanded={open}
-        className="fixed right-0 top-1/2 -translate-y-1/2 z-40 flex items-center gap-2 px-3 py-4 bg-amber text-graphite-deep font-display font-bold text-xs tracking-widest rounded-l-sm shadow-lg hover:bg-amber-light transition-colors [writing-mode:vertical-rl]"
+        className="no-print fixed right-0 top-1/2 -translate-y-1/2 z-40 flex items-center gap-2 px-3 py-4 bg-amber text-graphite-deep font-display font-bold text-xs tracking-widest rounded-l-sm shadow-lg hover:bg-amber-light transition-colors [writing-mode:vertical-rl]"
       >
         LINKEDIN
       </button>
 
       <div
-        className={`fixed inset-y-0 right-0 z-50 w-full sm:w-[380px] surface-panel border-l border-foreground/10 shadow-2xl transition-transform duration-500 overflow-y-auto ${
+        className={`no-print fixed inset-y-0 right-0 z-50 w-full sm:w-[380px] surface-panel border-l border-foreground/10 shadow-2xl transition-transform duration-500 overflow-y-auto ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >

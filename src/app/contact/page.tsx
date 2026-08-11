@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Contact | DAINTYMINDZ LAB",
   description:
-    "Reach out to DAINTYMINDZ LAB — connect with our global research institute spanning the USA, Nigeria, South Korea, and Canada.",
+    "Reach out to DAINTYMINDZ LAB: connect with our global research institute spanning the USA, Nigeria, South Korea, and Canada.",
 };
 
 export default function ContactPage() {
@@ -24,7 +24,7 @@ export default function ContactPage() {
             </h1>
             <p className="mt-6 font-body text-lg text-foreground/60 leading-relaxed max-w-2xl mx-auto">
               Whether you&apos;re interested in collaborating on research,
-              joining the lab, or learning more about our work — we&apos;d love
+              joining the lab, or learning more about our work, we&apos;d love
               to hear from you.
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 Internships
               </h2>
               <p className="font-body text-sm text-foreground/55 mb-4">
-                Join our next cohort — remote roles available globally.
+                Join our next cohort: remote roles available globally.
               </p>
               <Link
                 href="/internships"

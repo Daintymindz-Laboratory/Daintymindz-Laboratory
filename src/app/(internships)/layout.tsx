@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "Internships | DAINTYMINDZ LAB",
   },
   description:
-    "Join the DAINTYMINDZ Internship Programme 2026 — a four-month remote programme across Machine Learning, Software Engineering, Data Analytics, and Data Operations.",
+    "Join the DAINTYMINDZ Internship Programme 2026: a four-month remote programme across Machine Learning, Software Engineering, Data Analytics, and Data Operations.",
   alternates: {
     canonical: "https://daintymindz.com/internships",
   },

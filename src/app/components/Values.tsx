@@ -69,7 +69,7 @@ export default function Values() {
             <div className="surface-panel border border-foreground/5 rounded-sm overflow-hidden card-hover">
               <Image
                 src={heroSrc}
-                alt="A Daintymind — the human element of innovation"
+                alt="A Daintymind, the human element of innovation"
                 width={1200}
                 height={800}
                 sizes="(min-width: 1024px) 50vw, 100vw"

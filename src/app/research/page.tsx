@@ -24,7 +24,7 @@ export default function ResearchPage() {
               <span className="text-amber-gradient">four thrusts</span>
             </h1>
             <p className="mt-6 font-body text-lg text-foreground/60 leading-relaxed max-w-3xl">
-              Our research is organized into four interdependent thrusts — each
+              Our research is organized into four interdependent thrusts, each
               addressing a core pillar of the intelligence pipeline, from raw
               data to real-world deployment.
             </p>

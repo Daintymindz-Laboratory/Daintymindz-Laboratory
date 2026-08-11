@@ -340,3 +340,20 @@ body {
 .soft-border {
   border-color: var(--line-soft);
 }
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .surface-panel,
+  .surface-panel-muted {
+    background: white;
+    border: 1px solid #ddd;
+  }
+}
