@@ -52,16 +52,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-6xl mx-auto pt-20 px-4 sm:px-6 lg:px-12 text-center">
-        <div className="animate-fade-up opacity-0 mb-8">
-          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-amber/20 bg-amber/5">
-            <div className="w-2 h-2 bg-amber rounded-full animate-pulse" />
-            <span className="font-body text-[8px] font-semibold tracking-[0.3em] uppercase text-amber">
-              Global Research Institute
-            </span>
-          </div>
-        </div>
-
-        <h1 className="animate-fade-up opacity-0 delay-200 font-display font-extrabold leading-[0.92] tracking-tight text-foreground text-[1.85rem] sm:text-6xl md:text-7xl lg:text-9xl">
+        <h1 className="animate-fade-up opacity-0 font-display font-extrabold leading-[0.92] tracking-tight text-foreground text-[1.85rem] sm:text-6xl md:text-7xl lg:text-9xl">
           Engineering
           <br />
           <span className="text-amber-gradient">Intelligent Futures.</span>

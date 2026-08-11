@@ -3,17 +3,17 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | DAINTYMINDZ LAB",
-  description: "Privacy policy for DAINTYMINDZ LTD — outlining how we collect, use, and protect information across our global research initiatives.",
+  description: "Privacy policy for DAINTYMINDZ LTD: outlining how we collect, use, and protect information across our global research initiatives.",
 };
 
 const sections = [
   {
     title: "1. Information We Collect",
-    body: "We collect information to drive our \"Intelligence Research for Impact\" mission. This includes: Professional Information (name, email address, and institutional affiliation); Field Research Data (Data Ops) such as environmental data, crop imagery, and infrastructure metadata — anonymized to protect individual privacy; and Technical Data (IP addresses, browser types, and usage patterns on our website and GitHub repositories).",
+    body: "We collect information to drive our \"Intelligence Research for Impact\" mission. This includes: Professional Information (name, email address, and institutional affiliation); Field Research Data (Data Ops) such as environmental data, crop imagery, and infrastructure metadata, anonymized to protect individual privacy; and Technical Data (IP addresses, browser types, and usage patterns on our website and GitHub repositories).",
   },
   {
     title: "2. How We Use Your Data",
-    body: "Daintymindz uses collected data for: Research & Development — to train and refine our Machine Learning models for seed viability, shelf-life prediction, and infrastructure diagnostics; Communication — to respond to inquiries, manage our \"Mentorship Mandate,\" and provide project updates; and Operational Integrity — to ensure the security of our software systems and digital ecosystems.",
+    body: "Daintymindz uses collected data for: Research & Development, to train and refine our Machine Learning models for seed viability, shelf-life prediction, and infrastructure diagnostics; Communication, to respond to inquiries, manage our \"Mentorship Mandate,\" and provide project updates; and Operational Integrity, to ensure the security of our software systems and digital ecosystems.",
   },
   {
     title: "3. Data Operations (Data Ops) & Ethics",

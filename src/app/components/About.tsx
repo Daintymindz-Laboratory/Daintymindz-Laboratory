@@ -34,7 +34,7 @@ export default function About() {
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-24 items-start">
           <div className={`${inView ? "animate-slide-left" : "opacity-0"}`}>
             <h2 className="font-display font-extrabold text-2xl sm:text-4xl lg:text-6xl leading-[1.05] text-foreground">
-              Beyond Innovation —
+              Beyond Innovation,
               <br />
               <span className="text-amber-gradient">Pioneering the Future of Intelligence</span>
             </h2>

@@ -49,7 +49,7 @@ export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
       <div className="mb-10 surface-panel border border-foreground/5 rounded-sm overflow-hidden">
         <Image
           src={track.image}
-          alt={`${track.title} — ${track.subtitle}`}
+          alt={`${track.title}, ${track.subtitle}`}
           width={1200}
           height={800}
           sizes="(min-width: 1024px) 960px, 100vw"

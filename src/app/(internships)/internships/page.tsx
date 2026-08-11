@@ -6,7 +6,7 @@ import { PROGRAM_INFO, TRACKS } from "../internship-data";
 export const metadata: Metadata = {
   title: "Internships | DAINTYMINDZ LAB",
   description:
-    "Explore the DAINTYMINDZ Internship Programme 2026 — four research tracks, four months, fully remote, open to talent worldwide.",
+    "Explore the DAINTYMINDZ Internship Programme 2026: four research tracks, four months, fully remote, open to talent worldwide.",
   alternates: {
     canonical: "https://daintymindz.com/internships",
   },
@@ -174,8 +174,8 @@ export default function InternshipsPage() {
             href={`mailto:${PROGRAM_INFO.email}`}
           >
             {PROGRAM_INFO.email}
-          </a>{" "}
-          — we would love to hear from you.
+          </a>
+          , we would love to hear from you.
         </p>
       </div>
     </>

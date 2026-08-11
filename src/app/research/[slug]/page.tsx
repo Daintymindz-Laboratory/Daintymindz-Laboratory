@@ -149,6 +149,25 @@ export default async function ResearchDetailPage({
               </div>
             </div>
 
+            {thrust.slug === "software-systems" && (
+              <div className="surface-panel border border-amber/20 rounded-sm p-8 text-center">
+                <h2 className="font-display font-bold text-2xl text-foreground mb-4">
+                  See What We&apos;ve Shipped
+                </h2>
+                <p className="font-body text-base text-foreground/60 leading-relaxed mb-6 max-w-xl mx-auto">
+                  Browse the software our engineering team has built and
+                  deployed: web apps, mobile apps, APIs, and platforms in
+                  active use.
+                </p>
+                <Link
+                  href="/portfolio"
+                  className="inline-flex items-center gap-2 px-8 py-3.5 bg-amber text-graphite-deep font-display font-bold text-sm tracking-widest rounded-sm hover:bg-amber-light transition-colors"
+                >
+                  VIEW SOFTWARE PORTFOLIO →
+                </Link>
+              </div>
+            )}
+
             {relatedProjects.length > 0 && (
               <div className="surface-panel border border-foreground/5 rounded-sm p-8">
                 <h2 className="font-display font-bold text-2xl text-foreground mb-6">

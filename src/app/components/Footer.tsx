@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-foreground/5">
+    <footer className="no-print relative border-t border-foreground/5">
       <div className="overflow-hidden py-6 border-b border-foreground/5">
         <div className="animate-marquee whitespace-nowrap">
           {Array.from({ length: 8 }).map((_, i) => (
@@ -53,6 +53,11 @@ export default function Footer() {
               <li>
                 <Link href="/services" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
                   Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/portfolio" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
+                  Portfolio
                 </Link>
               </li>
               <li>

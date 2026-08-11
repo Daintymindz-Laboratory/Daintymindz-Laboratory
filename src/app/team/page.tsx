@@ -6,7 +6,7 @@ import { MembershipType, team } from "../data/team";
 export const metadata: Metadata = {
   title: "Global Team | DAINTYMINDZ LAB",
   description:
-    "Meet the DaintyMindz — a global team of specialists united by scientific rigor and the pursuit of intelligent, real-world solutions.",
+    "Meet the DaintyMindz: a global team of specialists united by scientific rigor and the pursuit of intelligent, real-world solutions.",
 };
 
 export default function TeamPage() {
