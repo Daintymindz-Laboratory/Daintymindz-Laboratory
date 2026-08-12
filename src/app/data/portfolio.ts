@@ -47,7 +47,7 @@ export const portfolioProducts: PortfolioProduct[] = [
       "A modern note-taking app built as an alternative to Notion. A rich block editor supports effortless idea capture, content organizes into hierarchical notebooks, and OpenAI-powered writing assistance helps with drafting, editing, and brainstorming. Ships as a fully installable Progressive Web App with push notifications, offline capability, and a share-to-note feature from a phone's share menu.",
     techStack: ["Next.js", "Prisma", "Clerk Auth", "OpenAI", "Plate.js", "PWA"],
     url: "https://notely.joypinness.com",
-    images: ["/images/products/portfolio/notely-1.png", "/images/products/portfolio/notely-2.png"],
+    images: ["/images/products/portfolio/notely-1.png", "/images/products/portfolio/notely-2.png", "/images/products/portfolio/notely-3.png"],
   },
   {
     slug: "edgeconsent",
@@ -67,7 +67,7 @@ export const portfolioProducts: PortfolioProduct[] = [
       "A live sports prediction platform serving real users with real-time odds, match analysis, and prediction tracking. Includes a comprehensive admin panel with audit trails for every system action, role-based user management, payment integration for premium features, and automated match data ingestion, built to handle concurrent users and real-time updates.",
     techStack: ["Next.js", "React", "Node.js", "PostgreSQL", "REST API", "Payments"],
     url: "https://ogapredict.com",
-    images: ["/images/products/portfolio/ogapredict-1.png", "/images/products/portfolio/ogapredict-2.png"],
+    images: ["/images/products/portfolio/ogapredict-1.png", "/images/products/portfolio/ogapredict-2.png", "/images/products/portfolio/ogapredict-3.png", "/images/products/portfolio/ogapredict-4.png"],
   },
   {
     slug: "choirs-hub",
@@ -87,7 +87,7 @@ export const portfolioProducts: PortfolioProduct[] = [
       "A mobile workforce management platform for businesses that deploy field workers such as maintenance crews, delivery teams, and sales representatives. Field workers use a Flutter mobile app to clock in and out, submit job reports with photos, track location, and receive task assignments, while managers get real-time visibility into worker locations, completion rates, and automated timesheets through a web admin dashboard.",
     techStack: ["Flutter/Dart", "Next.js", "Clerk Auth", "Prisma", "Vercel Blob"],
     url: "https://fieldsnap-admin.vercel.app",
-    images: ["/images/products/portfolio/fieldsnap-1.png", "/images/products/portfolio/fieldsnap-2.png"],
+    images: ["/images/products/portfolio/fieldsnap-1.png", "/images/products/portfolio/fieldsnap-2.png", "/images/products/portfolio/fieldsnap-3.png", "/images/products/portfolio/fieldsnap-4.png"],
   },
   {
     slug: "steeze",
@@ -107,6 +107,6 @@ export const portfolioProducts: PortfolioProduct[] = [
       "A business analytics dashboard built for small and medium enterprises that need financial visibility without enterprise-grade complexity. Multi-tenant, role-based access lets business owners, accountants, and team leads view different slices of the same data, with financial reporting, invoice tracking, customer management, and automated alerts for overdue payments, backed by atomic ledger mutations that keep financial data consistent under concurrent operations.",
     techStack: ["Next.js", "Prisma", "Multi-Tenant Auth", "Atomic Ledger", "PostgreSQL"],
     url: "https://sme-gear-dashboard-three.vercel.app",
-    images: ["/images/products/portfolio/sme-gear-dashboard-1.png", "/images/products/portfolio/sme-gear-dashboard-2.png"],
+    images: ["/images/products/portfolio/sme-gear-dashboard-1.png", "/images/products/portfolio/sme-gear-dashboard-2.png", "/images/products/portfolio/sme-gear-dashboard-3.png"],
   },
 ];

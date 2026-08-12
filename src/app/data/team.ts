@@ -138,11 +138,43 @@ export const team: TeamMember[] = [
     membershipType: MembershipType.Leadership,
     location: "South Korea",
     photo: "/images/team/anthony.png",
-    bio: `Operating as a senior DaintyMind from South Korea, he is a Senior Full-Stack Engineer with over seven years of experience designing and building scalable web, mobile, and distributed systems. He leads the Software Development division at DaintyMindz Research Laboratory, where he is responsible for driving the architecture and delivery of robust, production-grade platforms that support the lab’s research, AI, and data-driven initiatives.
-    
-    His expertise spans modern tech stacks, cloud-native systems, and blockchain-integrated applications. He has led the development of multiple products across fintech, intelligent systems, and AI-assisted platforms, combining strong engineering principles with practical product thinking.
-    
-    At DaintyMindz, Anthony focuses on building high-quality software systems, mentoring engineers, and establishing technical standards that enable the team to translate research ideas into real-world, impactful products.`,
+    bio: `Operating as a senior DaintyMind from South Korea, he is a Senior Full-Stack Engineer with over nine years of experience designing and building scalable web, mobile, and distributed systems across fintech, e-commerce, blockchain, and AI. He leads the Software Engineering division at DaintyMindz Laboratory, where he is responsible for driving the architecture and delivery of robust, production-grade platforms that support the lab's research, AI, and data-driven initiatives.
+
+    He is currently pursuing a PhD in IT Convergence Engineering at Kumoh National Institute of Technology in South Korea, researching verifiable AI decision infrastructure for regulated, high-stakes operations. He also founded and leads Joypinness Technologies, a web development agency that has delivered 15 or more products to clients across Nigeria and beyond.
+
+    His expertise spans modern tech stacks, cloud-native systems, and blockchain-integrated applications. He has led the development of multiple products across fintech, intelligent systems, and AI-assisted platforms, combining strong engineering principles with practical product thinking. At DaintyMindz, Anthony focuses on building high-quality software systems, mentoring engineers, and establishing technical standards that enable the team to translate research ideas into real-world, impactful products.`,
+    education: [
+      "PhD (in progress), IT Convergence Engineering, Kumoh National Institute of Technology, South Korea",
+    ],
+    skills: [
+      "React",
+      "Next.js",
+      "Angular",
+      "TypeScript",
+      "React Native",
+      "Flutter",
+      "Node.js",
+      "NestJS",
+      "PostgreSQL",
+      "Redis",
+      "Solidity & Web3",
+      "PyTorch / ML",
+      "Docker",
+      "AWS S3",
+    ],
+    experience: [
+      { title: "Founder & CEO", org: "Joypinness Technologies", period: "Present" },
+    ],
+    metrics: [
+      { label: "Years Experience", value: "9+" },
+      { label: "Products Shipped", value: "15+" },
+      { label: "Publications", value: "2" },
+      { label: "Live Platforms", value: "5" },
+    ],
+    links: [
+      { label: "GitHub", url: "https://github.com/tony-eneh" },
+      { label: "LinkedIn", url: "https://linkedin.com/in/anthony-eneh" },
+    ],
     projects: ["bitter-gourd-freshness-detection"],
   },
   {
