@@ -17,7 +17,15 @@ export const portfolioProducts: PortfolioProduct[] = [
       "A learning management system (LMS) built for Daintymindz researchers and interns, spanning 17 courses across four tracks: Artificial Intelligence, Data Analytics, Software Engineering, and Data Operations. Courses run fully project-based, from Python foundations to production AI systems, with course progress tracking and a verified certificate on completion.",
     techStack: ["LMS", "AI Curriculum", "Certification"],
     url: "https://academy.daintymindz.com",
-    images: ["https://academy.daintymindz.com/logo.png", "/images/products/portfolio/academy-2.png"],
+    images: [
+      "/images/products/portfolio/academy-2.png",
+      "/images/products/portfolio/academy-3.png",
+      "/images/products/portfolio/academy-4.png",
+      "/images/products/portfolio/academy-5.png",
+      "/images/products/portfolio/academy-6.png",
+      "/images/products/portfolio/academy-7.png",
+      "/images/products/portfolio/academy-8.png",
+    ],
   },
   {
     slug: "fair-smart-traffic",
@@ -67,7 +75,7 @@ export const portfolioProducts: PortfolioProduct[] = [
       "A live sports prediction platform serving real users with real-time odds, match analysis, and prediction tracking. Includes a comprehensive admin panel with audit trails for every system action, role-based user management, payment integration for premium features, and automated match data ingestion, built to handle concurrent users and real-time updates.",
     techStack: ["Next.js", "React", "Node.js", "PostgreSQL", "REST API", "Payments"],
     url: "https://ogapredict.com",
-    images: ["/images/products/portfolio/ogapredict-1.png", "/images/products/portfolio/ogapredict-2.png", "/images/products/portfolio/ogapredict-3.png", "/images/products/portfolio/ogapredict-4.png"],
+    images: ["/images/products/portfolio/ogapredict-2.png", "/images/products/portfolio/ogapredict-3.png", "/images/products/portfolio/ogapredict-4.png", "/images/products/portfolio/ogapredict-1.png"],
   },
   {
     slug: "choirs-hub",
