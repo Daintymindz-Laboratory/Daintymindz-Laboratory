@@ -62,13 +62,15 @@ export default function ProjectsPage() {
                     {project.name}
                   </h2>
                   <p className="font-body text-sm leading-relaxed text-foreground/55 mb-2">
-                    <strong className="text-foreground/70">The Problem:</strong>{" "}
-                    {project.problem}
+                    <strong className="text-foreground/70">
+                      {project.publicationType ? "Publication:" : "The Problem:"}
+                    </strong>{" "}
+                    {project.publicationType ? project.solution : project.problem}
                   </p>
-                  <p className="font-body text-sm leading-relaxed text-foreground/55 mb-5">
+                  {!project.publicationType && <p className="font-body text-sm leading-relaxed text-foreground/55 mb-5">
                     <strong className="text-foreground/70">The Solution:</strong>{" "}
                     {project.solution}
-                  </p>
+                  </p>}
 
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
