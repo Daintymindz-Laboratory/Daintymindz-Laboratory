@@ -109,7 +109,7 @@ export const team: TeamMember[] = [
       },
     ],
     publicationsUrl: "https://judithnjoku.me/publications/",
-    projects: ["bitter-gourd-freshness-detection"],
+    projects: ["freshlab-tomato", "bitter-gourd-freshness-detection"],
   },
   {
     slug: "cynthia",
@@ -129,7 +129,7 @@ export const team: TeamMember[] = [
     She holds a Master of Business Administration (MBA) in Human Resources Management and continues to expand her expertise in data analytics, automation, and emerging technologies.
 
     Cynthia is passionate about leveraging data and technology to drive informed decision-making, improve systems, and support innovation across industries.`,
-    projects: ["bitter-gourd-freshness-detection"],
+    projects: ["freshlab-tomato", "bitter-gourd-freshness-detection"],
   },
   {
     slug: "anthony",
@@ -175,7 +175,7 @@ export const team: TeamMember[] = [
       { label: "GitHub", url: "https://github.com/tony-eneh" },
       { label: "LinkedIn", url: "https://linkedin.com/in/anthony-eneh" },
     ],
-    projects: ["bitter-gourd-freshness-detection"],
+    projects: ["freshlab-tomato", "bitter-gourd-freshness-detection"],
   },
   {
     slug: "gloria",
@@ -189,7 +189,7 @@ export const team: TeamMember[] = [
     Her expertise spans food product development, agro-based research, and data structuring, giving her a unique ability to translate complex field data into actionable scientific insights. She is particularly interested in tackling post-harvest losses, improving food quality, and strengthening data reliability across global food systems.
     
     Operating from Nigeria, Gloria is building a strong research trajectory centered on leveraging data to solve critical food challenges in developing regions, positioning her as a rising contributor to global food security innovation.`,
-    projects: ["bitter-gourd-freshness-detection"],
+    projects: ["freshlab-tomato", "bitter-gourd-freshness-detection"],
   },
   {
     slug: "kings",
