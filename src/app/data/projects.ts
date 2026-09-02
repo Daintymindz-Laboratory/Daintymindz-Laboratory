@@ -10,9 +10,52 @@ export type Project = {
   venue?: string;
   paperUrl?: string;
   posterUrl?: string;
+  organization?: string;
+  publicationType?: string;
+  publicationDate?: string;
+  version?: string;
+  authors?: string[];
+  doiUrl?: string;
+  zenodoUrl?: string;
+  license?: string;
+  citation?: string;
 };
 
 export const projects: Project[] = [
+  {
+    slug: "freshlab-tomato",
+    name: "FreshLab-Tomato: A Longitudinal Shelf-Life Dataset",
+    status: "Published",
+    category: "Open Research Dataset",
+    image: "/images/projects/freshlab-tomato-cover.webp",
+    problem:
+      "Reliable shelf-life and spoilage research needs longitudinal produce imagery paired with environmental measurements and consistent annotations.",
+    solution:
+      "FreshLab-Tomato is a longitudinal image and environmental dataset developed for tomato shelf-life assessment and spoilage prediction. It contains 1,080 images of 12 tomatoes monitored over 10 consecutive days under ambient, outdoor, and refrigerated storage conditions. The release includes temperature and relative-humidity readings, visual spoilage annotations, structured metadata, collection and annotation protocols, and sample exploratory analysis.",
+    tags: [
+      "Open Data",
+      "Agricultural Research",
+      "Computer Vision",
+      "Postharvest Monitoring",
+      "Food Quality",
+    ],
+    venue: "September 2026 · Version 1.0",
+    organization: "DaintyMindz Laboratory",
+    publicationType: "Open research dataset",
+    publicationDate: "September 2026",
+    version: "1.0",
+    authors: [
+      "Gloria Iheoma Njoku",
+      "Anthony Uchenna Eneh",
+      "Cynthia Chidinma Osewemen",
+      "Judith Nkechinyere Njoku-Vowels",
+    ],
+    doiUrl: "https://doi.org/10.21227/wvqh-5c80",
+    zenodoUrl: "https://zenodo.org/records/22239910",
+    license: "Creative Commons Attribution 4.0 International",
+    citation:
+      "Njoku, G. I., Eneh, A. U., Osewemen, C. C., and Njoku-Vowels, J. N. (2026). FreshLab-Tomato: A Longitudinal Shelf-Life Dataset (Version 1.0). IEEE DataPort. https://doi.org/10.21227/wvqh-5c80",
+  },
   {
     slug: "bitter-gourd-freshness-detection",
     name: "Explainable Bitter Gourd Freshness Detection using MobileNetV3 and GradCAM",

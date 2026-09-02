@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects, statusClasses } from "../../data/projects";
+import CitationCopyButton from "../../components/CitationCopyButton";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -90,8 +91,28 @@ export default async function ProjectDetailPage({
               {project.name}
             </h1>
 
-            {(project.paperUrl || project.posterUrl) && (
+            {(project.paperUrl || project.posterUrl || project.doiUrl || project.zenodoUrl) && (
               <div className="mt-6 flex flex-wrap gap-4">
+                {project.doiUrl && (
+                  <a
+                    href={project.doiUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-amber text-graphite-deep font-display font-bold text-sm tracking-wider rounded-sm hover:bg-amber-light transition-colors"
+                  >
+                    View Dataset →
+                  </a>
+                )}
+                {project.zenodoUrl && (
+                  <a
+                    href={project.zenodoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 border border-foreground/15 text-foreground/70 font-display font-semibold text-sm tracking-wider rounded-sm hover:border-amber/50 hover:text-amber transition-colors"
+                  >
+                    View on Zenodo →
+                  </a>
+                )}
                 {project.paperUrl && (
                   <a
                     href={project.paperUrl}
@@ -131,27 +152,90 @@ export default async function ProjectDetailPage({
           )}
 
           <div className="space-y-6">
+            {project.publicationType && (
+              <div className="surface-panel border border-foreground/5 rounded-sm p-6 sm:p-8">
+                <p className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-amber mb-6">
+                  Publication details
+                </p>
+                <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+                  {[
+                    ["Organization", project.organization],
+                    ["Publication type", project.publicationType],
+                    ["Publication date", project.publicationDate],
+                    ["Version", project.version],
+                    ["Licence", project.license],
+                  ].map(([label, value]) => (
+                    <div key={label} className={label === "Licence" ? "sm:col-span-2" : ""}>
+                      <dt className="font-body text-xs uppercase tracking-wider text-foreground/40 mb-1">
+                        {label}
+                      </dt>
+                      <dd className="font-body text-sm leading-relaxed text-foreground/75">
+                        {value}
+                      </dd>
+                    </div>
+                  ))}
+                  <div className="sm:col-span-2">
+                    <dt className="font-body text-xs uppercase tracking-wider text-foreground/40 mb-1">
+                      Authors
+                    </dt>
+                    <dd className="font-body text-sm leading-relaxed text-foreground/75">
+                      {project.authors?.join("; ")}
+                    </dd>
+                  </div>
+                  <div className="sm:col-span-2">
+                    <dt className="font-body text-xs uppercase tracking-wider text-foreground/40 mb-1">
+                      DOI
+                    </dt>
+                    <dd>
+                      <a
+                        href={project.doiUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-body text-sm text-amber hover:text-amber-light transition-colors break-all"
+                      >
+                        10.21227/wvqh-5c80
+                      </a>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            )}
+
             <div className="surface-panel border border-foreground/5 rounded-sm p-8">
               <h2 className="font-display font-bold text-2xl text-foreground mb-4">
-                The Problem
+                {project.publicationType ? "Dataset overview" : "The Problem"}
               </h2>
               <p className="font-body text-base leading-relaxed text-foreground/60">
-                {project.problem}
+                {project.publicationType ? project.solution : project.problem}
               </p>
             </div>
 
-            <div className="surface-panel border border-foreground/5 rounded-sm p-8">
+            {!project.publicationType && <div className="surface-panel border border-foreground/5 rounded-sm p-8">
               <h2 className="font-display font-bold text-2xl text-foreground mb-4">
                 The Solution
               </h2>
               <p className="font-body text-base leading-relaxed text-foreground/60">
                 {project.solution}
               </p>
-            </div>
+            </div>}
+
+            {project.citation && (
+              <div className="surface-panel border border-foreground/5 rounded-sm p-6 sm:p-8">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+                  <h2 className="font-display font-bold text-2xl text-foreground">
+                    Recommended citation
+                  </h2>
+                  <CitationCopyButton citation={project.citation} />
+                </div>
+                <p className="font-body text-sm leading-relaxed text-foreground/60 break-words">
+                  {project.citation}
+                </p>
+              </div>
+            )}
 
             <div className="surface-panel border border-foreground/5 rounded-sm p-8">
               <h2 className="font-display font-bold text-2xl text-foreground mb-4">
-                Departments
+                {project.publicationType ? "Research tags" : "Departments"}
               </h2>
               <div className="flex flex-wrap gap-3">
                 {project.tags.map((tag) => (
@@ -159,7 +243,7 @@ export default async function ProjectDetailPage({
                     key={tag}
                     className="px-4 py-2 text-sm font-body font-semibold tracking-wider uppercase border border-amber/15 text-amber/70 rounded-sm"
                   >
-                    #{tag}
+                    {project.publicationType ? tag : `#${tag}`}
                   </span>
                 ))}
               </div>
