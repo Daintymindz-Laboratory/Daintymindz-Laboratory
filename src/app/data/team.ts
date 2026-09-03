@@ -118,17 +118,55 @@ export const team: TeamMember[] = [
     membershipType: MembershipType.Leadership,
     location: "Canada",
     photo: "/images/team/cynthia2.jpeg",
-    bio: `Representing our Canadian hub as a strategic DaintyMind, Cynthia Osewemen is a data analytics and operations professional with over 10 years of experience spanning banking operations, customer service leadership, and data analysis. She currently leads the Data Analytics Division  at DaintyMindz Lab. In her role, Cynthia oversees analytical projects, supervises interns, reviews deliverables, and engages with clients to ensure high-quality outcomes. She plays a key role in establishing structured workflows, optimizing processes, and maintaining high standards for data accuracy, reporting, and client satisfaction as the lab continues to grow.
-    
-    Cynthia has strong expertise in data analysis and reporting, working with tools such as Microsoft Excel, SQL, Python, and Power BI to transform data into actionable insights. She also brings growing experience in AI-driven automation, leveraging technology to streamline workflows, improve efficiency, and enhance data processing and reporting capabilities.
-    
-    Her approach combines technical proficiency with a strong focus on process improvement, workflow optimization, and operational efficiency, ensuring that systems are not only functional but scalable and sustainable.
-    
-    Prior to transitioning into data analytics, she built a solid foundation in the banking sector, where she held leadership roles in operations and customer service. This experience strengthened her ability to manage teams, optimize processes, and deliver results in high-performance, regulated environments.
-    
-    She holds a Master of Business Administration (MBA) in Human Resources Management and continues to expand her expertise in data analytics, automation, and emerging technologies.
+    bio: `Representing our Canadian hub as a strategic DaintyMind, Cynthia Chidinma Osewemen is a data analytics and operations leader with more than 11 years of experience across banking operations, analytics consulting, project management, workflow automation, and financial advisory. She has led or supervised more than 30 staff and delivered over 20 data analytics and automation projects, building a career around turning complex operational data into clear, actionable decisions.
 
-    Cynthia is passionate about leveraging data and technology to drive informed decision-making, improve systems, and support innovation across industries.`,
+    Cynthia currently leads the Data Analytics function at DaintyMindz Laboratory, where she oversees analytical projects, mentors interns, reviews deliverables, establishes documentation standards, and applies AI-driven automation to improve data processing, reporting, and operational workflows. She also works as a Data Analytics Consultant at Amdari, developing Power BI dashboards, KPI reports, and analytical products that support business priorities and operational decision-making. Since 2022, she has worked independently as a Top Rated Project Manager, Data Analyst, and CRM Administrator, delivering workflow and process improvements across platforms including Airtable, Asana, Trello, Jira, Monday.com, Make.com, and n8n.
+
+    Before moving fully into analytics, Cynthia built close to a decade of experience in Nigerian banking. She progressed through customer service, funds transfer, service operations, branch management, and Head of Operations roles at Keystone Bank and TAJBank. Her work included leading the operational launch of a new TAJBank branch, onboarding and training more than 15 staff, strengthening compliance and reconciliation processes, and delivering service improvements that increased customer satisfaction while reducing transaction errors.
+
+    Her technical toolkit includes SQL, Power BI, Excel, Python, Tableau, Power Query, DAX, IBM Cognos, Snowflake, Amazon S3, and Airbyte. Her original academic background is in the life sciences: she earned a Bachelor of Science in Plant Science and Biotechnology from the University of Port Harcourt before completing an MBA in Human Resource Management. This combination of scientific training, regulated operations experience, and modern analytics expertise informs her practical, evidence-led approach to research and decision intelligence.`,
+    education: [
+      "Junior Data Analyst Program, NPower Canada, 2026",
+      "MBA, Human Resource Management, Ahmadu Bello University, 2020",
+      "BSc, Plant Science and Biotechnology, University of Port Harcourt, 2012",
+    ],
+    skills: [
+      "Power BI",
+      "SQL",
+      "Python",
+      "Excel",
+      "Tableau",
+      "Power Query & DAX",
+      "IBM Cognos",
+      "Snowflake",
+      "Data Modeling",
+      "Data Storytelling",
+      "Workflow Automation",
+      "Banking Operations",
+    ],
+    experience: [
+      { title: "Data Analytics Consultant", org: "Amdari, Calgary (Remote)", period: "Apr 2026 – Present" },
+      { title: "Supervising Staff, Data Analytics", org: "DaintyMindz Laboratory (Remote)", period: "Feb 2026 – Present" },
+      { title: "Project Manager, Data Analyst & CRM Administrator", org: "Upwork (Freelance, Top Rated)", period: "Oct 2022 – Present" },
+      { title: "Data Analyst Consultant", org: "Amdor Analytics (Remote)", period: "Aug 2025 – Jan 2026" },
+      { title: "Head of Operations & Customer Service Supervisor", org: "TAJBank Ltd., Asaba, Nigeria", period: "Oct 2024 – Aug 2025" },
+      { title: "Branch Service Manager", org: "Keystone Bank Limited, Asaba, Nigeria", period: "Feb 2024 – Oct 2024" },
+      { title: "Service Officer", org: "Keystone Bank Limited, Asaba, Nigeria", period: "Dec 2017 – Feb 2024" },
+      { title: "Funds Transfer Officer, Branch Operations", org: "Keystone Bank Limited, Onitsha, Nigeria", period: "Nov 2016 – Nov 2017" },
+      { title: "Team Lead, Customer Service Unit", org: "Keystone Bank Limited, Onitsha, Nigeria", period: "May 2015 – Nov 2016" },
+      { title: "Graduate Trainee, Administration & Accounts", org: "Zitadel Limited, Nigeria", period: "Jul 2013 – Mar 2015" },
+    ],
+    metrics: [
+      { label: "Years Experience", value: "11+" },
+      { label: "Staff Led", value: "30+" },
+      { label: "Projects Delivered", value: "20+" },
+      { label: "Banking Experience", value: "9+ yrs" },
+    ],
+    links: [
+      { label: "Portfolio", url: "https://cynthiaosewemen.github.io/portfolio" },
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/cynthia-osewemen" },
+      { label: "GitHub", url: "https://github.com/CynthiaOsewemen" },
+    ],
     projects: ["freshlab-tomato", "bitter-gourd-freshness-detection"],
   },
   {
