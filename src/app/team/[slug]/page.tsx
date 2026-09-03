@@ -232,6 +232,24 @@ export default async function TeamMemberPage({
                 </div>
               )}
 
+              {member.certifications && member.certifications.length > 0 && (
+                <div className="surface-panel border border-foreground/5 rounded-sm p-8">
+                  <h2 className="font-display font-bold text-xl text-foreground mb-4">
+                    Certifications
+                  </h2>
+                  <ul className="space-y-3">
+                    {member.certifications.map((certification) => (
+                      <li key={certification} className="flex items-start gap-3">
+                        <div className="mt-1.5 w-2 h-2 rounded-full bg-amber shrink-0" />
+                        <span className="font-body text-sm leading-relaxed text-foreground/60">
+                          {certification}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {member.skills && member.skills.length > 0 && (
                 <div className="surface-panel border border-foreground/5 rounded-sm p-8">
                   <h2 className="font-display font-bold text-xl text-foreground mb-4">
