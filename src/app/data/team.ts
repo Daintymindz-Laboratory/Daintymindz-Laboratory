@@ -119,11 +119,11 @@ export const team: TeamMember[] = [
     membershipType: MembershipType.Leadership,
     location: "Canada",
     photo: "/images/team/cynthia2.jpeg",
-    bio: `Representing our Canadian hub as a strategic DaintyMind, Cynthia Chidinma Osewemen is a data analytics and operations leader with more than 11 years of banking experience, complemented by work in analytics consulting, project management, workflow automation, and financial advisory. She has led or supervised more than 30 staff and delivered over 20 data analytics and automation projects, building a career around turning complex operational data into clear, actionable decisions.
+    bio: `Representing our Canadian hub as a strategic DaintyMind, Cynthia Chidinma Osewemen is a data analytics and operations leader with more than 10 years of banking experience, complemented by work in analytics consulting, project management, workflow automation, and financial advisory. She has led or supervised more than 30 staff and delivered over 20 data analytics and automation projects, building a career around turning complex operational data into clear, actionable decisions.
 
     Cynthia currently leads the Data Analytics function at DaintyMindz Laboratory, where she oversees analytical projects, mentors interns, reviews deliverables, establishes documentation standards, and applies AI-driven automation to improve data processing, reporting, and operational workflows. She also works as a Data Analytics Consultant at Amdari, developing Power BI dashboards, KPI reports, and analytical products that support business priorities and operational decision-making. Since 2022, she has worked independently as a Top Rated Project Manager, Data Analyst, and CRM Administrator, delivering workflow and process improvements across platforms including Airtable, Asana, Trello, Jira, Monday.com, Make.com, and n8n.
 
-    Before moving fully into analytics, Cynthia built more than 11 years of experience in Nigerian banking. She progressed through customer service, funds transfer, service operations, branch management, and Head of Operations roles at Keystone Bank and TAJBank. Her work included leading the operational launch of a new TAJBank branch, onboarding and training more than 15 staff, strengthening compliance and reconciliation processes, and delivering service improvements that increased customer satisfaction while reducing transaction errors.
+    Before moving fully into analytics, Cynthia built more than 10 years of experience in Nigerian banking. She progressed through customer service, funds transfer, service operations, branch management, and Head of Operations roles at Keystone Bank and TAJBank. Her work included leading the operational launch of a new TAJBank branch, onboarding and training more than 15 staff, strengthening compliance and reconciliation processes, and delivering service improvements that increased customer satisfaction while reducing transaction errors.
 
     Her technical toolkit includes SQL, Power BI, Excel, Python, Tableau, Power Query, DAX, IBM Cognos, Snowflake, Amazon S3, and Airbyte. Her original academic background is in the life sciences: she earned a Bachelor of Science in Plant Science and Biotechnology from the University of Port Harcourt before completing an MBA in Human Resource Management. This combination of scientific training, regulated operations experience, and modern analytics expertise informs her practical, evidence-led approach to research and decision intelligence.`,
     education: [
@@ -166,7 +166,7 @@ export const team: TeamMember[] = [
       { title: "Graduate Trainee, Administration & Accounts", org: "Zitadel Limited, Nigeria", period: "Jul 2013 – Mar 2015" },
     ],
     metrics: [
-      { label: "Banking Experience", value: "11+ yrs" },
+      { label: "Banking Experience", value: "10+ yrs" },
       { label: "Staff Led", value: "30+" },
       { label: "Projects Delivered", value: "20+" },
       { label: "Customer Satisfaction Lift", value: "85%" },
