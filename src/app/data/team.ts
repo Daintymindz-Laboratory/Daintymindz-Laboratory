@@ -30,6 +30,7 @@ export type TeamMember = {
   photo: string;
   bio: string;
   education?: string[];
+  certifications?: string[];
   skills?: string[];
   experience?: ExperienceEntry[];
   links?: PortfolioLink[];
@@ -129,6 +130,14 @@ export const team: TeamMember[] = [
       "Junior Data Analyst Program, NPower Canada, 2026",
       "MBA, Human Resource Management, Ahmadu Bello University, 2020",
       "BSc, Plant Science and Biotechnology, University of Port Harcourt, 2012",
+    ],
+    certifications: [
+      "IBM Data Analyst Professional Certificate, July 2026",
+      "Microsoft Azure AI-900 Professional Certificate, May 2026",
+      "Data Analyst Skillpath: Zero to Hero in Excel, SQL and Python, Start-Tech Academy, Udemy",
+      "Global Data Analytics, AMDOR Analytics, Nigeria",
+      "Data Analysis Capstone Project Certificate, IBM",
+      "Data Analysis with Python, Coursera and IBM",
     ],
     skills: [
       "Power BI",
