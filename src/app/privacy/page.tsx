@@ -13,7 +13,7 @@ const sections = [
   },
   {
     title: "2. How We Use Your Data",
-    body: "Daintymindz uses collected data for: Research & Development, to train and refine our Machine Learning models for seed viability, shelf-life prediction, and infrastructure diagnostics; Communication, to respond to inquiries, manage our \"Mentorship Mandate,\" and provide project updates; and Operational Integrity, to ensure the security of our software systems and digital ecosystems.",
+    body: "Daintymindz uses collected data for: Research & Development, to develop and evaluate our Machine Learning models for food-quality assessment and agricultural research; Communication, to respond to inquiries, manage our \"Mentorship Mandate,\" and provide project updates; and Operational Integrity, to ensure the security of our software systems and digital ecosystems.",
   },
   {
     title: "3. Data Operations (Data Ops) & Ethics",
@@ -29,7 +29,7 @@ const sections = [
   },
   {
     title: "6. Security",
-    body: "We implement industry-standard encryption and secure \"Edge-Computing\" protocols to protect our \"Daintymindz Mobile Vision Core\" and all internal databases from unauthorized access.",
+    body: "We implement industry-standard encryption and secure computing protocols to protect our research systems and internal databases from unauthorized access.",
   },
 ];
 
