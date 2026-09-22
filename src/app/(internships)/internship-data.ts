@@ -36,7 +36,7 @@ export const TRACKS: InternshipTrack[] = [
     responsibilities: [
       "Build and evaluate predictive models for agriculture, healthcare, and sustainability applications",
       "Work with computer vision, NLP, and time-series forecasting pipelines",
-      "Contribute to active projects including HarvestGuard AI and the Seed Viability Predictor",
+      "Contribute to active food-quality research and computer-vision projects",
       "Collaborate with cross-functional teams on data preprocessing and model optimization",
       "Document experiments, results, and model performance metrics",
     ],
@@ -48,7 +48,7 @@ export const TRACKS: InternshipTrack[] = [
       "Strong analytical and problem-solving skills",
     ],
     // applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
-    relatedProjects: ["HarvestGuard AI", "Seed Viability Predictor", "Crop Shelf-Life Estimator"],
+    relatedProjects: ["FreshLab-Tomato", "Bitter Gourd Freshness Detection"],
   },
   {
     slug: "software-systems",
@@ -61,7 +61,7 @@ export const TRACKS: InternshipTrack[] = [
       "Work at the intersection of engineering and innovation. As a Software Engineering intern, you will develop web and mobile applications, build scalable full-stack systems, and contribute to platforms that connect communities with opportunity.",
     responsibilities: [
       "Develop web and mobile applications using modern frameworks",
-      "Work on active projects including Pathfinder and DMZ Mentor Connect",
+      "Build research-facing web applications and internal collaboration tools",
       "Build and maintain scalable full-stack systems and APIs",
       "Participate in code reviews, testing, and CI/CD workflows",
       "Collaborate with designers and researchers to translate requirements into features",
@@ -74,7 +74,7 @@ export const TRACKS: InternshipTrack[] = [
       "Eagerness to learn and build in a fast-paced, globally distributed team",
     ],
     // applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
-    relatedProjects: ["Pathfinder", "DMZ Mentor Connect"],
+    relatedProjects: ["DaintyMindz Laboratory Website", "Research Data Tools"],
   },
   {
     slug: "data-analytics",
@@ -87,7 +87,7 @@ export const TRACKS: InternshipTrack[] = [
       "Turn raw data into actionable insight. As a Data Analytics intern, you will design dashboards, perform statistical analysis, and craft visualizations that inform critical decisions across the lab's research thrusts.",
     responsibilities: [
       "Design interactive dashboards and data visualizations for research projects",
-      "Work with projects including PurityScale and the Crop Shelf-Life Estimator",
+      "Analyse agricultural image and environmental data from active research projects",
       "Perform statistical analysis, reporting, and trend identification",
       "Clean, transform, and prepare datasets for analytical workflows",
       "Present findings and recommendations to cross-functional stakeholders",
@@ -100,7 +100,7 @@ export const TRACKS: InternshipTrack[] = [
       "Attention to detail and strong communication skills",
     ],
     // applyUrl: "https://airtable.com/applEOCNoedjfFOE4/pagFvjG3FYPskX2RQ/form",
-    relatedProjects: ["PurityScale", "Crop Shelf-Life Estimator"],
+    relatedProjects: ["FreshLab-Tomato", "Bitter Gourd Freshness Detection"],
   },
   {
     slug: "data-operations",
@@ -126,6 +126,6 @@ export const TRACKS: InternshipTrack[] = [
       "Strong organizational skills and attention to data quality",
       "Interest in field research and real-world data challenges",
     ],
-    relatedProjects: ["HarvestGuard AI", "Seed Viability Predictor", "PurityScale"],
+    relatedProjects: ["FreshLab-Tomato", "Bitter Gourd Freshness Detection"],
   },
 ];
