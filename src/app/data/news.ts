@@ -18,28 +18,28 @@ export type Milestone = {
 export const milestones: Milestone[] = [
   {
     date: "21 June 2019",
-    title: "DaintyMindz begins with words and a bold idea",
+    title: "DaintyMindz begins with design, software, and words",
     category: "Our Beginning",
     image: "/images/news/daintymindz-original-logo.png",
     imageAlt: "The original DaintyMindz writing agency logo",
     summary:
-      "DaintyMindz began as a writing agency, helping clients shape ideas into thoughtful, compelling work. With our original hand-lettered identity and an ambitious spirit, we started building the creative foundation that would one day grow into a multidisciplinary research and technology company.",
+      "DaintyMindz began as a creative and software services business, offering graphic and logo design alongside web and software development. Writing soon became part of the work as we helped clients shape ideas into thoughtful, compelling content. With our original hand-lettered identity and an ambitious spirit, we started building the foundation that would grow into a multidisciplinary research and technology company.",
   },
   {
     date: "2020–2021",
-    title: "DaintyMindz expands beyond writing",
+    title: "Writing becomes a core service",
     category: "Growth",
     summary:
-      "In 2020, DaintyMindz grew beyond writing and began offering logo design and web design services. Our creative team also expanded as new writers joined, developed their craft, and stepped into lead responsibilities. What began as a small writing team was becoming a broader creative agency shaped by shared standards, mentorship, and an appetite for bigger opportunities.",
+      "By 2020, writing had become a core DaintyMindz service alongside our existing logo design, web design, and software work. The creative team expanded as new writers joined, developed their craft, and stepped into lead responsibilities. DaintyMindz was becoming a broader agency shaped by shared standards, mentorship, and an appetite for bigger opportunities.",
   },
   {
     date: "2022–2025",
     title: "A new look for a growing DaintyMindz",
     category: "Rebrand",
-    image: "/images/news/daintymindz-2022-logo-transparent.png",
+    image: "/images/news/daintymindz-2022-pencil-logo.png",
     imageAlt: "The second DaintyMindz logo introduced during the writing agency's growth",
     summary:
-      "As the agency matured, our identity evolved with it. This second DaintyMindz logo marked a more confident chapter: we celebrated repeat engagements, landed major clients across different seasons, and contributed writing to Expat Guide Korea, an important step in our international story.",
+      "DaintyMindz began with software and creative design services, including web and logo design, before writing became the agency's primary focus. As the team and service portfolio matured, our identity evolved too. This second logo marked a more confident chapter as we landed major clients and contributed writing to Expat Guide Korea.",
   },
   {
     date: "4 January 2026",

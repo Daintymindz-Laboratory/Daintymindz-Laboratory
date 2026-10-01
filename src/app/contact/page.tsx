@@ -47,16 +47,16 @@ export default function ContactPage() {
 
             <div className="surface-panel border border-foreground/5 rounded-sm p-8">
               <h2 className="font-display font-bold text-xl text-foreground mb-2">
-                Internships
+                Careers
               </h2>
               <p className="font-body text-sm text-foreground/55 mb-4">
-                Join our next cohort: remote roles available globally.
+                Explore Research Associate, internship, and collaboration pathways.
               </p>
               <Link
-                href="/internships"
+                href="/careers"
                 className="font-display font-bold text-amber hover:text-amber-light transition-colors text-sm tracking-[0.2em] uppercase"
               >
-                View Open Tracks →
+                View Career Paths →
               </Link>
             </div>
 

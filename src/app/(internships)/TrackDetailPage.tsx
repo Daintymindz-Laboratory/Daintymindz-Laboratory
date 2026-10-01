@@ -3,18 +3,14 @@ import Link from "next/link";
 import { type InternshipTrack, PROGRAM_INFO } from "./internship-data";
 
 export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
-  const internshipFormUrl = process.env.INTERNSHIP_APPLICATION_FORM_URL?.trim();
-  const applyUrl = track.applyUrl ?? internshipFormUrl;
-  const hasApplyUrl = Boolean(applyUrl);
-
   return (
     <>
       <div className="mt-10 mb-14">
         <Link
-          href="/internships"
+          href="/careers"
           className="inline-flex items-center gap-2 font-body text-sm text-foreground/55 hover:text-amber transition-colors mb-6"
         >
-          ← All internships
+          ← Careers
         </Link>
 
         <p className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber mb-4">
@@ -114,11 +110,16 @@ export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
       {/* Apply CTA */}
       <div className="surface-panel border border-amber/20 rounded-sm p-8 text-center">
         <h2 className="font-display font-bold text-2xl text-foreground mb-4">
-          Ready to Apply?
+          No Current Openings
         </h2>
         <p className="font-body text-base text-foreground/60 leading-relaxed mb-6 max-w-2xl mx-auto">
-          Submit your application for the <strong>{track.title}</strong> internship
-          track. If you have questions, reach out to{" "}
+          Applications for the <strong>{track.title}</strong> internship track are
+          currently closed. Future cohort dates and the official application link
+          will be published on our{" "}
+          <Link className="text-amber hover:text-amber-light transition-colors" href="/careers">
+            Careers page
+          </Link>
+          . If you have programme questions, reach out to{" "}
           <a
             className="text-amber hover:text-amber-light transition-colors"
             href={`mailto:${PROGRAM_INFO.email}`}
@@ -127,21 +128,9 @@ export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
           </a>
           .
         </p>
-        {hasApplyUrl ? (
-          <a
-            href={applyUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-body text-sm font-semibold tracking-wider uppercase bg-amber text-graphite-deep px-8 py-3.5 rounded-sm hover:bg-amber-light transition-colors"
-          >
-            Apply Now
-            <span>→</span>
-          </a>
-        ) : (
-          <div className="inline-flex items-center gap-2 font-body text-sm font-semibold tracking-wider uppercase bg-foreground/8 text-foreground/45 px-8 py-3.5 rounded-sm border border-foreground/10 cursor-not-allowed">
-            Applications Open Soon
-          </div>
-        )}
+        <div className="inline-flex items-center gap-2 font-body text-sm font-semibold tracking-wider uppercase bg-foreground/8 text-foreground/45 px-8 py-3.5 rounded-sm border border-foreground/10 cursor-not-allowed">
+          Applications Closed
+        </div>
       </div>
     </>
   );

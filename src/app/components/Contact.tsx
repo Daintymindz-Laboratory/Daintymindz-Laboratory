@@ -96,11 +96,11 @@ export default function Contact() {
                 Are you a future Daintymind?
               </h3>
               <p className="font-body text-sm leading-relaxed text-foreground/55 mb-6">
-                We are always looking for visionary interns and researchers in ML,
-                Software Engineering, and Data Ops.
+                Explore future Research Associate, internship, and collaboration
+                pathways across our four research tracks.
               </p>
-              <Link href="/internships" className="font-display font-bold text-sm tracking-[0.24em] uppercase text-amber hover:text-amber-light transition-colors">
-                Apply for our Next Cohort →
+              <Link href="/careers" className="font-display font-bold text-sm tracking-[0.24em] uppercase text-amber hover:text-amber-light transition-colors">
+                Explore Careers →
               </Link>
             </div>
           </div>

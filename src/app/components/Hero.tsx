@@ -72,7 +72,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-amber-light translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
           </Link>
           <Link
-            href="/internships"
+            href="/careers"
             className="px-8 sm:px-10 py-3.5 sm:py-4 border border-foreground/20 text-foreground/70 font-display font-semibold text-xs sm:text-sm tracking-widest rounded-sm hover:border-amber/50 hover:text-amber transition-all duration-300"
           >
             JOIN THE LAB

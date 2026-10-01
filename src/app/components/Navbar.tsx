@@ -14,7 +14,7 @@ const navLinks = [
   { label: "Services", href: "/services" },
   { label: "News", href: "/news" },
   { label: "Team", href: "/team" },
-  { label: "Internships", href: "/internships" },
+  { label: "Careers", href: "/careers" },
 ];
 
 export default function Navbar() {
@@ -79,7 +79,7 @@ export default function Navbar() {
             <div className="flex items-center gap-4 shrink-0 max-w-fit">
               <ThemeToggle theme={theme} onToggle={toggleTheme} className="ms-auto" />
               <Link
-                href="/internships"
+                href="/careers"
                 className="hidden md:flex px-6 py-2.5 bg-amber text-graphite-deep font-display font-bold text-sm tracking-wider rounded-sm hover:bg-amber-light transition-colors duration-300"
               >
                 JOIN THE LAB
@@ -133,7 +133,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link
-            href="/internships"
+            href="/careers"
             onClick={() => setMobileOpen(false)}
             className="mt-4 px-10 py-4 bg-amber text-graphite-deep font-display font-bold text-lg tracking-wider rounded-sm"
           >

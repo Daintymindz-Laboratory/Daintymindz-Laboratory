@@ -13,7 +13,7 @@ export interface InternshipTrack {
 }
 
 export const PROGRAM_INFO = {
-  name: "DAINTYMINDZ Internship Programme 2026",
+  name: "DAINTYMINDZ Internship Programme",
   tagline: "Are You a Future Daintymind?",
   duration: "4 months",
   mode: "Remote (Global)",
@@ -21,6 +21,7 @@ export const PROGRAM_INFO = {
     "Undergraduate students passionate about using technology for real-world impact.",
   email: "internships@daintymindz.com",
   heroImage: "/images/internships/hero.jpg",
+  applicationsOpen: false,
 } as const;
 
 export const TRACKS: InternshipTrack[] = [

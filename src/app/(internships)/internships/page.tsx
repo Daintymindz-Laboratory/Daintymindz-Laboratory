@@ -6,12 +6,12 @@ import { PROGRAM_INFO, TRACKS } from "../internship-data";
 export const metadata: Metadata = {
   title: "Internships | DAINTYMINDZ LAB",
   description:
-    "Explore the DAINTYMINDZ Internship Programme 2026: four research tracks, four months, fully remote, open to talent worldwide.",
+    "Explore the DAINTYMINDZ Internship Programme: four research tracks, four months, fully remote, and reusable for future cohorts.",
   alternates: {
     canonical: "https://daintymindz.com/internships",
   },
   openGraph: {
-    title: "DAINTYMINDZ Internship Programme 2026",
+    title: "DAINTYMINDZ Internship Programme",
     description:
       "Explore four research tracks: Machine Learning, Software Engineering, Data Analytics, and Data Operations.",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DAINTYMINDZ Internship Programme 2026",
+    title: "DAINTYMINDZ Internship Programme",
     description:
       "Four-month remote programme across ML, Software Engineering, Data Analytics, and Data Ops.",
     images: [
@@ -41,7 +41,7 @@ export default function InternshipsPage() {
     <>
       <div className="mt-10 mb-14">
         <p className="font-body text-xs font-semibold tracking-[0.4em] uppercase text-amber mb-4">
-          Internship Programme 2026
+          Internship Programme
         </p>
         <h1 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-6xl text-foreground leading-tight">
           {PROGRAM_INFO.tagline.split("Future").map((part, i) =>
@@ -64,11 +64,21 @@ export default function InternshipsPage() {
         </p>
       </div>
 
+      <div className="mb-10 rounded-sm border border-amber/25 bg-amber/8 px-6 py-5">
+        <p className="font-display text-lg font-bold text-foreground">No current openings</p>
+        <p className="mt-2 font-body text-sm leading-6 text-foreground/60">
+          Applications are currently closed. Future cohort dates and the official application form will be published on the Careers page.
+        </p>
+        <Link href="/careers" className="mt-4 inline-flex items-center gap-2 font-display text-xs font-bold uppercase tracking-wider text-amber hover:text-amber-light">
+          View Careers <span aria-hidden="true">→</span>
+        </Link>
+      </div>
+
       {/* Hero image */}
       <div className="mb-14 surface-panel border border-foreground/5 rounded-sm overflow-hidden">
         <Image
           src={PROGRAM_INFO.heroImage}
-          alt="DAINTYMINDZ Internship Programme 2026"
+          alt="DAINTYMINDZ Internship Programme"
           width={1200}
           height={800}
           sizes="(min-width: 1024px) 960px, 100vw"
@@ -131,7 +141,7 @@ export default function InternshipsPage() {
                 {track.description}
               </p>
               <div className="flex items-center gap-2 font-body text-sm text-amber">
-                Learn more & apply
+                Explore this track
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </div>
