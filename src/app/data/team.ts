@@ -46,19 +46,25 @@ export enum MembershipType {
   Intern = "Intern",
 }
 
+const teamDisplayOrder: Record<string, number> = {
+  cynthia: 1,
+  anthony: 2,
+  judith: 3,
+};
+
 export const team: TeamMember[] = [
   {
     slug: "judith",
     name: "Dr. Judith Vowels",
-    role: "Director of Research",
+    role: "Leading Team Member & Consultant",
     membershipType: MembershipType.Leadership,
     location: "USA",
     photo: "/images/team/judith_pic.png",
-    bio: `As the founding DaintyMind, Dr. Judith Vowels is a distinguished researcher and the visionary architect behind Daintymindz Laboratory. She holds a Ph.D. in IT Convergence Engineering and an M.Sc. in Electronics Engineering from Kumoh National Institute of Technology, and currently serves as a Distinguished Postdoctoral Fellow at the University of Wyoming, where she leads the lab's strategic expansion into Digital Twins, Deep Learning, and Autonomous Systems.
+    bio: `Dr. Judith Vowels is a leading team member and consultant at Daintymindz Laboratory. She holds a Ph.D. in IT Convergence Engineering and an M.Sc. in Electronics Engineering from Kumoh National Institute of Technology, and currently serves as a Distinguished Postdoctoral Fellow at the University of Wyoming. She contributes specialist guidance in Digital Twins, Deep Learning, Autonomous Systems, and research strategy.
 
     Her research integrates digital twins, trustworthy and explainable AI, computer vision, and simulation to make complex physical systems, from batteries and bridges to city infrastructure, more observable, predictable, and trustworthy. Her doctoral work, BatteryMetrix, is a user-centered digital twin for predictive, explainable, and secure battery management in electric vehicles. She has also led research on adverse-weather image restoration for autonomous perception (OmniRestore, presented at CVPR 2026), predictive digital twins for smart parking (PANDA), and multi-bridge structural health monitoring in South Korea (BridgeSync). Her work has been widely cited and published in venues including IEEE Access, the IEEE Internet of Things Journal, and IEEE/CVF CVPR Workshops.
 
-    Based in the United States, Judith bridges the critical gap between complex academic theory and the deployment of high-impact software systems. In addition to her role as Founder, she serves as the Technical Advisor to the Machine Learning Department, where she guides the development of predictive models for climate resilience, infrastructure diagnostics, and agricultural intelligence. Her leadership ensures that every project at DMZ Lab is grounded in scientific rigor while remaining focused on "Engineering Intelligent Futures" for global communities.`,
+    Based in the United States, Judith bridges the critical gap between complex academic theory and the deployment of high-impact software systems. As a consultant and technical advisor, she supports the Machine Learning team with research direction, model development, and scientific review. Her contribution helps ensure that DaintyMindz projects remain rigorous, trustworthy, and focused on real-world impact.`,
     education: [
       "PhD, IT Convergence Engineering, Kumoh National Institute of Technology, 2025",
       "MSc, Electronics Engineering, Kumoh National Institute of Technology, 2021",
@@ -115,13 +121,13 @@ export const team: TeamMember[] = [
   {
     slug: "cynthia",
     name: "Mrs. Cynthia Osewemen",
-    role: "Head of Data Analytics",
+    role: "Managing Director",
     membershipType: MembershipType.Leadership,
     location: "Canada",
     photo: "/images/team/cynthia2.jpeg",
     bio: `Representing our Canadian hub as a strategic DaintyMind, Cynthia Chidinma Osewemen is a data analytics and operations leader with more than 10 years of banking experience, complemented by work in analytics consulting, project management, workflow automation, and financial advisory. She has led or supervised more than 30 staff and delivered over 20 data analytics and automation projects, building a career around turning complex operational data into clear, actionable decisions.
 
-    Cynthia currently leads the Data Analytics function at DaintyMindz Laboratory, where she oversees analytical projects, mentors interns, reviews deliverables, establishes documentation standards, and applies AI-driven automation to improve data processing, reporting, and operational workflows. She also works as a Data Analytics Consultant at Amdari, developing Power BI dashboards, KPI reports, and analytical products that support business priorities and operational decision-making. Since 2022, she has worked independently as a Top Rated Project Manager, Data Analyst, and CRM Administrator, delivering workflow and process improvements across platforms including Airtable, Asana, Trello, Jira, Monday.com, Make.com, and n8n.
+    As Managing Director of DaintyMindz Laboratory, Cynthia leads the laboratory's day-to-day operations, team coordination, programme delivery, and organisational development. She oversees analytical projects, mentors team members and interns, reviews deliverables, establishes documentation standards, and applies AI-driven automation to improve data processing, reporting, and operational workflows. She also works as a Data Analytics Consultant at Amdari, developing Power BI dashboards, KPI reports, and analytical products that support business priorities and operational decision-making. Since 2022, she has worked independently as a Top Rated Project Manager, Data Analyst, and CRM Administrator, delivering workflow and process improvements across platforms including Airtable, Asana, Trello, Jira, Monday.com, Make.com, and n8n.
 
     Before moving fully into analytics, Cynthia built more than 10 years of experience in Nigerian banking. She progressed through customer service, funds transfer, service operations, branch management, and Head of Operations roles at Keystone Bank and TAJBank. Her work included leading the operational launch of a new TAJBank branch, onboarding and training more than 15 staff, strengthening compliance and reconciliation processes, and delivering service improvements that increased customer satisfaction while reducing transaction errors.
 
@@ -155,7 +161,7 @@ export const team: TeamMember[] = [
     ],
     experience: [
       { title: "Data Analytics Consultant", org: "Amdari, Calgary (Remote)", period: "Apr 2026 – Present" },
-      { title: "Supervising Staff, Data Analytics", org: "DaintyMindz Laboratory (Remote)", period: "Feb 2026 – Present" },
+      { title: "Managing Director", org: "DaintyMindz Laboratory (Remote)", period: "Feb 2026 – Present" },
       { title: "Project Manager, Data Analyst & CRM Administrator", org: "Upwork (Freelance, Top Rated)", period: "Oct 2022 – Present" },
       { title: "Data Analyst Consultant", org: "Amdor Analytics (Remote)", period: "Aug 2025 – Jan 2026" },
       { title: "Head of Operations & Customer Service Supervisor", org: "TAJBank Ltd., Asaba, Nigeria", period: "Oct 2024 – Aug 2025" },
@@ -321,4 +327,8 @@ export const team: TeamMember[] = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Next.js", "Node.js", "Express.js", "MongoDB"],
     links: [{ label: "Portfolio", url: "https://new-portfolio-seven-mu-61.vercel.app/" }],
   },
-];
+].sort(
+  (a, b) =>
+    (teamDisplayOrder[a.slug] ?? Number.MAX_SAFE_INTEGER) -
+    (teamDisplayOrder[b.slug] ?? Number.MAX_SAFE_INTEGER)
+);
