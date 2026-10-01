@@ -5,6 +5,13 @@ export type Milestone = {
   category: string;
   image?: string;
   imageAlt?: string;
+  gallery?: {
+    src: string;
+    alt: string;
+    caption: string;
+    fit?: "cover" | "contain";
+  }[];
+  links?: { label: string; url: string }[];
   people?: { name: string; role: string; slug: string }[];
 };
 
@@ -71,6 +78,42 @@ export const milestones: Milestone[] = [
     ],
   },
   {
+    date: "22 June 2026",
+    title: "Research beyond borders at KICS 2026",
+    category: "Conference",
+    summary:
+      "DaintyMindz Laboratory proudly participated in the 2026 KICS Summer Conference in Jeju, South Korea. Anthony Eneh represented the team and presented our research, Explainable Bitter Gourd Freshness Detection using MobileNetV3 and GradCAM, to an international audience. From concept to conference, this milestone celebrates collaboration, innovation, and AI research designed for real-world food quality and agricultural impact. One Lab. Global Impact.",
+    gallery: [
+      {
+        src: "/images/news/kics-2026/instagram-cover.jpg",
+        alt: "Anthony Eneh presenting the DaintyMindz bitter gourd freshness research at KICS 2026 in Jeju",
+        caption: "Anthony Eneh representing DaintyMindz Laboratory at KICS 2026",
+      },
+      {
+        src: "/images/projects/kics-bitter-gourd-poster.png",
+        alt: "Research poster for explainable bitter gourd freshness detection using MobileNetV3 and GradCAM",
+        caption: "The research presented to the international conference audience",
+        fit: "contain",
+      },
+    ],
+    links: [
+      {
+        label: "View conference post",
+        url: "https://www.instagram.com/p/DZ4tzemFyXz/",
+      },
+    ],
+    people: [
+      { name: "Gloria Njoku", role: "Co-author", slug: "gloria" },
+      { name: "Cynthia Osewemen", role: "Co-author", slug: "cynthia" },
+      {
+        name: "Anthony Eneh",
+        role: "Conference Representative & Co-author",
+        slug: "anthony",
+      },
+      { name: "Judith Vowels", role: "Co-author", slug: "judith" },
+    ],
+  },
+  {
     date: "August 2026",
     title: "Four new Research Associates join DaintyMindz",
     category: "Research Associate Programme",
@@ -85,6 +128,32 @@ export const milestones: Milestone[] = [
         role: "Software Engineering Research Associate",
         slug: "collins",
       },
+    ],
+  },
+  {
+    date: "1 September 2026",
+    title: "FreshLab-Tomato is published",
+    category: "Open Research Dataset",
+    image: "/images/projects/freshlab-tomato-cover.webp",
+    imageAlt: "Cover of the FreshLab-Tomato longitudinal shelf-life dataset",
+    summary:
+      "Great news for the DaintyMindz team! FreshLab-Tomato: A Longitudinal Shelf-Life Dataset is now publicly available through IEEE DataPort and Zenodo. Special recognition goes to Gloria Iheoma Njoku for her dedication and excellent work in data collection and organisation. Congratulations to the entire team on turning careful, sustained research into an open resource for shelf-life assessment and spoilage prediction.",
+    links: [
+      { label: "View dataset", url: "https://doi.org/10.21227/wvqh-5c80" },
+      {
+        label: "View on Zenodo",
+        url: "https://zenodo.org/records/22239910",
+      },
+    ],
+    people: [
+      {
+        name: "Gloria Njoku",
+        role: "Data Collection & Organisation",
+        slug: "gloria",
+      },
+      { name: "Anthony Eneh", role: "Co-author", slug: "anthony" },
+      { name: "Cynthia Osewemen", role: "Co-author", slug: "cynthia" },
+      { name: "Judith Vowels", role: "Co-author", slug: "judith" },
     ],
   },
   {
