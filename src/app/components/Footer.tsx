@@ -61,6 +61,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/news" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
+                  News & Milestones
+                </Link>
+              </li>
+              <li>
                 <Link href="/team" className="golden-border relative pb-0.5 font-body text-sm text-foreground/40 hover:text-amber transition-colors duration-300">
                   Team
                 </Link>
@@ -92,7 +97,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-foreground/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-foreground/30">
-            © {new Date().getFullYear()} DAINTYMINDZ LTD
+            © {new Date().getFullYear()} DAINTY MINDZ LTD · RC 9161423
           </p>
           <div className="flex items-center gap-6">
             <Link href="/" className="font-body text-xs text-foreground/30 hover:text-amber transition-colors duration-300">
