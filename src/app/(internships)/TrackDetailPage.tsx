@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { type InternshipTrack, PROGRAM_INFO } from "./internship-data";
+import { type InternshipTrack } from "./internship-data";
 
 export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
   return (
@@ -119,12 +119,12 @@ export default function TrackDetailPage({ track }: { track: InternshipTrack }) {
           <Link className="text-amber hover:text-amber-light transition-colors" href="/careers">
             Careers page
           </Link>
-          . If you have programme questions, reach out to{" "}
+          . Career and programme enquiries can be sent to{" "}
           <a
             className="text-amber hover:text-amber-light transition-colors"
-            href={`mailto:${PROGRAM_INFO.email}`}
+            href="mailto:careers@daintymindz.com?subject=Internship%20Enquiry"
           >
-            {PROGRAM_INFO.email}
+            careers@daintymindz.com
           </a>
           .
         </p>

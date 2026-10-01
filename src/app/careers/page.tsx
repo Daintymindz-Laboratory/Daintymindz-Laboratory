@@ -32,6 +32,12 @@ export default function CareersPage() {
             <p className="mt-2 font-body text-sm leading-6 text-foreground/60">
               We are not accepting applications at this time. When a role opens, the vacancy and its official application link will be published here.
             </p>
+            <a
+              href="mailto:careers@daintymindz.com?subject=Career%20Enquiry"
+              className="mt-5 inline-flex items-center gap-2 rounded-sm border border-amber/35 px-5 py-3 font-display text-xs font-bold uppercase tracking-wider text-amber transition-colors hover:bg-amber hover:text-graphite-deep"
+            >
+              Email careers@daintymindz.com <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
           <section className="mt-20">
@@ -102,6 +108,13 @@ export default function CareersPage() {
                 </article>
               ))}
             </div>
+            <p className="mt-8 font-body text-sm leading-7 text-foreground/55">
+              Questions about employment opportunities can be sent to{" "}
+              <a className="font-semibold text-amber hover:text-amber-light" href="mailto:careers@daintymindz.com?subject=Career%20Enquiry">
+                careers@daintymindz.com
+              </a>
+              .
+            </p>
           </section>
         </div>
       </section>

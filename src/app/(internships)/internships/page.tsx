@@ -67,11 +67,16 @@ export default function InternshipsPage() {
       <div className="mb-10 rounded-sm border border-amber/25 bg-amber/8 px-6 py-5">
         <p className="font-display text-lg font-bold text-foreground">No current openings</p>
         <p className="mt-2 font-body text-sm leading-6 text-foreground/60">
-          Applications are currently closed. Future cohort dates and the official application form will be published on the Careers page.
+          Applications are currently closed. Future cohort dates and the official application form will be published on the Careers page. Career enquiries can be sent to careers@daintymindz.com.
         </p>
-        <Link href="/careers" className="mt-4 inline-flex items-center gap-2 font-display text-xs font-bold uppercase tracking-wider text-amber hover:text-amber-light">
-          View Careers <span aria-hidden="true">→</span>
-        </Link>
+        <div className="mt-4 flex flex-wrap gap-5">
+          <Link href="/careers" className="inline-flex items-center gap-2 font-display text-xs font-bold uppercase tracking-wider text-amber hover:text-amber-light">
+            View Careers <span aria-hidden="true">→</span>
+          </Link>
+          <a href="mailto:careers@daintymindz.com?subject=Internship%20Enquiry" className="inline-flex items-center gap-2 font-display text-xs font-bold uppercase tracking-wider text-amber hover:text-amber-light">
+            Email Careers <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
 
       {/* Hero image */}
