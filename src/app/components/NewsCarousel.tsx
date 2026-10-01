@@ -37,7 +37,7 @@ export default function NewsCarousel({ images }: { images: GalleryImage[] }) {
               alt={image.alt}
               fill
               sizes="(min-width: 768px) 45vw, 100vw"
-              className={image.fit === "contain" ? "bg-white object-contain p-3" : "object-cover"}
+              className={image.fit === "contain" ? "object-contain" : "object-cover"}
             />
             <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/85 to-transparent px-5 pb-5 pt-12">
               <p className="font-body text-xs leading-5 text-white/85">{image.caption}</p>
