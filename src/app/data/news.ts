@@ -87,14 +87,21 @@ export const milestones: Milestone[] = [
       "DaintyMindz Laboratory proudly participated in the 2026 KICS Summer Conference in Jeju, South Korea. Anthony Eneh represented the team and presented our research, Explainable Bitter Gourd Freshness Detection using MobileNetV3 and GradCAM, to an international audience. From concept to conference, this milestone celebrates collaboration, innovation, and AI research designed for real-world food quality and agricultural impact. One Lab. Global Impact.",
     gallery: [
       {
-        src: "/images/news/kics-2026/instagram-cover.jpg",
-        alt: "Anthony Eneh presenting the DaintyMindz bitter gourd freshness research at KICS 2026 in Jeju",
-        caption: "Anthony Eneh representing DaintyMindz Laboratory at KICS 2026",
+        src: "/images/news/kics-2026/kics-announcement.jpeg",
+        alt: "DaintyMindz Laboratory announcement for its research presentation at the 2026 KICS Summer Conference",
+        caption: "DaintyMindz research presented at KICS 2026 in Jeju, South Korea",
+        fit: "contain",
       },
       {
-        src: "/images/projects/kics-bitter-gourd-poster.png",
-        alt: "Research poster for explainable bitter gourd freshness detection using MobileNetV3 and GradCAM",
-        caption: "The research presented to the international conference audience",
+        src: "/images/news/kics-2026/anthony-presenting.jpeg",
+        alt: "Anthony Eneh explaining the DaintyMindz bitter gourd freshness research to a conference attendee",
+        caption: "Anthony Eneh presenting the team's explainable AI research to an international audience",
+        fit: "contain",
+      },
+      {
+        src: "/images/news/kics-2026/poster-discussion.jpeg",
+        alt: "Anthony Eneh discussing the DaintyMindz research poster at KICS 2026",
+        caption: "A closer discussion of the MobileNetV3 and GradCAM research poster",
         fit: "contain",
       },
     ],
