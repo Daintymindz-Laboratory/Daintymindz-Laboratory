@@ -32,7 +32,7 @@ export const milestones: Milestone[] = [
     image: "/images/news/daintymindz-2022-logo.png",
     imageAlt: "The second DaintyMindz logo introduced during the writing agency's growth",
     summary:
-      "As the agency matured, our identity evolved with it. This second DaintyMindz logo marked a more confident chapter: we celebrated repeat engagements, landed major clients across different seasons, and contributed writing to Expat Guide Korea—an important step in our international story.",
+      "As the agency matured, our identity evolved with it. This second DaintyMindz logo marked a more confident chapter: we celebrated repeat engagements, landed major clients across different seasons, and contributed writing to Expat Guide Korea, an important step in our international story.",
   },
   {
     date: "4 January 2026",
@@ -57,12 +57,12 @@ export const milestones: Milestone[] = [
   },
   {
     date: "1 February 2026",
-    title: "Cynthia Osewemen and Anthony Eneh join our leadership",
+    title: "Cynthia Osewemen and Anthony Eneh join DaintyMindz",
     category: "Leadership",
     summary:
-      "We welcomed two accomplished leaders to help carry the DaintyMindz vision forward. Cynthia Osewemen joined to lead the company as Managing Director, while Anthony Eneh took the helm of Software Engineering. Together, they brought deep operational, analytical, and engineering experience to our next phase of growth.",
+      "We welcomed two accomplished professionals to help carry the DaintyMindz vision forward. Cynthia Osewemen joined as Lead, Data Analytics, while Anthony Eneh took the helm of Software Engineering. Together, they brought deep operational, analytical, and engineering experience to our next phase of growth.",
     people: [
-      { name: "Cynthia Osewemen", role: "Managing Director", slug: "cynthia" },
+      { name: "Cynthia Osewemen", role: "Lead, Data Analytics", slug: "cynthia" },
       {
         name: "Anthony Eneh",
         role: "Head of Software Engineering",
@@ -75,7 +75,7 @@ export const milestones: Milestone[] = [
     title: "Four new Research Associates join DaintyMindz",
     category: "Research Associate Programme",
     summary:
-      "Our Research Associate Programme came to life—and what a welcome it was! We were thrilled to receive four talented professionals across Machine Learning, Data Operations, Data Analytics, and Software Engineering. Their arrival strengthened our ability to turn rigorous ideas into practical, real-world impact.",
+      "Our Research Associate Programme came to life, and what a welcome it was! We were thrilled to receive four talented professionals across Machine Learning, Data Operations, Data Analytics, and Software Engineering. Their arrival strengthened our ability to turn rigorous ideas into practical, real-world impact.",
     people: [
       { name: "Kings Opara", role: "Machine Learning Research Associate", slug: "kings" },
       { name: "Victory Ikpeyi", role: "Data Operations Research Associate", slug: "victory" },
@@ -85,6 +85,16 @@ export const milestones: Milestone[] = [
         role: "Software Engineering Research Associate",
         slug: "collins",
       },
+    ],
+  },
+  {
+    date: "1 October 2026",
+    title: "Cynthia Osewemen becomes Managing Director",
+    category: "Leadership",
+    summary:
+      "Today, we celebrate a new leadership chapter as Cynthia Osewemen becomes Managing Director of DaintyMindz Laboratory. After joining us in February as Lead, Data Analytics, Cynthia brought clarity, discipline, and generous mentorship to our work. We are delighted to see her lead the company into its next season of growth.",
+    people: [
+      { name: "Cynthia Osewemen", role: "Managing Director", slug: "cynthia" },
     ],
   },
 ];
