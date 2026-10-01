@@ -7,7 +7,7 @@ import { milestones } from "../data/news";
 export const metadata: Metadata = {
   title: "News & Milestones | DAINTYMINDZ LAB",
   description:
-    "Follow the DaintyMindz journey, from our beginnings as a writing agency to Dainty Mindz Ltd and a growing global research team.",
+    "Follow the DaintyMindz journey, from our beginnings in creative and software services to Dainty Mindz Ltd and a growing global research team.",
   alternates: { canonical: "https://daintymindz.com/news" },
 };
 
@@ -26,7 +26,7 @@ export default function NewsPage() {
               Every chapter brought us <span className="text-amber-gradient">closer</span>
             </h1>
             <p className="mx-auto mt-7 max-w-3xl font-body text-base leading-8 text-foreground/60 sm:text-lg">
-              From a small writing agency to a multidisciplinary research and technology company, this is the DaintyMindz story: built by people, strengthened by purpose, and still unfolding.
+              From a creative and software services business to a multidisciplinary research and technology company, this is the DaintyMindz story: built by people, strengthened by purpose, and still unfolding.
             </p>
             <p className="mt-5 font-body text-xs font-semibold uppercase tracking-[0.22em] text-foreground/45">
               Dainty Mindz Ltd · RC 9161423
