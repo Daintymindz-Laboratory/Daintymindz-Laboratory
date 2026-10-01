@@ -50,15 +50,23 @@ export default function NewsPage() {
                     {milestone.gallery && <NewsCarousel images={milestone.gallery} />}
 
                     {milestone.image && (
-                      <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-foreground/5 bg-black">
+                      <div
+                        className={`relative aspect-[16/10] w-full overflow-hidden border-b border-foreground/5 ${
+                          milestone.image.includes("logo")
+                            ? "bg-[#f3f0e8]"
+                            : "bg-black"
+                        }`}
+                      >
                         <Image
                           src={milestone.image}
                           alt={milestone.imageAlt ?? ""}
                           fill
                           sizes="(min-width: 768px) 45vw, 100vw"
-                          className={`object-contain ${
-                            milestone.category === "Company Milestone" ? "bg-white p-3" : "p-8"
-                          }`}
+                          className={
+                            milestone.image.includes("logo")
+                              ? "object-contain p-8 sm:p-12"
+                              : "object-contain p-8"
+                          }
                         />
                       </div>
                     )}
