@@ -21,7 +21,7 @@ export const milestones: Milestone[] = [
     title: "DaintyMindz begins with design, software, and words",
     category: "Our Beginning",
     image: "/images/news/daintymindz-original-logo.png",
-    imageAlt: "The original DaintyMindz writing agency logo",
+    imageAlt: "The original DaintyMindz logo",
     summary:
       "DaintyMindz began as a creative and software services business, offering graphic and logo design alongside web and software development. Writing soon became part of the work as we helped clients shape ideas into thoughtful, compelling content. With our original hand-lettered identity and an ambitious spirit, we started building the foundation that would grow into a multidisciplinary research and technology company.",
   },
@@ -37,16 +37,18 @@ export const milestones: Milestone[] = [
     title: "A new look for a growing DaintyMindz",
     category: "Rebrand",
     image: "/images/news/daintymindz-2022-pencil-logo.png",
-    imageAlt: "The second DaintyMindz logo introduced during the writing agency's growth",
+    imageAlt: "The second DaintyMindz logo featuring a pencil between the words",
     summary:
       "DaintyMindz began with software and creative design services, including web and logo design, before writing became the agency's primary focus. As the team and service portfolio matured, our identity evolved too. This second logo marked a more confident chapter as we landed major clients and contributed writing to Expat Guide Korea.",
   },
   {
-    date: "4 January 2026",
-    title: "A new chapter: DaintyMindz Ltd is incorporated",
+    date: "4 January and 1 February 2026",
+    title: "DaintyMindz Ltd is incorporated and unveils a new identity",
     category: "Company Milestone",
+    image: "/images/news/daintymindz-2026-current-logo.png",
+    imageAlt: "The current DaintyMindz circuit-inspired logo introduced in February 2026",
     summary:
-      "We proudly entered a new era as Dainty Mindz Ltd, a private company limited by shares. The incorporation formalised our evolution from a writing agency into a company bringing together research, data, machine learning, and software engineering. Company Registration No. 9161423.",
+      "On 4 January 2026, we proudly entered a new era as Dainty Mindz Ltd, a private company limited by shares. The incorporation formalised our evolution from a creative and software services business into a company bringing together research, data, machine learning, and software engineering. On 1 February 2026, we introduced our current circuit-inspired identity to represent this technology-led chapter. Company Registration No. 9161423.",
   },
   {
     date: "January 2026",
