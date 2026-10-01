@@ -27,16 +27,16 @@ export const milestones: Milestone[] = [
   },
   {
     date: "2020–2021",
-    title: "Our writing team begins to grow",
+    title: "DaintyMindz expands beyond writing",
     category: "Growth",
     summary:
-      "Our writing community steadily expanded as new writers joined, developed their craft, and stepped into lead responsibilities. What began with a small creative team was becoming a dependable agency shaped by shared standards, mentorship, and an appetite for bigger opportunities.",
+      "In 2020, DaintyMindz grew beyond writing and began offering logo design and web design services. Our creative team also expanded as new writers joined, developed their craft, and stepped into lead responsibilities. What began as a small writing team was becoming a broader creative agency shaped by shared standards, mentorship, and an appetite for bigger opportunities.",
   },
   {
     date: "2022–2025",
     title: "A new look for a growing DaintyMindz",
     category: "Rebrand",
-    image: "/images/news/daintymindz-2022-logo.png",
+    image: "/images/news/daintymindz-2022-logo-transparent.png",
     imageAlt: "The second DaintyMindz logo introduced during the writing agency's growth",
     summary:
       "As the agency matured, our identity evolved with it. This second DaintyMindz logo marked a more confident chapter: we celebrated repeat engagements, landed major clients across different seasons, and contributed writing to Expat Guide Korea, an important step in our international story.",
