@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import NewsCarousel from "../components/NewsCarousel";
 import { milestones } from "../data/news";
 
 export const metadata: Metadata = {
@@ -46,16 +47,26 @@ export default function NewsPage() {
                   <span className="absolute left-0 top-7 h-[15px] w-[15px] rounded-full border-4 border-background bg-amber shadow-[0_0_0_1px_rgba(213,156,16,0.35)] md:left-1/2 md:-translate-x-1/2" />
 
                   <div className="surface-panel overflow-hidden rounded-sm border border-foreground/8 shadow-xl shadow-black/5">
+                    {milestone.gallery && <NewsCarousel images={milestone.gallery} />}
+
                     {milestone.image && (
-                      <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-foreground/5 bg-black">
+                      <div
+                        className={`relative aspect-[16/10] w-full overflow-hidden border-b border-foreground/5 ${
+                          milestone.image.includes("logo")
+                            ? "bg-[#f3f0e8]"
+                            : "bg-black"
+                        }`}
+                      >
                         <Image
                           src={milestone.image}
                           alt={milestone.imageAlt ?? ""}
                           fill
                           sizes="(min-width: 768px) 45vw, 100vw"
-                          className={`object-contain ${
-                            milestone.category === "Company Milestone" ? "bg-white p-3" : "p-8"
-                          }`}
+                          className={
+                            milestone.image.includes("logo")
+                              ? "object-contain p-8 sm:p-12"
+                              : "object-contain p-8"
+                          }
                         />
                       </div>
                     )}
@@ -76,6 +87,22 @@ export default function NewsPage() {
                       <p className="mt-4 font-body text-sm leading-7 text-foreground/60">
                         {milestone.summary}
                       </p>
+
+                      {milestone.links && (
+                        <div className="mt-6 flex flex-wrap gap-3">
+                          {milestone.links.map((link) => (
+                            <a
+                              key={link.url}
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 rounded-sm border border-amber/35 px-4 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-amber transition-colors hover:bg-amber hover:text-graphite-deep"
+                            >
+                              {link.label} <span aria-hidden="true">↗</span>
+                            </a>
+                          ))}
+                        </div>
+                      )}
 
                       {milestone.people && (
                         <div className="mt-6 grid gap-3">
