@@ -69,9 +69,9 @@ export const milestones: Milestone[] = [
     title: "Cynthia Osewemen and Anthony Eneh join DaintyMindz",
     category: "Leadership",
     summary:
-      "We welcomed two accomplished professionals to help carry the DaintyMindz vision forward. Cynthia Osewemen joined as Lead, Data Analytics, while Anthony Eneh took the helm of Software Engineering. Together, they brought deep operational, analytical, and engineering experience to our next phase of growth.",
+      "We welcomed two accomplished professionals to help carry the DaintyMindz vision forward. Cynthia Osewemen joined as Head of Data Analytics, while Anthony Eneh took the helm of Software Engineering. Together, they brought deep operational, analytical, and engineering experience to our next phase of growth.",
     people: [
-      { name: "Cynthia Osewemen", role: "Lead, Data Analytics", slug: "cynthia" },
+      { name: "Cynthia Osewemen", role: "Head of Data Analytics", slug: "cynthia" },
       {
         name: "Anthony Eneh",
         role: "Head of Software Engineering",
@@ -167,12 +167,12 @@ export const milestones: Milestone[] = [
   },
   {
     date: "1 October 2026",
-    title: "Cynthia Osewemen becomes Managing Director",
+    title: "Cynthia Osewemen becomes Head of Data Analytics",
     category: "Leadership",
     summary:
-      "Today, we celebrate a new leadership chapter as Cynthia Osewemen becomes Managing Director of DaintyMindz Laboratory. After joining us in February as Lead, Data Analytics, Cynthia brought clarity, discipline, and generous mentorship to our work. We are delighted to see her lead the company into its next season of growth.",
+      "Today, we celebrate a new leadership chapter as Cynthia Osewemen becomes Head of Data Analytics of DaintyMindz Laboratory. After joining us in February as Head of Data Analytics, Cynthia brought clarity, discipline, and generous mentorship to our work. We are delighted to see her lead the company into its next season of growth.",
     people: [
-      { name: "Cynthia Osewemen", role: "Managing Director", slug: "cynthia" },
+      { name: "Cynthia Osewemen", role: "Head of Data Analytics", slug: "cynthia" },
     ],
   },
 ];
